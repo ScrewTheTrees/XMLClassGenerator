@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrewTheTrees.XMLClassGenerator.Core", "ScrewTheTrees.XMLClassGenerator.Core\ScrewTheTrees.XMLClassGenerator.Core.csproj", "{12BD1EDB-C23F-4E05-A3B1-890EB13842E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12BD1EDB-C23F-4E05-A3B1-890EB13842E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12BD1EDB-C23F-4E05-A3B1-890EB13842E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12BD1EDB-C23F-4E05-A3B1-890EB13842E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12BD1EDB-C23F-4E05-A3B1-890EB13842E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BE28ED9-683A-454B-B9BC-D9A72154F1CD}
+	EndGlobalSection
+EndGlobal
