@@ -4,10 +4,10 @@ namespace ScrewTheTrees.XMLClassGenerator.Core
 {
     class XMLClassEntity
     {
-        public string id;
-        public string name;
-        public string handler;
-        public int size;
+        public string id { get; }
+        public string name { get; }
+        public string handler { get; }
+        public int size { get; }
 
         public XMLClassEntity parentClass = null;
         public XMLClassEntity[] childrenClasses = null;
