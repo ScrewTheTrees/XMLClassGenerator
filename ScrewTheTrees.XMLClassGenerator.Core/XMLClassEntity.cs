@@ -9,7 +9,17 @@ namespace ScrewTheTrees.XMLClassGenerator.Core
         public string handler;
         public int size;
 
-        public XMLClassEntity parentClass;
-        public XMLClassEntity[] childrenClasses;
+        public XMLClassEntity parentClass = null;
+        public XMLClassEntity[] childrenClasses = null;
+
+
+        public XMLClassEntity(string id, string name, string handler, int size)
+        {
+            this.id = id;
+            this.name = name;
+            this.handler = handler;
+            this.size = size;
+        }
+
     }
 }
