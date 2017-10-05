@@ -1,5 +1,6 @@
 ﻿
 
+using System;
 using System.IO;
 
 namespace ScrewTheTrees.XmlClassGenerator.Core
@@ -31,17 +32,12 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
         private void GenerateFoldersToFile()
         {
             XmlClassEntity parent = xmlClass.parentClass;
-            string extraDir = "";
 
-            while (parent != null)
-            {
-                extraDir = (parent.Name.Substring(1, parent.Name.Length - 1)) + "\\" + extraDir;
+            string extraDir = xmlClass.directory;
 
-                if (!Directory.Exists(outputDirectory + extraDir))
-                    Directory.CreateDirectory(outputDirectory + extraDir);
 
-                parent = parent.parentClass;
-            }
+            if (!Directory.Exists(outputDirectory + @"\" + extraDir))
+                Directory.CreateDirectory(outputDirectory + @"\" + extraDir);
         }
     }
 }

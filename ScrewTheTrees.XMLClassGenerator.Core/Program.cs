@@ -8,11 +8,11 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
     {
         static void Main(string[] args)
         {
-            string output = "C:\\Classes";
+            string output = @"C:\Classes";
             if (!Directory.Exists(output))
                 Directory.CreateDirectory(output);
 
-            output += "\\output\\";
+            output += @"\output";
             if (!Directory.Exists(output))
                 Directory.CreateDirectory(output);
 
