@@ -1,12 +1,12 @@
 ﻿
 
-namespace ScrewTheTrees.XMLClassGenerator.Core
+namespace ScrewTheTrees.XmlClassGenerator.Core
 {
     class ClassGeneratorMainFile
     {
-        private XMLClassEntity[] xmlClasses;
+        private XmlClassEntity[] xmlClasses;
 
-        public ClassGeneratorMainFile(XMLClassEntity[] xmlClasses)
+        public ClassGeneratorMainFile(XmlClassEntity[] xmlClasses)
         {
             this.xmlClasses = xmlClasses;
         }

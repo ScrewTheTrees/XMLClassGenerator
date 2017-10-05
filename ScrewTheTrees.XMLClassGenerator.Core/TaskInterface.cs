@@ -1,6 +1,6 @@
 ﻿
 
-namespace ScrewTheTrees.XMLClassGenerator.Core
+namespace ScrewTheTrees.XmlClassGenerator.Core
 {
     interface ITaskInterface
     {

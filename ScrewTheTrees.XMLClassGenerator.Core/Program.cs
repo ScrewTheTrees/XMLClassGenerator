@@ -2,16 +2,16 @@
 
 
 
-namespace ScrewTheTrees.XMLClassGenerator.Core
+namespace ScrewTheTrees.XmlClassGenerator.Core
 {
     class Program
     {
         static void Main(string[] args)
         {
-            XMLEntityImporter handle = new XMLEntityImporter("Classes.xml", "\\output");
+            XmlEntityImporter handle = new XmlEntityImporter("Classes.xml", "\\output");
 
             handle.Load();
-            handle.createEntities();
+            handle.CreateEntities();
 
             Console.ReadLine();
         }

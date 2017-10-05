@@ -1,43 +1,55 @@
 ﻿
 
-namespace ScrewTheTrees.XMLClassGenerator.Core
+using System.Collections.Generic;
+
+namespace ScrewTheTrees.XmlClassGenerator.Core
 {
-    class XMLClassEntity
+    class XmlClassEntity
     {
-        public string id { get; }
-        public string name { get; }
-        public string handler { get; }
-        public int size { get; }
+        public string ID { get; }
+        public string Name { get; }
+        public string Sandler { get; }
+        public int Size { get; }
 
         public string directory = "\\";
 
-        public XMLClassEntity parentClass = null;
-        public XMLClassEntity[] childrenClasses = null;
+        public XmlClassEntity parentClass = null;
+        public List<XmlClassEntity> childrenClasses = new List<XmlClassEntity>();
 
 
-        public XMLClassEntity(string id, string name, string handler, int size)
+        public XmlClassEntity(string id, string name, string handler, int size)
         {
-            this.id = id;
-            this.name = name;
-            this.handler = handler;
-            this.size = size;
+            this.ID = id;
+            this.Name = name;
+            this.Sandler = handler;
+            this.Size = size;
         }
 
         /**
          * Calculates the relative directory this class is gonna be in the file/import structure.
          **/
-        public void calculateDirectory()
+        public void CalculateDirectory()
         {
-            XMLClassEntity parent = parentClass;
+            XmlClassEntity parent = parentClass;
 
             while (parent != null)
             {
-                directory = ("\\" + parent.name.Substring(1, parent.name.Length - 1)) + directory;
+                directory = ("\\" + parent.Name.Substring(1, parent.Name.Length - 1)) + directory;
 
                 parent = parent.parentClass;
             }
 
         }
 
+        public void AddToParent()
+        {
+            if (parentClass != null)
+            {
+                if (!parentClass.childrenClasses.Contains(this))
+                {
+                    parentClass.childrenClasses.Add(this);
+                }
+            }
+        }
     }
 }
