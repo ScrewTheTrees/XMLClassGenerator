@@ -32,18 +32,16 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             return doc;
         }
 
-
         public List<XmlClassEntity> CreateEntities()
         {
             List<XmlClassEntity> entities = new List<XmlClassEntity>();
+            List<XElement> rootClass = new List<XElement>();
+            rootClass.AddRange(doc.Elements().Where(x => x.Name == "class"));
 
-            List<XElement> root = new List<XElement>();
-            root.AddRange(doc.Elements().Where(x => x.Name == "class"));
-
-            Console.WriteLine(root.Attributes().FirstOrDefault() + "  - Children:  " + root.Elements().Count().ToString());
+            Console.WriteLine(rootClass.Attributes().FirstOrDefault() + "  - Children:  " + rootClass.Elements().Count().ToString());
 
             //Loop through all the elements to create their ClassEntities
-            foreach (XElement node in root)
+            foreach (XElement node in rootClass)
                 entities = ParseNode(node, entities, null);
 
             //Calculate directories (and print debug i guess)
@@ -56,7 +54,6 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
 
             return entities;
         }
-
 
         private List<XmlClassEntity> ParseNode(XElement element, List<XmlClassEntity> entities, XmlClassEntity parent)
         {
@@ -73,10 +70,8 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
                 foreach (XElement node in element.Elements().Where(x => x.Name == "class"))
                     entities = ParseNode(node, entities, currentEntity);
             }
-            
             return entities;
         }
-
 
         private XmlClassEntity MakeEntityFromElement(XElement element)
         {
@@ -86,9 +81,6 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
                 handler: element.Attribute("handler").Value,
                 size: int.Parse(element.Attribute("size").Value
                 ));
-
         }
-
-
     }
 }

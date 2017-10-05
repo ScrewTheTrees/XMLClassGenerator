@@ -2,7 +2,7 @@
 
 namespace ScrewTheTrees.XmlClassGenerator.Core
 {
-    interface ITaskInterface
+    interface ITask
     {
         bool Execute();
     }

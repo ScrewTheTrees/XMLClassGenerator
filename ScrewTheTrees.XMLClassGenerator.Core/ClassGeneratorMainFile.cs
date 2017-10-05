@@ -16,6 +16,5 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             //TODO: Generate File
         }
 
-
     }
 }
