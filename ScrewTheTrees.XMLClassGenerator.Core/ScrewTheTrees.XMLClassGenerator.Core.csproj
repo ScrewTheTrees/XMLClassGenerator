@@ -48,7 +48,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaskInterface.cs" />
     <Compile Include="XMLClassEntity.cs" />
-    <Compile Include="XMLHandler.cs" />
+    <Compile Include="XMLEntityImporter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -8,6 +8,7 @@ namespace ScrewTheTrees.XMLClassGenerator.Core
         public string name { get; }
         public string handler { get; }
         public int size { get; }
+
         public string directory = "\\";
 
         public XMLClassEntity parentClass = null;
@@ -23,7 +24,7 @@ namespace ScrewTheTrees.XMLClassGenerator.Core
         }
 
         /**
-         * Calculates the relative directory this instance is gonna need...
+         * Calculates the relative directory this instance is gonna need in structure.
          * 
          * */
         public void calculateDirectory()

@@ -53,7 +53,7 @@ namespace ScrewTheTrees.XMLClassGenerator.Core
             {
                 e.calculateDirectory();
 
-                Console.WriteLine(e.name + " : " + e.directory);
+                Console.WriteLine("name: " + e.name + " - Size:" + e.size + " - ID:" + e.id + " - Handler:" + e.handler);
             }
 
 
@@ -64,19 +64,19 @@ namespace ScrewTheTrees.XMLClassGenerator.Core
         }
 
 
-        private List<XMLClassEntity> parseNode(XElement root, List<XMLClassEntity> entities, XMLClassEntity parent)
+        private List<XMLClassEntity> parseNode(XElement element, List<XMLClassEntity> entities, XMLClassEntity parent)
         {
             //TODO: Loop logic
-            Console.WriteLine(root.Attributes().FirstOrDefault() + "  - Children:  " + root.Elements().Count().ToString());
+            Console.WriteLine(element.Attributes().FirstOrDefault() + "  - Children:  " + element.Elements().Count().ToString());
 
-            XMLClassEntity currentEntity = makeEntityFromElement(root);
+            XMLClassEntity currentEntity = makeEntityFromElement(element);
             currentEntity.parentClass = parent;
 
             entities.Add(currentEntity);
 
-            if (root.Elements().Count() > 0 && root != null)
+            if (element.Elements().Count() > 0 && element != null)
             {
-                foreach (XElement node in root.Elements())
+                foreach (XElement node in element.Elements())
                 entities = parseNode(node, entities, currentEntity);
             }
             
@@ -84,13 +84,13 @@ namespace ScrewTheTrees.XMLClassGenerator.Core
         }
 
 
-        private XMLClassEntity makeEntityFromElement(XElement root)
+        private XMLClassEntity makeEntityFromElement(XElement element)
         {
             return new XMLClassEntity(
-                id: root.Attribute("id").Value,
-                name: root.Attribute("name").Value,
-                handler: root.Attribute("handler").Value,
-                size: int.Parse(root.Attribute("size").Value
+                id: element.Attribute("id").Value,
+                name: element.Attribute("name").Value,
+                handler: element.Attribute("handler").Value,
+                size: int.Parse(element.Attribute("size").Value
                 ));
 
         }
