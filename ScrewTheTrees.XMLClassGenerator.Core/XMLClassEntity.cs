@@ -11,7 +11,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
         public string Handler { get; }
         public int Size { get; }
 
-        public string directory = "\\";
+        public string directory = "";
 
         public XmlClassEntity parentClass = null;
         public List<XmlClassEntity> childrenClasses = new List<XmlClassEntity>();
@@ -34,7 +34,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
 
             while (parent != null)
             {
-                directory = ("\\" + parent.Name.Substring(1, parent.Name.Length - 1)) + directory;
+                directory = (parent.Name.Substring(1, parent.Name.Length - 1))+ "\\" + directory;
 
                 parent = parent.parentClass;
             }

@@ -1,6 +1,6 @@
 ﻿using System;
-
-
+using System.Collections.Generic;
+using System.IO;
 
 namespace ScrewTheTrees.XmlClassGenerator.Core
 {
@@ -8,10 +8,24 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
     {
         static void Main(string[] args)
         {
-            XmlEntityImporter handle = new XmlEntityImporter("Classes.xml", "\\output");
+            string output = "C:\\Classes";
+            if (!Directory.Exists(output))
+                Directory.CreateDirectory(output);
+
+            output += "\\output\\";
+            if (!Directory.Exists(output))
+                Directory.CreateDirectory(output);
+
+            XmlEntityImporter handle = new XmlEntityImporter("Classes.xml", output);
 
             handle.Load();
-            handle.CreateEntities();
+            List<XmlClassEntity> entitites = handle.CreateEntities();
+
+            foreach (XmlClassEntity e in entitites)
+            {
+                ClassGeneratorClassFile cgcf = new ClassGeneratorClassFile(e, output);
+                cgcf.Execute();
+            }
 
             Console.ReadLine();
         }
