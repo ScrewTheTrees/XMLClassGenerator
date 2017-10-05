@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrewTheTrees.XMLClassGenerator.Core", "ScrewTheTrees.XMLClassGenerator.Core\ScrewTheTrees.XMLClassGenerator.Core.csproj", "{12BD1EDB-C23F-4E05-A3B1-890EB13842E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrewTheTrees.XmlClassGenerator.Core", "ScrewTheTrees.XMLClassGenerator.Core\ScrewTheTrees.XmlClassGenerator.Core.csproj", "{12BD1EDB-C23F-4E05-A3B1-890EB13842E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -51,7 +51,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             {
                 e.CalculateDirectory();
 
-                Console.WriteLine("name: " + e.Name + " - Size:" + e.Size + " - ID:" + e.ID + " - Handler:" + e.Sandler);
+                Console.WriteLine("Name: " + e.Name + "      Size:" + e.Size + "   ID:" + e.ID + "   Handler:" + e.Sandler);
             }
 
             return entities;
