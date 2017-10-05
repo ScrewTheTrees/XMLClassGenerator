@@ -16,12 +16,10 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             this.outputDirectory = outputDirectory;
         }
 
-        public bool Execute()
+        public void Execute()
         {
             GenerateFoldersToFile();
             GenerateFile();
-
-            return true;
         }
 
         public void GenerateFile()
@@ -34,7 +32,6 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             XmlClassEntity parent = xmlClass.parentClass;
 
             string extraDir = xmlClass.directory;
-
 
             if (!Directory.Exists(outputDirectory + @"\" + extraDir))
                 Directory.CreateDirectory(outputDirectory + @"\" + extraDir);

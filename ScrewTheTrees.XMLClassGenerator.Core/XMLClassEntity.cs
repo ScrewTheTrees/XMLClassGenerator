@@ -6,23 +6,20 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
 {
     class XmlClassEntity
     {
-        public string ID { get; }
-        public string Name { get; }
-        public string Handler { get; }
-        public int Size { get; }
+        public string ID = "";
+        public string Name = "";
+        public string Handler = "";
+        public int Size = 0;
 
-        public string directory = @"\";
+        public string directory = "";
 
         public XmlClassEntity parentClass = null;
         public List<XmlClassEntity> childrenClasses = new List<XmlClassEntity>();
 
 
-        public XmlClassEntity(string id, string name, string handler, int size)
+        public XmlClassEntity()
         {
-            ID = id;
-            Name = name;
-            Handler = handler;
-            Size = size;
+
         }
 
         /**
@@ -47,6 +44,42 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
                 if (!parentClass.childrenClasses.Contains(this))
                 {
                     parentClass.childrenClasses.Add(this);
+                }
+            }
+        }
+
+
+        public static int CompareByDirectoryLength(XmlClassEntity dir1, XmlClassEntity dir2)
+        {
+            if (dir1 == null)
+            {
+                if (dir2 == null)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return -1;
+                }
+            }
+            else
+            {
+                if (dir2 == null)
+                {
+                    return 1;
+                }
+                else
+                {
+                    int retval = dir1.directory.Length.CompareTo(dir2.directory.Length);
+
+                    if (retval != 0)
+                    {
+                        return retval;
+                    }
+                    else
+                    {
+                        return dir1.directory.CompareTo(dir2.directory);
+                    }
                 }
             }
         }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading;
 
 namespace ScrewTheTrees.XmlClassGenerator.Core
 {
@@ -21,10 +22,16 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             handle.Load();
             List<XmlClassEntity> entitites = handle.CreateEntities();
 
+            //IF we sort them according to string length, it will always generate the essential folders before their subfolders!
+            entitites.Sort(XmlClassEntity.CompareByDirectoryLength);
+
+
             foreach (XmlClassEntity e in entitites)
             {
                 ClassGeneratorClassFile cgcf = new ClassGeneratorClassFile(e, output);
-                cgcf.Execute();
+                Thread workerThread = new Thread(cgcf.Execute);
+                workerThread.Start();
+                //cgcf.Execute();
             }
 
             Console.ReadLine();

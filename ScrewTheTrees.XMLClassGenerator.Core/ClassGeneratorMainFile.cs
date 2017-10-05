@@ -13,11 +13,9 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             this.outputDirectory = outputDirectory;
         }
 
-        public bool Execute()
+        public void Execute()
         {
             GenerateFile();
-
-            return true;
         }
 
         public void GenerateFile()

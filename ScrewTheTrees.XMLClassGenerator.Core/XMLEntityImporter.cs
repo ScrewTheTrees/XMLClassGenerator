@@ -73,12 +73,12 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
 
         private XmlClassEntity MakeEntityFromElement(XElement element)
         {
-            return new XmlClassEntity(
-                id: element.Attribute("id").Value,
-                name: element.Attribute("name").Value,
-                handler: element.Attribute("handler").Value,
-                size: int.Parse(element.Attribute("size").Value
-                ));
+            return (new XmlClassEntity() {
+                ID = element.Attribute("id").Value,
+                Name = element.Attribute("name").Value,
+                Handler = element.Attribute("handler").Value,
+                Size = int.Parse(element.Attribute("size").Value)
+                });
         }
     }
 }
