@@ -46,7 +46,7 @@
     <Compile Include="ClassGeneratorMainFile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TaskInterface.cs" />
+    <Compile Include="ITask.cs" />
     <Compile Include="XmlClassEntity.cs" />
     <Compile Include="XmlEntityImporter.cs" />
   </ItemGroup>

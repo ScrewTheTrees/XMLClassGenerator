@@ -57,8 +57,6 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
 
         private List<XmlClassEntity> ParseNode(XElement element, List<XmlClassEntity> entities, XmlClassEntity parent)
         {
-            Console.WriteLine(element.Attributes().FirstOrDefault() + " - Children:  " + element.Elements().Count().ToString());
-
             XmlClassEntity currentEntity = MakeEntityFromElement(element);
             currentEntity.parentClass = parent;
 
