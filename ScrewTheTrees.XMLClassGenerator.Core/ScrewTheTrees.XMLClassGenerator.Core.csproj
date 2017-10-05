@@ -48,13 +48,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaskInterface.cs" />
     <Compile Include="XMLClassEntity.cs" />
-    <Compile Include="XMLImporter.cs" />
+    <Compile Include="XMLHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Classes.xml" />
+    <Content Include="Classes.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

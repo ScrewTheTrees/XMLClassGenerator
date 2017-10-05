@@ -1,4 +1,6 @@
-﻿
+﻿using System;
+
+
 
 namespace ScrewTheTrees.XMLClassGenerator.Core
 {
@@ -6,7 +8,12 @@ namespace ScrewTheTrees.XMLClassGenerator.Core
     {
         static void Main(string[] args)
         {
+            XMLHandler handle = new XMLHandler("Classes.xml", "\\output");
 
+            handle.Load();
+            handle.createEntities();
+
+            Console.ReadLine();
         }
     }
 }
