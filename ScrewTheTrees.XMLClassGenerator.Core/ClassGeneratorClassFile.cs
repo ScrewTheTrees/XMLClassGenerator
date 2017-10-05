@@ -2,21 +2,31 @@
 
 namespace ScrewTheTrees.XmlClassGenerator.Core
 {
-    class ClassGeneratorClassFile
+    class ClassGeneratorClassFile : ITask
     {
         private XmlClassEntity xmlClass;
+        private string outputDirectory;
 
-        public ClassGeneratorClassFile(XmlClassEntity classes)
+        public ClassGeneratorClassFile(XmlClassEntity xmlClass, string outputDirectory)
         {
-            this.xmlClass = classes;
+            this.xmlClass = xmlClass;
+            this.outputDirectory = outputDirectory;
         }
 
-        public void GenerateFile(string outputDir)
+        public bool Execute()
+        {
+            GenerateFoldersToFile();
+            GenerateFile();
+
+            return true;
+        }
+
+        public void GenerateFile()
         {
             //TODO: Generate File
         }
 
-        private void GenerateFoldersToFile(string outputDir, string baseDir)
+        private void GenerateFoldersToFile()
         {
             //TODO: Make Folder Generator
         }
