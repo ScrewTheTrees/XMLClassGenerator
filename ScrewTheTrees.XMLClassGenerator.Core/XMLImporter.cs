@@ -7,10 +7,22 @@ namespace ScrewTheTrees.XMLClassGenerator.Core
     {
         public XmlDocument docu = new XmlDocument();
         public List<XMLClassEntity> eList = new List<XMLClassEntity>();
-        
-        public XMLHandler(string document)
+        private string outputDirectory;
+        private string loadDocument;
+
+
+        public XMLHandler(string loadDocument, string outputDirectory)
         {
-            docu.Load(document);
+            this.loadDocument = loadDocument;
+            this.outputDirectory = outputDirectory;
         }
+
+        public XmlDocument Load()
+        {
+            docu.Load(loadDocument);
+
+            return docu;
+        }
+
     }
 }

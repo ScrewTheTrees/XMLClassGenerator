@@ -1,0 +1,1316 @@
+<class id="+aga" name="CAgent" handler="0x6FD4BFBC" size="32">
+  <class id="+agr" name="CTriggerRegion" handler="0x6FD4BFF0" size="36" />
+  <class id="+wgh" name="CGhostImage" handler="0x6FD812A0" size="100" />
+  <class id="+ccu" name="CCreepCampUI" handler="0x6FD8008C" size="48" />
+  <class id="+ccp" name="CCreepCampIndicator" handler="0x6FD800A4" size="60" />
+  <class id="spla" name="CSplashData" handler="0x6FD7B8B0" size="76" />
+  <class id="shft" name="MineShaft" handler="0x6FD7F338" size="76" />
+  <class id="rslt" name="AcolyteRingSlot" handler="0x6FD7BEEC" size="80" />
+  <class id="rlyp" name="CRallyPoint" handler="0x6FD7B508" size="72" />
+  <class id="+w3a" name="CAgentWar3" handler="0x6FD4BD04" size="36">
+    <class id="+w3i" name="CWar3Image" handler="0x6FD80FC0" size="44">
+      <class id="+EIm" name="CEffectImage" handler="0x6FD8120C" size="132">
+        <class id="+EIP" name="CEffectImagePos" handler="0x6FD81244" size="160">
+          <class id="XHf2" name="CEffectFlameStrikeTwo" handler="0x6FD7F1D0" size="352" />
+          <class id="XNvc" name="CEffectVolcano" handler="0x6FD7F13C" size="1064" />
+          <class id="Xbdt" name="CBaseEffectDetector" handler="0x6FD7AFE0" size="188">
+            <class id="Xfla" name="CEffectFlare" handler="0x6FD7F230" size="188" />
+          </class>
+          <class id="+ERs" name="CEffectRangeListener" handler="0x6FD81278" size="208">
+            <class id="Xclf" name="CEffectCloudOfFog" handler="0x6FD7C36C" size="296" />
+            <class id="XEtq" name="CEffectTranquility" handler="0x6FD7E05C" size="284">
+              <class id="XEsf" name="CEffectStarfall" handler="0x6FD7E0A4" size="292">
+                <class id="XNmo" name="CEffectMonsoon" handler="0x6FD7E0EC" size="292" />
+              </class>
+              <class id="XUdd" name="CEffectDeathAndDecay" handler="0x6FD7E80C" size="304">
+                <class id="XHfs" name="CEffectFlameStrike" handler="0x6FD7F1B8" size="348">
+                  <class id="Xbof" name="CEffectBallsOfFire" handler="0x6FD7E53C" size="348" />
+                </class>
+              </class>
+            </class>
+            <class id="XNcs" name="CEffectClusterRockets" handler="0x6FD7DEF0" size="328">
+              <class id="XNhs" name="CEffectHealingSpray" handler="0x6FD7B934" size="328" />
+            </class>
+          </class>
+        </class>
+        <class id="+EIf" name="CEffectImageFogged" handler="0x6FD8122C" size="136" />
+      </class>
+      <class id="+w3w" name="CWidget" handler="0x6FD800CC" size="68">
+        <class id="+w3s" name="CSelectable" handler="0x6FD80104" size="84">
+          <class id="+w3d" name="CDestructable" handler="0x6FD80FE0" size="136" />
+          <class id="+w3u" name="CUnit" handler="0x6FD80198" size="784" />
+          <class id="item" name="CItem" handler="0x6FD80128" size="248" />
+        </class>
+        <class id="AI-C" name="CCaptainAI" handler="0x6FD87904" size="576" />
+      </class>
+      <class id="+w3B" name="CBulletBase" handler="0x6FD810FC" size="120">
+        <class id="+wbu" name="CBullet" handler="0x6FD81114" size="144">
+          <class id="Mesn" name="CMissileSentinel" handler="0x6FD7C9E4" size="192" />
+          <class id="MUcs" name="CMissileCarrionSwarm" handler="0x6FD7CA8C" size="268">
+            <class id="MOsh" name="CMissileShockwave" handler="0x6FD7CAD4" size="268" />
+            <class id="MNbf" name="CMissileBreathOfFire" handler="0x6FD7C0B4" size="292">
+              <class id="MCbf" name="CMissileBreathOfFrost" handler="0x6FD7C0FC" size="292" />
+            </class>
+          </class>
+          <class id="MUds" name="CMissileDarkSummoning" handler="0x6FD7B218" size="176" />
+          <class id="MNst" name="CMissileStampede" handler="0x6FD7CF1C" size="236" />
+          <class id="B-Mi" name="CMissile" handler="0x6FD81144" size="172">
+            <class id="Mfir" name="CMissileFire" handler="0x6FD7D5E4" size="196" />
+            <class id="Mfbk" name="CMissileFeedback" handler="0x6FD7E47C" size="172" />
+            <class id="MHtb" name="CMissileThunderBolt" handler="0x6FD7DD40" size="180" />
+            <class id="Muco" name="CMissileUnstableConcoction" handler="0x6FD7C99C" size="248" />
+            <class id="MOcl" name="CMissileChainLightning" handler="0x6FD7C1D4" size="172" />
+            <class id="Mmir" name="CMissileMirrorImage" handler="0x6FD7FCC0" size="192" />
+            <class id="Mcor" name="CMissileCorrosiveBreath" handler="0x6FD7E59C" size="172" />
+            <class id="Mabs" name="CMissileAbsorb" handler="0x6FD7E89C" size="188" />
+            <class id="Mdvm" name="CMissileDevourMagic" handler="0x6FD7E9BC" size="172" />
+            <class id="Mpos" name="CMissilePossession" handler="0x6FD7C2C4" size="208" />
+            <class id="MUdc" name="CMissileDeathCoil" handler="0x6FD7F444" size="192" />
+            <class id="MNef" name="CMissileElementalFury" handler="0x6FD7EC8C" size="176" />
+            <class id="MNlm" name="CMissileLavaMonster" handler="0x6FD7F0C4" size="172" />
+            <class id="B-Ms" name="CMissileSplash" handler="0x6FD81174" size="220">
+              <class id="Mbof" name="CMissileBallsOfFire" handler="0x6FD7E524" size="296" />
+              <class id="Mcbs" name="CMissileCorrosiveBreathSplash" handler="0x6FD7E5B4" size="220" />
+              <class id="Mfrb" name="CMissileFrostBreath" handler="0x6FD7E6BC" size="260" />
+              <class id="BfMs" name="CBuffMissileSplash" handler="0x6FD810E4" size="288">
+                <class id="Mfzs" name="CMissileFreezeSplash" handler="0x6FD7C418" size="288" />
+                <class id="Mfss" name="CMissileFrostSplash" handler="0x6FD7C3E8" size="288" />
+                <class id="Mpas" name="CMissilePoisonAttackSplash" handler="0x6FD7FF30" size="320">
+                  <class id="Msss" name="CMissileSlowPoisonSplash" handler="0x6FD7FF60" size="320" />
+                  <class id="MHcs" name="CMissileColdArrowSplash" handler="0x6FD7C490" size="320" />
+                  <class id="MIps" name="CMissilePoisonDamageSplash" handler="0x6FD7D6D4" size="320" />
+                </class>
+                <class id="Mlis" name="CMissileLiquidFireSplash" handler="0x6FD7E674" size="312" />
+                <class id="MOcs" name="CMissileCriticalStrikeSplash" handler="0x6FD7C598" size="296" />
+                <class id="Mfrs" name="CMissileFreezingBreathSplash" handler="0x6FD7E614" size="288" />
+                <class id="MNdh" name="CMissileDrunkenHaze" handler="0x6FD7EB6C" size="324" />
+                <class id="MNab" name="CMissileAcidBomb" handler="0x6FD7B97C" size="336" />
+                <class id="MNtm" name="CMissileTransmute" handler="0x6FD7B9F4" size="304" />
+                <class id="MNic" name="CMissileIncinerate" handler="0x6FD7F07C" size="344" />
+                <class id="MIcs" name="CMissileCorruptionSplash" handler="0x6FD7D77C" size="296" />
+                <class id="MIls" name="CMissileLightningPurgeSplash" handler="0x6FD7D65C" size="328" />
+                <class id="MIss" name="CMissileSpellEffectSplash" handler="0x6FD7D7C4" size="300" />
+              </class>
+            </class>
+            <class id="B-Mb" name="CMissileBounce" handler="0x6FD8118C" size="200">
+              <class id="MIdc" name="CMissileItemDispelChain" handler="0x6FD7D3A4" size="236" />
+            </class>
+            <class id="B-Ml" name="CMissileLine" handler="0x6FD811A4" size="272" />
+            <class id="BfMi" name="CBuffMissile" handler="0x6FD810CC" size="232">
+              <class id="Mfre" name="CMissileFreeze" handler="0x6FD7C400" size="232" />
+              <class id="Mfro" name="CMissileFrost" handler="0x6FD7C3D0" size="232" />
+              <class id="Mpoi" name="CMissilePoisonAttack" handler="0x6FD7FF18" size="264">
+                <class id="Mspo" name="CMissileSlowPoison" handler="0x6FD7FF48" size="264">
+                  <class id="MEsh" name="CMissileShadowStrike" handler="0x6FD7CA74" size="280" />
+                </class>
+                <class id="MHca" name="CMissileColdArrow" handler="0x6FD7C478" size="264" />
+                <class id="MNpa" name="CMissileParasite" handler="0x6FD7FD68" size="288" />
+                <class id="MIpb" name="CMissilePoisonDamage" handler="0x6FD7D6BC" size="264" />
+              </class>
+              <class id="Mpxf" name="CMissilePhoenixFire" handler="0x6FD7FE10" size="232" />
+              <class id="Msps" name="CMissileSpellSteal" handler="0x6FD7CD50" size="244" />
+              <class id="MHt2" name="CMissileThunderBoltTwo" handler="0x6FD7DD58" size="244" />
+              <class id="Mens" name="CMissileEnsnare" handler="0x6FD7ECEC" size="252" />
+              <class id="Mliq" name="CMissileLiquidFire" handler="0x6FD7E65C" size="256" />
+              <class id="MOcr" name="CMissileCriticalStrike" handler="0x6FD7C580" size="240" />
+              <class id="Mfrz" name="CMissileFreezingBreath" handler="0x6FD7E5FC" size="232" />
+              <class id="Mweb" name="CMissileWeb" handler="0x6FD7ED4C" size="252" />
+              <class id="MNba" name="CMissileBlackArrow" handler="0x6FD7BEA4" size="252" />
+              <class id="MIcb" name="CMissileCorruption" handler="0x6FD7D764" size="240" />
+              <class id="MIlp" name="CMissileLightningPurge" handler="0x6FD7D644" size="272" />
+              <class id="MIsb" name="CMissileSpellEffect" handler="0x6FD7D7AC" size="244" />
+            </class>
+          </class>
+          <class id="B-Ar" name="CArtillery" handler="0x6FD8107C" size="204">
+            <class id="Rfsh" name="CArtilleryFragShards" handler="0x6FD7E4DC" size="256" />
+            <class id="Rbof" name="CArtilleryBallsOfFire" handler="0x6FD7E50C" size="280" />
+            <class id="Rfrb" name="CArtilleryFrostBreath" handler="0x6FD7E6A4" size="244" />
+            <class id="Mpts" name="CArtilleryPlagueToss" handler="0x6FD7FBA0" size="220" />
+            <class id="RNcs" name="CArtilleryClusterRockets" handler="0x6FD7DED8" size="216" />
+            <class id="MNsy" name="CMissileSummonFactory" handler="0x6FD7DE60" size="304" />
+            <class id="B-Al" name="CArtilleryLine" handler="0x6FD81094" size="296" />
+            <class id="BfAi" name="CBuffArtillery" handler="0x6FD810AC" size="264">
+              <class id="RNvc" name="CArtilleryVolcano" handler="0x6FD7F154" size="296" />
+            </class>
+          </class>
+        </class>
+        <class id="+wbp" name="CBulletPath" handler="0x6FD8112C" size="136">
+          <class id="B-Mp" name="CMissilePath" handler="0x6FD8115C" size="164">
+            <class id="Mspa" name="CMissileSpiderAttack" handler="0x6FD7CD98" size="192" />
+          </class>
+        </class>
+      </class>
+      <class id="+trk" name="CTrackable" handler="0x6FD78650" size="68" />
+    </class>
+    <class id="uref" name="CUnitRefList" handler="0x6FD801E0" size="48">
+      <class id="task" name="CTask" handler="0x6FD80844" size="52">
+        <class id="tskP" name="CTaskParam" handler="0x6FD8085C" size="56">
+          <class id="tskO" name="CTaskOrderParam" handler="0x6FD808A4" size="56">
+            <class id="tskg" name="CTaskGhost" handler="0x6FD80934" size="88" />
+          </class>
+          <class id="tskA" name="CTaskAction" handler="0x6FD8088C" size="56" />
+        </class>
+        <class id="tsk." name="CTaskPoint" handler="0x6FD808BC" size="80">
+          <class id="tk.2" name="CTaskPoint2" handler="0x6FD808D4" size="96" />
+          <class id="tk.t" name="CTaskPointAndTarget" handler="0x6FD808EC" size="96" />
+        </class>
+        <class id="tskt" name="CTaskTarget" handler="0x6FD80904" size="76">
+          <class id="tkt2" name="CTaskTarget2" handler="0x6FD8091C" size="88" />
+        </class>
+        <class id="tskR" name="CTaskRotate" handler="0x6FD80874" size="60" />
+      </class>
+      <class id="abil" name="CAbility" handler="0x6FD7ADC4" size="108">
+        <class id="AAin" name="CAbilityInterfaced" handler="0x6FD7B1B8" size="108">
+          <class id="powr" name="CPower" handler="0x6FD7B6E4" size="108">
+            <class id="AAbt" name="CAbilityButton" handler="0x6FD7AF94" size="128">
+              <class id="AAsp" name="CAbilitySpell" handler="0x6FD7B6CC" size="228">
+                <class id="AAsm" name="CAbilitySimpleSpell" handler="0x6FD7B6B4" size="292">
+                  <class id="AAcs" name="CAbilityClosestTargetSpell" handler="0x6FD7AFAC" size="296">
+                    <class id="Aast" name="CAbilityAncestralSpirit" handler="0x6FD7BA84" size="316" />
+                    <class id="Acoi" name="CAbilityCoupleInstant" handler="0x6FD7C508" size="296" />
+                    <class id="Acan" name="CAbilityCannibalize" handler="0x6FD7C1BC" size="344" />
+                  </class>
+                  <class id="AAms" name="CAbilityModalSpell" handler="0x6FD7FD08" size="292">
+                    <class id="AAat" name="CAbilityAutoTargetSpell" handler="0x6FD7AF04" size="312">
+                      <class id="Arep" name="CAbilityRepair" handler="0x6FD7B538" size="464">
+                        <class id="Aren" name="CAbilityRenew" handler="0x6FD7B550" size="464" />
+                        <class id="Arst" name="CAbilityRestoration" handler="0x6FD7B568" size="464" />
+                      </class>
+                      <class id="Asds" name="CAbilitySelfDestruct" handler="0x6FD7C96C" size="324" />
+                      <class id="Ahea" name="CAbilityHeal" handler="0x6FD7D44C" size="312">
+                        <class id="Anhe" name="CAbilityNeutralHeal" handler="0x6FD7D464" size="312" />
+                      </class>
+                      <class id="Ainf" name="CAbilityInnerFire" handler="0x6FD7F7A4" size="312" />
+                      <class id="Aslo" name="CAbilitySlow" handler="0x6FD7CC30" size="312" />
+                      <class id="Asps" name="CAbilitySpellSteal" handler="0x6FD7CD38" size="312" />
+                      <class id="AHRa" name="CAbilityRangerArrow" handler="0x6FD7C680" size="312">
+                        <class id="AHfa" name="CAbilityFlamingArrows" handler="0x6FD7F200" size="312">
+                          <class id="Afak" name="CAbilityFlamingAttack" handler="0x6FD7F218" size="312" />
+                          <class id="ANba" name="CAbilityBlackArrow" handler="0x6FD7BEBC" size="312" />
+                        </class>
+                        <class id="AEpa" name="CAbilityPoisonArrows" handler="0x6FD7FFC0" size="312" />
+                        <class id="AHca" name="CAbilityColdArrows" handler="0x6FD7C4A8" size="312" />
+                        <class id="ANia" name="CAbilityIncinerateArrow" handler="0x6FD7F064" size="312" />
+                      </class>
+                      <class id="Ablo" name="CAbilityBloodlust" handler="0x6FD7C050" size="312">
+                        <class id="Afzy" name="CAbilityFrenzy" handler="0x6FD7C080" size="312" />
+                      </class>
+                      <class id="Aadm" name="CAbilityAutoDispelMagic" handler="0x6FD7D2FC" size="312" />
+                      <class id="Afae" name="CAbilityFaerieFire" handler="0x6FD7EEE4" size="312" />
+                      <class id="Ambt" name="CAbilityManaBattery" handler="0x6FD7FA4C" size="376" />
+                      <class id="Acrs" name="CAbilityCurse" handler="0x6FD7EE54" size="312" />
+                      <class id="Amel" name="CAbilityMeatLoad" handler="0x6FD7FB88" size="312" />
+                      <class id="Arai" name="CAbilityRaiseDead" handler="0x6FD7DBD0" size="340">
+                        <class id="AUcb" name="CAbilityCarrionScarabs" handler="0x6FD7DBE8" size="340">
+                          <class id="Avng" name="CAbilityVengeance" handler="0x6FD7CE74" size="340" />
+                        </class>
+                        <class id="AIrd" name="CAbilityItemRaiseDead" handler="0x6FD7DC30" size="340" />
+                      </class>
+                      <class id="Arpb" name="CAbilityReplenish" handler="0x6FD7C78C" size="320">
+                        <class id="Arpl" name="CAbilityReplenishLife" handler="0x6FD7C7A4" size="320" />
+                        <class id="Arpm" name="CAbilityReplenishMana" handler="0x6FD7C7BC" size="320" />
+                      </class>
+                      <class id="Aweb" name="CAbilityWeb" handler="0x6FD7ED64" size="312" />
+                      <class id="AUfu" name="CAbilityFrostArmorAuto" handler="0x6FD7F308" size="312" />
+                      <class id="ANpa" name="CAbilityParasite" handler="0x6FD7FD50" size="312" />
+                    </class>
+                    <class id="Apsh" name="CAbilityPhaseShift" handler="0x6FD7FDC8" size="304" />
+                    <class id="Abar" name="CAbilityBarkskin" handler="0x6FD7BDFC" size="292" />
+                  </class>
+                  <class id="Ablp" name="CAbilityBlightPlacement" handler="0x6FD7AF4C" size="292" />
+                  <class id="Adro" name="CAbilityCargoDrop" handler="0x6FD7E764" size="380" />
+                  <class id="Aloa" name="CAbilityCargoLoad" handler="0x6FD7E77C" size="316">
+                    <class id="Adev" name="CAbilityDevour" handler="0x6FD7E974" size="316">
+                      <class id="ACdv" name="CAbilityCreepDevour" handler="0x6FD7E98C" size="316" />
+                    </class>
+                  </class>
+                  <class id="Adta" name="CAbilityDetectAoe" handler="0x6FD7B070" size="292">
+                    <class id="AOfs" name="CAbilityFarSight" handler="0x6FD7B088" size="292" />
+                  </class>
+                  <class id="Acmg" name="CAbilityControlMagic" handler="0x6FD7C30C" size="292" />
+                  <class id="Adis" name="CAbilityDispelMagic" handler="0x6FD7D2CC" size="312">
+                    <class id="Adch" name="CAbilityDisenchant" handler="0x6FD7D2E4" size="312" />
+                    <class id="Adtn" name="CAbilityDetonate" handler="0x6FD7D32C" size="312" />
+                    <class id="AIdi" name="CAbilityItemDispelAoe" handler="0x6FD7D314" size="312" />
+                  </class>
+                  <class id="Afla" name="CAbilityFlare" handler="0x6FD7F248" size="296" />
+                  <class id="Aivs" name="CAbilityInvisibility" handler="0x6FD7F7D4" size="292" />
+                  <class id="Amls" name="CAbilityMagicLeash" handler="0x6FD7FA04" size="368" />
+                  <class id="Aply" name="CAbilityPolymorph" handler="0x6FD7FFD8" size="300">
+                    <class id="AOhx" name="CAbilityHex" handler="0x6FD7F3FC" size="300" />
+                  </class>
+                  <class id="Atlp" name="CAbilityTankLoadPilot" handler="0x6FD7DC68" size="292" />
+                  <class id="Atpi" name="CAbilityTankPilot" handler="0x6FD7DC80" size="300" />
+                  <class id="AHbn" name="CAbilityBanish" handler="0x6FD7BDCC" size="292" />
+                  <class id="AHbz" name="CAbilityBlizzard" handler="0x6FD7BFC0" size="348">
+                    <class id="ANrf" name="CAbilityRainOfFire" handler="0x6FD7C020" size="348" />
+                  </class>
+                  <class id="AHdr" name="CAbilityDrain" handler="0x6FD7EB3C" size="384" />
+                  <class id="AOeq" name="CAbilityEarthquake" handler="0x6FD7EBE4" size="368" />
+                  <class id="AHfs" name="CAbilityFlameStrike" handler="0x6FD7F1E8" size="336" />
+                  <class id="AHhb" name="CAbilityHolyBolt" handler="0x6FD7F42C" size="312" />
+                  <class id="AHmt" name="CAbilityMassTeleport" handler="0x6FD7B1E8" size="336" />
+                  <class id="AHtb" name="CAbilityThunderBolt" handler="0x6FD7DD70" size="292">
+                    <class id="ACtb" name="CAbilityCreepThunderBolt" handler="0x6FD7DD88" size="292" />
+                    <class id="ANfb" name="CAbilityFireBolt" handler="0x6FD7DDA0" size="292" />
+                  </class>
+                  <class id="Aens" name="CAbilityEnsnare" handler="0x6FD7ED04" size="296" />
+                  <class id="Aeye" name="CAbilityEvilEye" handler="0x6FD7EE9C" size="292" />
+                  <class id="Ahwd" name="CAbilityHealingWard" handler="0x6FD7F3B4" size="312" />
+                  <class id="Alsh" name="CAbilityLightningShield" handler="0x6FD7F944" size="292" />
+                  <class id="Aprg" name="CAbilityPurge" handler="0x6FD7D35C" size="292">
+                    <class id="Achd" name="CAbilityCargoHoldDeath" handler="0x6FD7D374" size="292" />
+                    <class id="AIlp" name="CAbilityLightningPurge" handler="0x6FD7D674" size="292" />
+                  </class>
+                  <class id="Aspl" name="CAbilitySpiritLink" handler="0x6FD7CDFC" size="296" />
+                  <class id="Asta" name="CAbilityStasisTrap" handler="0x6FD7CF80" size="292" />
+                  <class id="Auco" name="CAbilityUnstableConcoction" handler="0x6FD7C984" size="332" />
+                  <class id="AOcl" name="CAbilityChainLightning" handler="0x6FD7C1EC" size="696">
+                    <class id="AOhw" name="CAbilityHealingWave" handler="0x6FD7F3E4" size="696" />
+                  </class>
+                  <class id="AOvd" name="CAbilityVoodoo" handler="0x6FD7E180" size="372" />
+                  <class id="AOwd" name="CAbilityWard" handler="0x6FD7E1EC" size="292">
+                    <class id="AImo" name="CAbilityItemMonsterLure" handler="0x6FD7E234" size="292" />
+                  </class>
+                  <class id="Acyc" name="CAbilityCyclone" handler="0x6FD7C5F8" size="296" />
+                  <class id="Adec" name="CAbilityDecouple" handler="0x6FD7C520" size="292" />
+                  <class id="Aeat" name="CAbilityEatTree" handler="0x6FD7EBFC" size="292">
+                    <class id="Agra" name="CAbilityGrabTree" handler="0x6FD7EC2C" size="292" />
+                  </class>
+                  <class id="Amfl" name="CAbilityManaFlare" handler="0x6FD7FADC" size="324" />
+                  <class id="Arej" name="CAbilityRejuvination" handler="0x6FD7D4C4" size="292">
+                    <class id="AIrg" name="CAbilityRegeneration" handler="0x6FD7D524" size="312" />
+                  </class>
+                  <class id="Aesn" name="CAbilitySentinel" handler="0x6FD7C9CC" size="320" />
+                  <class id="Atau" name="CAbilityTaunt" handler="0x6FD7DCC8" size="292" />
+                  <class id="AEbl" name="CAbilityBlink" handler="0x6FD7BF34" size="332" />
+                  <class id="AEer" name="CAbilityEntanglingRoots" handler="0x6FD7EDC4" size="292" />
+                  <class id="AEfk" name="CAbilityFanOfKnives" handler="0x6FD7EF2C" size="292" />
+                  <class id="AEfn" name="CAbilityForceOfNature" handler="0x6FD7F290" size="292" />
+                  <class id="AEmb" name="CAbilityManaBurn" handler="0x6FD7FA64" size="324" />
+                  <class id="AEsh" name="CAbilityShadowStrike" handler="0x6FD7CA44" size="292" />
+                  <class id="Aabs" name="CAbilityAbsorb" handler="0x6FD7E884" size="292" />
+                  <class id="Aams" name="CAbilityAntiMagicShell" handler="0x6FD7F9D4" size="292">
+                    <class id="Aami" name="CAbilityAntiMagicShellInstant" handler="0x6FD7F9EC" size="292" />
+                  </class>
+                  <class id="Acri" name="CAbilityCripple" handler="0x6FD7C550" size="292" />
+                  <class id="Advm" name="CAbilityDevourMagic" handler="0x6FD7E9A4" size="292" />
+                  <class id="Aexh" name="CAbilityExhume" handler="0x6FD7EEB4" size="312" />
+                  <class id="Apos" name="CAbilityPossession" handler="0x6FD7C294" size="292">
+                    <class id="Aps2" name="CAbilityPossessionTwo" handler="0x6FD7C2AC" size="328" />
+                  </class>
+                  <class id="Alam" name="CAbilitySacrificialLamb" handler="0x6FD7C90C" size="292" />
+                  <class id="Auhf" name="CAbilityUnholyFrenzy" handler="0x6FD7E138" size="292" />
+                  <class id="Auns" name="CAbilityUnsummon" handler="0x6FD7E168" size="292" />
+                  <class id="AUan" name="CAbilityAnimateDead" handler="0x6FD7BA3C" size="312">
+                    <class id="AHre" name="CAbilityResurrection" handler="0x6FD7C81C" size="332">
+                      <class id="AIrs" name="CAbilityItemResurrection" handler="0x6FD7C834" size="332" />
+                    </class>
+                    <class id="ACad" name="CAbilityCreepAnimateDead" handler="0x6FD7BA54" size="312" />
+                    <class id="AIan" name="CAbilityItemAnimateDead" handler="0x6FD7BA6C" size="312" />
+                  </class>
+                  <class id="AUcs" name="CAbilityCarrionSwarm" handler="0x6FD7CABC" size="292">
+                    <class id="AOsh" name="CAbilityShockwave" handler="0x6FD7CB04" size="292" />
+                    <class id="ANbf" name="CAbilityBreathOfFire" handler="0x6FD7C0E4" size="292">
+                      <class id="ACbf" name="CAbilityBreathOfFrost" handler="0x6FD7C12C" size="292" />
+                    </class>
+                  </class>
+                  <class id="AUdr" name="CAbilityDarkRitual" handler="0x6FD7E83C" size="312">
+                    <class id="AUdp" name="CAbilityDeathPact" handler="0x6FD7E854" size="312" />
+                    <class id="Aste" name="CAbilitySteal" handler="0x6FD7E86C" size="312" />
+                  </class>
+                  <class id="AUds" name="CAbilityDarkSummoning" handler="0x6FD7B200" size="648" />
+                  <class id="AUdd" name="CAbilityDeathAndDecay" handler="0x6FD7E824" size="332" />
+                  <class id="AUdc" name="CAbilityDeathCoil" handler="0x6FD7F45C" size="292" />
+                  <class id="AUfa" name="CAbilityFrostArmor" handler="0x6FD7F2F0" size="292" />
+                  <class id="AUfn" name="CAbilityFrostNova" handler="0x6FD7DDB8" size="292">
+                    <class id="AHtc" name="CAbilityThunderClap" handler="0x6FD7DDE8" size="292">
+                      <class id="AOws" name="CAbilityStomp" handler="0x6FD7DE30" size="292" />
+                      <class id="ACtc" name="CAbilityCreepThunderClap" handler="0x6FD7DE18" size="292" />
+                    </class>
+                  </class>
+                  <class id="AUim" name="CAbilityImpale" handler="0x6FD7F720" size="356" />
+                  <class id="AUls" name="CAbilityLocustSwarm" handler="0x6FD7F95C" size="828" />
+                  <class id="AUsl" name="CAbilitySleep" handler="0x6FD7CBA0" size="292">
+                    <class id="ANdc" name="CAbilityDarkConversion" handler="0x6FD7CC00" size="324" />
+                  </class>
+                  <class id="ANmr" name="CAbilityMindRot" handler="0x6FD7FC60" size="292" />
+                  <class id="ANmo" name="CAbilityMonsoon" handler="0x6FD7E104" size="304" />
+                  <class id="ANpr" name="CAbilityPreservation" handler="0x6FD80008" size="292">
+                    <class id="ANsa" name="CAbilitySanctuary" handler="0x6FD80020" size="292" />
+                  </class>
+                  <class id="Ashs" name="CAbilityShadowSight" handler="0x6FD7EF14" size="292" />
+                  <class id="ANss" name="CAbilitySpellShield" handler="0x6FD7CCF0" size="292">
+                    <class id="ANse" name="CAbilitySpellShieldAoe" handler="0x6FD7CD08" size="292" />
+                  </class>
+                  <class id="ANbs" name="CAbilityBlackArrowSpell" handler="0x6FD7BED4" size="292" />
+                  <class id="ANch" name="CAbilityCharm" handler="0x6FD7C2F4" size="292" />
+                  <class id="ANdo" name="CAbilityDoom" handler="0x6FD7EA04" size="292" />
+                  <class id="ANef" name="CAbilityElementalFury" handler="0x6FD7EC5C" size="328" />
+                  <class id="ANfl" name="CAbilityForkedLightning" handler="0x6FD7F2A8" size="292" />
+                  <class id="ANms" name="CAbilityManaShield" handler="0x6FD7FB28" size="304" />
+                  <class id="ANsi" name="CAbilitySilence" handler="0x6FD7CB40" size="296">
+                    <class id="Aclf" name="CAbilityCloudOfFog" handler="0x6FD7C384" size="308" />
+                    <class id="ANdh" name="CAbilityDrunkenHaze" handler="0x6FD7EB84" size="296" />
+                  </class>
+                  <class id="ANst" name="CAbilityStampede" handler="0x6FD7CF4C" size="364" />
+                  <class id="ANto" name="CAbilityTornado" handler="0x6FD7DF84" size="352" />
+                  <class id="ANab" name="CAbilityAcidBomb" handler="0x6FD7B964" size="292" />
+                  <class id="ANtm" name="CAbilityTransmute" handler="0x6FD7B9DC" size="292" />
+                  <class id="ANcs" name="CAbilityClusterRockets" handler="0x6FD7DEC0" size="412">
+                    <class id="ANhs" name="CAbilityHealingSpray" handler="0x6FD7B91C" size="412" />
+                  </class>
+                  <class id="ANsy" name="CAbilitySummonFactory" handler="0x6FD7DE48" size="292" />
+                  <class id="ANso" name="CAbilitySoulBurn" handler="0x6FD7F0F4" size="292" />
+                  <class id="ANvc" name="CAbilityVolcano" handler="0x6FD7F124" size="332" />
+                  <class id="ANbr" name="CAbilityBattleRoar" handler="0x6FD7C8DC" size="292" />
+                  <class id="ANcl" name="CAbilityChannel" handler="0x6FD7BB2C" size="316" />
+                  <class id="ANdp" name="CAbilityDarkPortal" handler="0x6FD7BACC" size="380" />
+                  <class id="ANfd" name="CAbilityFingerOfDeath" handler="0x6FD7BAE4" size="328" />
+                  <class id="ANin" name="CAbilityInferno" handler="0x6FD7F738" size="296">
+                    <class id="AUin" name="CAbilityDreadLordInferno" handler="0x6FD7F768" size="296" />
+                  </class>
+                  <class id="ANrc" name="CAbilityRainOfChaos" handler="0x6FD7BAFC" size="308" />
+                  <class id="ANsl" name="CAbilitySoulPreservation" handler="0x6FD7BAB4" size="320" />
+                  <class id="AIxm" name="CAbilityAttributeMod" handler="0x6FD7D854" size="304">
+                    <class id="AIam" name="CAbilityAgilityMod" handler="0x6FD7D884" size="304" />
+                    <class id="AIim" name="CAbilityIntelligenceMod" handler="0x6FD7D89C" size="304" />
+                    <class id="AIsm" name="CAbilityStrengthMod" handler="0x6FD7D8B4" size="304" />
+                  </class>
+                  <class id="AIfg" name="CAbilityFigurine" handler="0x6FD7EF5C" size="292">
+                    <class id="AIff" name="CAbilityFigurineFurbolg" handler="0x6FD7EF74" size="292" />
+                    <class id="AIfd" name="CAbilityFigurineRedDrake" handler="0x6FD7EF8C" size="292" />
+                    <class id="AIfr" name="CAbilityFigurineRockGolem" handler="0x6FD7EFA4" size="292" />
+                    <class id="AIfu" name="CAbilityFigurineDoomGuard" handler="0x6FD7EFBC" size="292" />
+                    <class id="AIfh" name="CAbilityFigurineFelHound" handler="0x6FD7EFD4" size="292" />
+                    <class id="AIfs" name="CAbilityFigurineSkeleton" handler="0x6FD7EFEC" size="292" />
+                  </class>
+                  <class id="AItm" name="CAbilityTome" handler="0x6FD7D98C" size="296">
+                    <class id="AIaa" name="CAbilityAttackMod" handler="0x6FD7D9BC" size="296" />
+                    <class id="AIem" name="CAbilityExperienceMod" handler="0x6FD7DA04" size="296" />
+                    <class id="AIgl" name="CAbilityGlyph" handler="0x6FD7F320" size="296" />
+                    <class id="AIlm" name="CAbilityLevelMod" handler="0x6FD7D9A4" size="296" />
+                    <class id="AImi" name="CAbilityMaxLifeMod" handler="0x6FD7D9D4" size="296" />
+                    <class id="AImn" name="CAbilityMaxManaMod" handler="0x6FD7D9EC" size="296" />
+                    <class id="AIrb" name="CAbilityRebirth" handler="0x6FD7DA4C" size="296" />
+                    <class id="AIgo" name="CAbilityItemGiveGold" handler="0x6FD7DA1C" size="296" />
+                    <class id="AIlu" name="CAbilityItemGiveLumber" handler="0x6FD7DA34" size="296" />
+                  </class>
+                  <class id="AIco" name="CAbilityItemCommand" handler="0x6FD7C2DC" size="292" />
+                  <class id="AIdm" name="CAbilityItemDamageAoe" handler="0x6FD7E7DC" size="292" />
+                  <class id="AIda" name="CAbilityItemDefenseAoe" handler="0x6FD7E914" size="292" />
+                  <class id="AIta" name="CAbilityItemDetectAoe" handler="0x6FD7B0A0" size="292" />
+                  <class id="AIhe" name="CAbilityItemHeal" handler="0x6FD7D47C" size="300" />
+                  <class id="AIha" name="CAbilityItemHealAoe" handler="0x6FD7D494" size="292" />
+                  <class id="AIil" name="CAbilityItemIllusion" handler="0x6FD7FCF0" size="296" />
+                  <class id="AIma" name="CAbilityItemManaRestore" handler="0x6FD7FAF8" size="308" />
+                  <class id="AImr" name="CAbilityItemManaRestoreAoe" handler="0x6FD7FB10" size="316" />
+                  <class id="AIpm" name="CAbilityItemPlaceMine" handler="0x6FD7F8AC" size="292" />
+                  <class id="AIri" name="CAbilityItemRandomItem" handler="0x6FD7DBB4" size="292" />
+                  <class id="AIrt" name="CAbilityItemRecall" handler="0x6FD7B230" size="300" />
+                  <class id="AIre" name="CAbilityItemRestore" handler="0x6FD7C75C" size="316" />
+                  <class id="AIra" name="CAbilityItemRestoreAoe" handler="0x6FD7C774" size="324" />
+                  <class id="AIsp" name="CAbilityItemSpeed" handler="0x6FD7CCA8" size="292">
+                    <class id="AIsa" name="CAbilityItemSpeedAoe" handler="0x6FD7CCC0" size="292" />
+                  </class>
+                  <class id="AIte" name="CAbilityItemTeleport" handler="0x6FD7B248" size="308">
+                    <class id="AItp" name="CAbilityItemTownPortal" handler="0x6FD7B260" size="308" />
+                  </class>
+                  <class id="AIvi" name="CAbilityItemInvis" handler="0x6FD7F7EC" size="292" />
+                  <class id="AIvu" name="CAbilityItemInvul" handler="0x6FD7F87C" size="292" />
+                  <class id="AIso" name="CAbilitySoulTrap" handler="0x6FD7CC48" size="296" />
+                  <class id="AIfc" name="CAbilityItemFlyingCarpet" handler="0x6FD7D584" size="292" />
+                  <class id="AIpv" name="CAbilityItemVampirePotion" handler="0x6FD7DB54" size="292" />
+                  <class id="AIwb" name="CAbilityItemWeb" handler="0x6FD7ED94" size="292" />
+                  <class id="AIdc" name="CAbilityItemDispelChain" handler="0x6FD7D3BC" size="292" />
+                  <class id="AIca" name="CAbilityItemCureAoe" handler="0x6FD7D3D4" size="292" />
+                  <class id="AIfa" name="CAbilityItemFlare" handler="0x6FD7F260" size="292" />
+                  <class id="AIbl" name="CAbilityItemBuild" handler="0x6FD7D2A0" size="296" />
+                  <class id="AItb" name="CAbilityItemDetectByBuff" handler="0x6FD7B100" size="292" />
+                </class>
+                <class id="Aasp" name="CAbilityAuraSpell" handler="0x6FD7BC04" size="228" />
+                <class id="Abou" name="CAbilityBounce" handler="0x6FD7C87C" size="228" />
+                <class id="Adri" name="CAbilityCargoDropInstant" handler="0x6FD7E74C" size="228">
+                  <class id="Astd" name="CAbilityStandDown" handler="0x6FD7C174" size="228" />
+                  <class id="Amed" name="CAbilityMeatDrop" handler="0x6FD7FB70" size="228" />
+                </class>
+                <class id="Amor" name="CAbilityMorph" handler="0x6FD7D554" size="420">
+                  <class id="Amou" name="CAbilityMount" handler="0x6FD7D56C" size="424" />
+                  <class id="Aphx" name="CAbilityPhoenix" handler="0x6FD7FE58" size="436" />
+                  <class id="Acpf" name="CAbilityCorporealForm" handler="0x6FD7EE0C" size="440" />
+                  <class id="Aetf" name="CAbilityEtherealForm" handler="0x6FD7EDF4" size="420" />
+                  <class id="Abrf" name="CAbilityBearForm" handler="0x6FD7BE2C" size="440" />
+                  <class id="Arav" name="CAbilityRavenForm" handler="0x6FD7C698" size="420" />
+                  <class id="AEme" name="CAbilityMetamorphosis" handler="0x6FD7FBE8" size="428" />
+                  <class id="Aave" name="CAbilityAvengerForm" handler="0x6FD7C6C8" size="420" />
+                  <class id="Abur" name="CAbilityBurrow" handler="0x6FD7C18C" size="440">
+                    <class id="ANsu" name="CAbilitySubmerge" handler="0x6FD7C1A4" size="440" />
+                  </class>
+                  <class id="Astn" name="CAbilityStoneForm" handler="0x6FD7C6B0" size="444" />
+                  <class id="ANcr" name="CAbilityChemicalRage" handler="0x6FD7B9AC" size="440" />
+                  <class id="ANrg" name="CAbilityRoboGoblin" handler="0x6FD7DF50" size="452" />
+                </class>
+                <class id="Aret" name="CAbilityRetrain" handler="0x6FD7DB9C" size="228" />
+                <class id="Arng" name="CAbilityRevenge" handler="0x6FD7C864" size="228" />
+                <class id="Atdp" name="CAbilityTankDropPilot" handler="0x6FD7DC50" size="228" />
+                <class id="AHav" name="CAbilityAvatar" handler="0x6FD7BD9C" size="260" />
+                <class id="AHds" name="CAbilityDivineShield" handler="0x6FD7E9EC" size="240" />
+                <class id="AHwe" name="CAbilityWaterElemental" handler="0x6FD7E27C" size="228">
+                  <class id="AHpx" name="CAbilitySummonPhoenix" handler="0x6FD7FE70" size="228" />
+                  <class id="AEst" name="CAbilityScout" handler="0x6FD7C954" size="248" />
+                  <class id="AEsv" name="CAbilitySpiritOfVengeance" handler="0x6FD7CE44" size="228" />
+                  <class id="Amec" name="CAbilityMechanicalCritter" handler="0x6FD7E2C4" size="228" />
+                  <class id="ANsg" name="CAbilitySummonGrizzly" handler="0x6FD7E2F4" size="228" />
+                  <class id="ANsq" name="CAbilitySummonQuillbeast" handler="0x6FD7E324" size="228" />
+                  <class id="ANsw" name="CAbilitySummonWarEagle" handler="0x6FD7E354" size="228" />
+                  <class id="ANwm" name="CAbilityWateryMinion" handler="0x6FD7E294" size="228" />
+                  <class id="ANlm" name="CAbilityLavaMonster" handler="0x6FD7F0AC" size="228" />
+                </class>
+                <class id="Abtl" name="CAbilityBattlestations" handler="0x6FD7C15C" size="252" />
+                <class id="Absk" name="CAbilityBerserkerRage" handler="0x6FD7BE5C" size="252" />
+                <class id="AOmi" name="CAbilityMirrorImage" handler="0x6FD7FCD8" size="392" />
+                <class id="AOre" name="CAbilityReincarnation" handler="0x6FD7C6F8" size="228">
+                  <class id="ACrn" name="CAbilityCreepReincarnation" handler="0x6FD7C710" size="228" />
+                </class>
+                <class id="AOsf" name="CAbilitySpiritWolf" handler="0x6FD7CED4" size="228">
+                  <class id="AIsh" name="CAbilitySpiritTroll" handler="0x6FD7CF04" size="228" />
+                </class>
+                <class id="AOww" name="CAbilityWhirlwind" handler="0x6FD7E39C" size="272" />
+                <class id="AOwk" name="CAbilityWindWalk" handler="0x6FD7E3D0" size="228" />
+                <class id="Aroa" name="CAbilityRoar" handler="0x6FD7C8AC" size="228">
+                  <class id="ANht" name="CAbilityHowlOfTerror" handler="0x6FD7F474" size="228" />
+                </class>
+                <class id="AEim" name="CAbilityImmolation" handler="0x6FD7F660" size="260" />
+                <class id="AEtq" name="CAbilityTranquility" handler="0x6FD7E074" size="264">
+                  <class id="AEsf" name="CAbilityStarfall" handler="0x6FD7E0BC" size="264" />
+                </class>
+                <class id="Aspb" name="CAbilitySpellBook" handler="0x6FD7CCD8" size="416" />
+                <class id="AIct" name="CAbilityItemChangeTOD" handler="0x6FD7DB24" size="228" />
+                <class id="AIrv" name="CAbilityItemRevealMap" handler="0x6FD7B0E8" size="228" />
+              </class>
+              <class id="AAns" name="CAbilityNeutralSpell" handler="0x6FD7B2DC" size="132">
+                <class id="Anei" name="CAbilityNeutralInteract" handler="0x6FD7B2AC" size="132" />
+                <class id="Andt" name="CAbilityNeutralDetectAoe" handler="0x6FD7B0B8" size="132" />
+                <class id="ANgl" name="CAbilityNeutralG2L" handler="0x6FD7B2F4" size="132" />
+                <class id="ANlg" name="CAbilityNeutralL2G" handler="0x6FD7B30C" size="132" />
+                <class id="ANsp" name="CAbilityNeutralSpies" handler="0x6FD7B0D0" size="132" />
+              </class>
+              <class id="APas" name="CAbilityPassive" handler="0x6FD7FDB0" size="128">
+                <class id="Adet" name="CAbilityDetector" handler="0x6FD7AFF8" size="148">
+                  <class id="Abdt" name="CAbilityBurrowDetector" handler="0x6FD7B010" size="148" />
+                  <class id="Agyv" name="CAbilityGyroVision" handler="0x6FD7B040" size="148" />
+                  <class id="Adts" name="CAbilityMagicSentry" handler="0x6FD7B058" size="148" />
+                  <class id="Atru" name="CAbilityTrueSight" handler="0x6FD7B028" size="148" />
+                </class>
+                <class id="Apoi" name="CAbilityPoisonAttack" handler="0x6FD7FF78" size="132">
+                  <class id="Aven" name="CAbilityVenomSpear" handler="0x6FD7FF90" size="132" />
+                  <class id="Aspo" name="CAbilitySlowPoison" handler="0x6FD7FFA8" size="132" />
+                  <class id="Apo2" name="CAbilityPoisonDamage" handler="0x6FD7D6A4" size="132" />
+                </class>
+                <class id="Aroc" name="CAbilityBarrage" handler="0x6FD7E56C" size="128" />
+                <class id="Afbk" name="CAbilityFeedback" handler="0x6FD7E464" size="128" />
+                <class id="Aflk" name="CAbilityFlakCannon" handler="0x6FD7E4AC" size="128" />
+                <class id="Afsh" name="CAbilityFragShards" handler="0x6FD7E4C4" size="128" />
+                <class id="Agyb" name="CAbilityGyroBombs" handler="0x6FD7E404" size="128" />
+                <class id="Apxf" name="CAbilityPhoenixFire" handler="0x6FD7FE40" size="148" />
+                <class id="Asth" name="CAbilityStormHammers" handler="0x6FD7E41C" size="128" />
+                <class id="Abof" name="CAbilityBallsOfFire" handler="0x6FD7E4F4" size="128" />
+                <class id="Aliq" name="CAbilityLiquidFire" handler="0x6FD7E68C" size="128" />
+                <class id="Asal" name="CAbilitySalvage" handler="0x6FD7DA7C" size="144" />
+                <class id="Awar" name="CAbilityWarStomp" handler="0x6FD7E24C" size="140">
+                  <class id="ANde" name="CAbilityDemolish" handler="0x6FD7DF68" size="140" />
+                </class>
+                <class id="AOcr" name="CAbilityCriticalStrike" handler="0x6FD7C568" size="136">
+                  <class id="AHbh" name="CAbilityBash" handler="0x6FD7BE14" size="136" />
+                  <class id="ANdb" name="CAbilityDrunkenBrawler" handler="0x6FD7C5B0" size="136" />
+                </class>
+                <class id="Acor" name="CAbilityCorrosiveBreath" handler="0x6FD7E5CC" size="128" />
+                <class id="Aetl" name="CAbilityEthereal" handler="0x6FD7EDDC" size="128" />
+                <class id="Aimp" name="CAbilityImpalingBolt" handler="0x6FD7E434" size="128" />
+                <class id="Amim" name="CAbilityMagicImmunity" handler="0x6FD7F98C" size="128" />
+                <class id="Amgl" name="CAbilityMoonGlaive" handler="0x6FD7E44C" size="128" />
+                <class id="Arsk" name="CAbilityResistantSkin" handler="0x6FD7CFB4" size="128" />
+                <class id="Assk" name="CAbilityStoneSkin" handler="0x6FD7CF9C" size="132" />
+                <class id="AEev" name="CAbilityEvasion" handler="0x6FD7EE3C" size="128" />
+                <class id="Afrz" name="CAbilityFreezingBreath" handler="0x6FD7E62C" size="128" />
+                <class id="Afra" name="CAbilityFrostAttack" handler="0x6FD7E494" size="128" />
+                <class id="Apts" name="CAbilityPlagueToss" handler="0x6FD7FBB8" size="128" />
+                <class id="ANpi" name="CAbilityPermImmolation" handler="0x6FD7F690" size="140">
+                  <class id="Apig" name="CAbilityPandaImmolation" handler="0x6FD7F6F0" size="140" />
+                  <class id="AIcf" name="CAbilityItemCloakOfFlames" handler="0x6FD7F6C0" size="140" />
+                </class>
+                <class id="ANth" name="CAbilityThorns" handler="0x6FD7DCF8" size="128">
+                  <class id="AUts" name="CAbilityThornyShield" handler="0x6FD7DD10" size="168" />
+                </class>
+                <class id="Aamk" name="CAbilityAttributeModSkill" handler="0x6FD7D86C" size="144" />
+                <class id="ANca" name="CAbilityCleavingAttack" handler="0x6FD7C33C" size="128">
+                  <class id="ANic" name="CAbilityIncinerate" handler="0x6FD7F04C" size="128" />
+                </class>
+                <class id="ANeg" name="CAbilityEngineeringUpgrade" handler="0x6FD7DF20" size="160" />
+                <class id="ANfy" name="CAbilityFactory" handler="0x6FD7DE90" size="148" />
+                <class id="AIdd" name="CAbilityPassiveDefense" handler="0x6FD7E8E4" size="132" />
+              </class>
+              <class id="Ahid" name="CAbilityHide" handler="0x6FD7CA2C" size="128" />
+              <class id="Adef" name="CAbilityDefend" handler="0x6FD7E8B4" size="152">
+                <class id="Amdf" name="CAbilityMagicDefense" handler="0x6FD7E8CC" size="152" />
+              </class>
+              <class id="Aroo" name="CAbilityRoot" handler="0x6FD7B5D8" size="212" />
+              <class id="Ashm" name="CAbilityShadowMeld" handler="0x6FD7CA14" size="192" />
+            </class>
+            <class id="Aatk" name="CAbilityAttack" handler="0x6FD7B8C8" size="1040" />
+            <class id="Acar" name="CAbilityCargoHold" handler="0x6FD7E734" size="672">
+              <class id="Abun" name="CAbilityBunker" handler="0x6FD7C144" size="672" />
+              <class id="Advc" name="CAbilityDevourCargo" handler="0x6FD7E95C" size="672" />
+              <class id="Aenc" name="CAbilityEntangleCargo" handler="0x6FD7D41C" size="672" />
+              <class id="Amtc" name="CAbilityMeatCargo" handler="0x6FD7FB58" size="672" />
+            </class>
+            <class id="Ahrb" name="CAbilityHarvestBase" handler="0x6FD7B118" size="404">
+              <class id="Ahrr" name="CAbilityHarvestReturn" handler="0x6FD7B130" size="456">
+                <class id="Ahrl" name="CAbilityHarvestLumber" handler="0x6FD7B148" size="516">
+                  <class id="Ahar" name="CAbilityHarvest" handler="0x6FD7B160" size="560" />
+                </class>
+              </class>
+              <class id="Awha" name="CAbilityWispHarvest" handler="0x6FD7E3E8" size="484" />
+            </class>
+            <class id="Amov" name="CAbilityMove" handler="0x6FD7F4AC" size="228" />
+            <class id="Acal" name="CAbilityCallToArms" handler="0x6FD7FC00" size="108">
+              <class id="Amil" name="CAbilityMilitia" handler="0x6FD7FC18" size="116" />
+              <class id="Amic" name="CAbilityMilitiaConvert" handler="0x6FD7FC48" size="128" />
+            </class>
+            <class id="Acou" name="CAbilityCouple" handler="0x6FD7C4C0" size="128">
+              <class id="Acoa" name="CAbilityCoupleArcher" handler="0x6FD7C4D8" size="128" />
+              <class id="Acoh" name="CAbilityCoupleHippogryph" handler="0x6FD7C4F0" size="128" />
+            </class>
+            <class id="Aent" name="CAbilityEntangle" handler="0x6FD7D3EC" size="164" />
+            <class id="Aaha" name="CAbilityAcolyteHarvest" handler="0x6FD7ADDC" size="148" />
+          </class>
+          <class id="ABbs" name="CAbilityBaseBuild" handler="0x6FD7AF1C" size="148">
+            <class id="ABqu" name="CAbilityBuildQueue" handler="0x6FD7E6EC" size="156">
+              <class id="ATrn" name="CAbilityTrain" handler="0x6FD7E704" size="192">
+                <class id="Asac" name="CAbilitySacrifice" handler="0x6FD7C8F4" size="216" />
+              </class>
+              <class id="Arev" name="CAbilityRevive" handler="0x6FD7B5A0" size="276" />
+            </class>
+            <class id="ABld" name="CAbilityBuild" handler="0x6FD7D1F8" size="176">
+              <class id="ANbu" name="CAbilityNeutralBuild" handler="0x6FD7D210" size="188">
+                <class id="AEbu" name="CAbilityNightElfBuild" handler="0x6FD7D258" size="188" />
+                <class id="AObu" name="CAbilityOrcBuild" handler="0x6FD7D240" size="188" />
+                <class id="AGbu" name="CAbilityNagaBuild" handler="0x6FD7D288" size="188" />
+              </class>
+              <class id="AHbu" name="CAbilityHumanBuild" handler="0x6FD7D228" size="176" />
+              <class id="AUbu" name="CAbilityUndeadBuild" handler="0x6FD7D270" size="188" />
+            </class>
+            <class id="ASbs" name="CAbilityBaseSell" handler="0x6FD7B608" size="1148">
+              <class id="Asei" name="CAbilitySellItem" handler="0x6FD7B650" size="1148">
+                <class id="Amai" name="CAbilityMakeItem" handler="0x6FD7B680" size="1152" />
+                <class id="Asid" name="CAbilitySellItemDynamic" handler="0x6FD7B668" size="1200" />
+              </class>
+              <class id="Asel" name="CAbilitySellUnit" handler="0x6FD7B620" size="1148">
+                <class id="Asud" name="CAbilitySellUnitDynamic" handler="0x6FD7B638" size="1200" />
+              </class>
+            </class>
+            <class id="ARes" name="CAbilityResearch" handler="0x6FD7B588" size="156" />
+            <class id="Aque" name="CAbilityQueue" handler="0x6FD7B4F0" size="312" />
+            <class id="Aupg" name="CAbilityUpgrade" handler="0x6FD7E7A4" size="148" />
+            <class id="AInP" name="CAbilityInProgress" handler="0x6FD7B1A0" size="152">
+              <class id="ABnP" name="CAbilityBuildInProgress" handler="0x6FD7AF7C" size="272" />
+              <class id="AUnP" name="CAbilityUpgradeInProgress" handler="0x6FD7E7BC" size="180" />
+            </class>
+            <class id="ASnP" name="CAbilitySacrificeInProgress" handler="0x6FD7C924" size="148" />
+          </class>
+          <class id="ARal" name="CAbilityRally" handler="0x6FD7B520" size="168" />
+          <class id="AHer" name="CAbilityHero" handler="0x6FD7CFD4" size="324" />
+          <class id="AInv" name="CAbilityInventory" handler="0x6FD7D53C" size="344" />
+          <class id="Aawa" name="CAbilityAwaken" handler="0x6FD7B5B8" size="108" />
+        </class>
+        <class id="ABon" name="CBonusBase" handler="0x6FD7D020" size="132">
+          <class id="buff" name="CBuff" handler="0x6FD7D008" size="204">
+            <class id="BAUR" name="CBuffAura" handler="0x6FD7D040" size="224">
+              <class id="BHab" name="CBuffAuraBrilliance" handler="0x6FD7BB44" size="252" />
+              <class id="BHad" name="CBuffAuraDevotion" handler="0x6FD7BC1C" size="252" />
+              <class id="Boar" name="CBuffAuraRegenLife" handler="0x6FD7AE28" size="248" />
+              <class id="Barm" name="CBuffAuraRegenMana" handler="0x6FD7AE40" size="248" />
+              <class id="BOac" name="CBuffAuraCommand" handler="0x6FD7BB74" size="256">
+                <class id="Bakb" name="CBuffAuraKotoBeast" handler="0x6FD7BBA4" size="256" />
+                <class id="BEar" name="CBuffAuraTrueshot" handler="0x6FD7BBD4" size="256" />
+              </class>
+              <class id="BOae" name="CBuffAuraEndurance" handler="0x6FD7BC64" size="260">
+                <class id="Basl" name="CBuffAuraSlow" handler="0x6FD7BC94" size="260" />
+              </class>
+              <class id="BEah" name="CBuffAuraThorns" handler="0x6FD7BCF4" size="224" />
+              <class id="Babr" name="CBuffAuraBlightRegen" handler="0x6FD7AE58" size="248" />
+              <class id="BUau" name="CBuffAuraUnholy" handler="0x6FD7BD24" size="264" />
+              <class id="BUav" name="CBuffAuraVampiric" handler="0x6FD7BD54" size="224" />
+            </class>
+            <class id="BDoT" name="CBuffDoT" handler="0x6FD7D0A0" size="252">
+              <class id="BlDT" name="CBuffLifeDoT" handler="0x6FD7D0B8" size="252">
+                <class id="Bpoi" name="CBuffPoisonAttack" handler="0x6FD7FE88" size="276">
+                  <class id="Bpsd" name="CBuffPoisonAttackStackDoT" handler="0x6FD7FEB8" size="288">
+                    <class id="Bssd" name="CBuffSlowPoisonStackDoT" handler="0x6FD7FED0" size="288" />
+                    <class id="BIpd" name="CBuffPoisonDamageStackDoT" handler="0x6FD7D704" size="288" />
+                  </class>
+                  <class id="Bliq" name="CBuffLiquidFire" handler="0x6FD7E644" size="276" />
+                  <class id="Bspo" name="CBuffSlowPoison" handler="0x6FD7FEA0" size="276">
+                    <class id="BEsh" name="CBuffShadowStrike" handler="0x6FD7CA5C" size="328" />
+                  </class>
+                  <class id="BHca" name="CBuffColdArrow" handler="0x6FD7C430" size="276">
+                    <class id="Bcsd" name="CBuffColdArrowStackDoT" handler="0x6FD7C448" size="288" />
+                  </class>
+                  <class id="BNab" name="CBuffAcidBomb" handler="0x6FD7B994" size="292" />
+                  <class id="BNpa" name="CBuffParasite" handler="0x6FD7FD80" size="300" />
+                  <class id="BIpb" name="CBuffPoisonDamage" handler="0x6FD7D6EC" size="276" />
+                </class>
+                <class id="Bmlt" name="CBuffMagicLeashTarget" handler="0x6FD7FA34" size="252" />
+                <class id="Bpxf" name="CBuffPhoenixFire" handler="0x6FD7FDF8" size="252" />
+                <class id="BHbd" name="CBuffBlizzard" handler="0x6FD7BFA8" size="252" />
+                <class id="BHfs" name="CBuffFlameStrike" handler="0x6FD7F188" size="300">
+                  <class id="Bbof" name="CBuffBallsOfFire" handler="0x6FD7E554" size="300" />
+                </class>
+                <class id="Bdig" name="CBuffDigesting" handler="0x6FD7E92C" size="264" />
+                <class id="Bcor" name="CBuffCorrosiveBreath" handler="0x6FD7E584" size="252" />
+                <class id="BEer" name="CBuffEntanglingRoots" handler="0x6FD7EDAC" size="264" />
+                <class id="Bapl" name="CBuffAuraPlague" handler="0x6FD7BCC4" size="252" />
+                <class id="Buhf" name="CBuffUnholyFrenzy" handler="0x6FD7E120" size="284" />
+                <class id="Buns" name="CBuffUnsummon" handler="0x6FD7E150" size="276" />
+                <class id="BNbf" name="CBuffBreathOfFire" handler="0x6FD7C0CC" size="252">
+                  <class id="BCbf" name="CBuffBreathOfFrost" handler="0x6FD7C114" size="252" />
+                </class>
+                <class id="BNdo" name="CBuffDoom" handler="0x6FD7EA34" size="288" />
+                <class id="BNrd" name="CBuffRainOfFire" handler="0x6FD7C008" size="252" />
+              </class>
+            </class>
+            <class id="BMDR" name="CBuffManaDrain" handler="0x6FD7D0D0" size="220">
+              <class id="BNmr" name="CBuffMindRot" handler="0x6FD7FC78" size="220" />
+            </class>
+            <class id="BPSE" name="CBuffPause" handler="0x6FD7D118" size="216">
+              <class id="Bpsh" name="CBuffPhaseShift" handler="0x6FD7FDE0" size="228" />
+              <class id="Bpos" name="CBuffPossession" handler="0x6FD7C264" size="216" />
+              <class id="BUsp" name="CBuffSleepPause" handler="0x6FD7CB70" size="216" />
+              <class id="BNtm" name="CBuffTransmute" handler="0x6FD7BA0C" size="236" />
+            </class>
+            <class id="BBAR" name="CBuffProgressBar" handler="0x6FD7D130" size="212">
+              <class id="BTLF" name="CBuffTimedLife" handler="0x6FD7D148" size="212">
+                <class id="Bcmg" name="CBuffControlMagic" handler="0x6FD7C324" size="212" />
+                <class id="BHwe" name="CBuffWaterElemental" handler="0x6FD7E264" size="212">
+                  <class id="BEsv" name="CBuffSpiritOfVengeance" handler="0x6FD7CE5C" size="212" />
+                  <class id="Bmec" name="CBuffMechanicalCritter" handler="0x6FD7E2DC" size="212" />
+                  <class id="BNsg" name="CBuffSummonGrizzly" handler="0x6FD7E30C" size="212" />
+                  <class id="BNsq" name="CBuffSummonQuillbeast" handler="0x6FD7E33C" size="212" />
+                  <class id="BNsw" name="CBuffSummonWarEagle" handler="0x6FD7E36C" size="212" />
+                  <class id="BNwm" name="CBuffWateryMinion" handler="0x6FD7E2AC" size="212" />
+                </class>
+                <class id="Beye" name="CBuffEvilEye" handler="0x6FD7EE84" size="212" />
+                <class id="Bhwd" name="CBuffHealingWard" handler="0x6FD7F3CC" size="212" />
+                <class id="Bstt" name="CBuffStasisTrapTrigger" handler="0x6FD7CF68" size="276" />
+                <class id="BOmi" name="CBuffMirrorImage" handler="0x6FD7FC90" size="228">
+                  <class id="BIil" name="CBuffItemIllusion" handler="0x6FD7FCA8" size="228" />
+                </class>
+                <class id="BOsf" name="CBuffSpiritWolf" handler="0x6FD7CEBC" size="224">
+                  <class id="BIsh" name="CBuffSpiritTroll" handler="0x6FD7CEEC" size="224" />
+                </class>
+                <class id="BOwd" name="CBuffWard" handler="0x6FD7E204" size="212">
+                  <class id="BImo" name="CBuffItemMonsterLure" handler="0x6FD7E21C" size="276" />
+                </class>
+                <class id="BEfn" name="CBuffForceOfNature" handler="0x6FD7F278" size="212" />
+                <class id="BEst" name="CBuffScout" handler="0x6FD7C93C" size="212" />
+                <class id="Bplg" name="CBuffPlagueWard" handler="0x6FD7BCDC" size="212" />
+                <class id="Brai" name="CBuffRaiseDead" handler="0x6FD7DC00" size="212">
+                  <class id="BUcb" name="CBuffCarrionScarab" handler="0x6FD7DC18" size="224">
+                    <class id="Bvng" name="CBuffVengeance" handler="0x6FD7CE8C" size="224" />
+                  </class>
+                </class>
+                <class id="BUan" name="CBuffAnimateDead" handler="0x6FD7BA24" size="212" />
+                <class id="BNdm" name="CBuffDarkMinion" handler="0x6FD7BE74" size="212" />
+                <class id="BNdi" name="CBuffDoomMinion" handler="0x6FD7EA1C" size="232" />
+                <class id="BNef" name="CBuffElementalFury" handler="0x6FD7EC74" size="224" />
+                <class id="BNto" name="CBuffTornado" handler="0x6FD7DF9C" size="212" />
+                <class id="BNcg" name="CBuffClockworkGoblin" handler="0x6FD7DEA8" size="268" />
+                <class id="BNfy" name="CBuffFactory" handler="0x6FD7DE78" size="264" />
+                <class id="BNlm" name="CBuffLavaMonster" handler="0x6FD7F0DC" size="312" />
+                <class id="BNin" name="CBuffInfernal" handler="0x6FD7F750" size="320" />
+                <class id="BNpm" name="CBuffParasiteMinion" handler="0x6FD7FD98" size="212" />
+                <class id="BFig" name="CBuffFigurine" handler="0x6FD7EF44" size="212" />
+                <class id="BIrb" name="CBuffRebirth" handler="0x6FD7DA64" size="212" />
+              </class>
+              <class id="Bmil" name="CBuffMilitia" handler="0x6FD7FC30" size="224" />
+              <class id="Bphx" name="CBuffPhoenix" handler="0x6FD7FE28" size="212" />
+              <class id="Bply" name="CBuffPolymorph" handler="0x6FD7FFF0" size="300">
+                <class id="BOhx" name="CBuffHex" handler="0x6FD7F414" size="300" />
+              </class>
+              <class id="BHav" name="CBuffAvatar" handler="0x6FD7BD84" size="240" />
+              <class id="BEme" name="CBuffMetamorphosis" handler="0x6FD7FBD0" size="224" />
+              <class id="BNcr" name="CBuffChemicalRage" handler="0x6FD7B9C4" size="224" />
+            </class>
+            <class id="Bprv" name="CBuffPulseReveal" handler="0x6FD7D1A8" size="228" />
+            <class id="BINV" name="CBaseBuffInvulnerable" handler="0x6FD7D058" size="204">
+              <class id="Bvul" name="CBuffInvulnerable" handler="0x6FD7F864" size="204">
+                <class id="BOvd" name="CBuffVoodoo" handler="0x6FD7E198" size="204" />
+              </class>
+            </class>
+            <class id="BSPD" name="CBuffSpeed" handler="0x6FD7D0E8" size="240">
+              <class id="Beth" name="CBuffEthereal" handler="0x6FD7EE24" size="256">
+                <class id="BHbn" name="CBuffBanish" handler="0x6FD7BDB4" size="256" />
+              </class>
+              <class id="Bfro" name="CBuffFrost" handler="0x6FD7C3A0" size="240" />
+              <class id="Bslo" name="CBuffSlow" handler="0x6FD7CC18" size="240" />
+              <class id="BHtc" name="CBuffThunderClap" handler="0x6FD7DDD0" size="240">
+                <class id="BCtc" name="CBuffCreepThunderClap" handler="0x6FD7DE00" size="240" />
+              </class>
+              <class id="Bbsk" name="CBuffBerserkerRage" handler="0x6FD7BE44" size="248" />
+              <class id="Bblo" name="CBuffBloodlust" handler="0x6FD7C068" size="288">
+                <class id="Bfzy" name="CBuffFrenzy" handler="0x6FD7C098" size="288" />
+              </class>
+              <class id="BOeq" name="CBuffEarthquake" handler="0x6FD7EBB4" size="240" />
+              <class id="Bspe" name="CBuffSpeedBonus" handler="0x6FD7CC90" size="240" />
+              <class id="Bcri" name="CBuffCripple" handler="0x6FD7C538" size="260">
+                <class id="BNso" name="CBuffSoulBurn" handler="0x6FD7F10C" size="316" />
+              </class>
+              <class id="BNsi" name="CBuffSilence" handler="0x6FD7CB28" size="272">
+                <class id="Bclf" name="CBuffCloudOfFog" handler="0x6FD7C354" size="276" />
+                <class id="BNdh" name="CBuffDrunkenHaze" handler="0x6FD7EB54" size="272" />
+              </class>
+            </class>
+            <class id="BAOE" name="CBuffAoe" handler="0x6FD7D160" size="212">
+              <class id="BHbz" name="CBuffBlizzardAoe" handler="0x6FD7BF90" size="212" />
+              <class id="BHfa" name="CBuffFlameStrikeAoe" handler="0x6FD7F1A0" size="212" />
+              <class id="Blsa" name="CBuffLightningShieldAoe" handler="0x6FD7F914" size="212" />
+              <class id="BOea" name="CBuffEarthquakeAoe" handler="0x6FD7EBCC" size="212" />
+              <class id="BOww" name="CBuffWhirlwindAoe" handler="0x6FD7E384" size="212" />
+              <class id="Bmfa" name="CBuffManaFlareAoe" handler="0x6FD7FAAC" size="248" />
+              <class id="BEia" name="CBuffImmolationAoe" handler="0x6FD7F630" size="212" />
+              <class id="BUdd" name="CBuffDeathAndDecayAoe" handler="0x6FD7E7F4" size="256" />
+              <class id="Btdg" name="CBuffTornadoDamageAoe" handler="0x6FD7DFE4" size="212" />
+              <class id="Btsa" name="CBuffTornadoSpinAoe" handler="0x6FD7E02C" size="212" />
+              <class id="BNrf" name="CBuffRainOfFireAoe" handler="0x6FD7BFF0" size="212" />
+              <class id="BNcs" name="CBuffClusterRockets" handler="0x6FD7DF08" size="216">
+                <class id="BNhs" name="CBuffHealingSpray" handler="0x6FD7B94C" size="216" />
+              </class>
+              <class id="BNva" name="CBuffVolcanoAoe" handler="0x6FD7F16C" size="212" />
+            </class>
+            <class id="BSTI" name="CBuffStackInfo" handler="0x6FD7D190" size="204">
+              <class id="Bpsi" name="CBuffPoisonAttackStackInfo" handler="0x6FD7FEE8" size="248">
+                <class id="Bssi" name="CBuffSlowPoisonStackInfo" handler="0x6FD7FF00" size="248" />
+                <class id="Bcsi" name="CBuffColdArrowStackInfo" handler="0x6FD7C460" size="248" />
+                <class id="BIpi" name="CBuffPoisonDamageStackInfo" handler="0x6FD7D71C" size="248" />
+              </class>
+            </class>
+            <class id="BTAR" name="CBuffTarget" handler="0x6FD7D178" size="216" />
+            <class id="Bdef" name="CBuffDefense" handler="0x6FD7E8FC" size="232">
+              <class id="Bbar" name="CBuffBarkskin" handler="0x6FD7BDE4" size="232" />
+            </class>
+            <class id="Bdet" name="CBuffDetected" handler="0x6FD7D070" size="212">
+              <class id="BSTN" name="CBuffStun" handler="0x6FD7D100" size="224">
+                <class id="Bfre" name="CBuffFreeze" handler="0x6FD7C3B8" size="224" />
+                <class id="Bfrz" name="CBuffFreezingBreath" handler="0x6FD7E5E4" size="224" />
+                <class id="BUst" name="CBuffSleepStun" handler="0x6FD7CB58" size="224" />
+              </class>
+              <class id="Bsha" name="CBuffSharedVision" handler="0x6FD7D088" size="212">
+                <class id="Bdvv" name="CBuffDevourVision" handler="0x6FD7E944" size="212" />
+                <class id="Bens" name="CBuffEnsnare" handler="0x6FD7ECA4" size="280">
+                  <class id="Bena" name="CBuffEnsnareAir" handler="0x6FD7ECBC" size="280">
+                    <class id="Bwea" name="CBuffWebAir" handler="0x6FD7ED34" size="280" />
+                  </class>
+                  <class id="Beng" name="CBuffEnsnareGround" handler="0x6FD7ECD4" size="280">
+                    <class id="Bweb" name="CBuffWeb" handler="0x6FD7ED1C" size="280" />
+                  </class>
+                </class>
+                <class id="Bfae" name="CBuffFaerieFire" handler="0x6FD7EECC" size="240" />
+                <class id="Bshs" name="CBuffShadowSight" handler="0x6FD7EEFC" size="212" />
+              </class>
+            </class>
+            <class id="Brgl" name="CBuffRangeListener" handler="0x6FD7D1C0" size="228">
+              <class id="Bmfl" name="CBuffManaFlare" handler="0x6FD7FAC4" size="316" />
+            </class>
+            <class id="Bhea" name="CBuffHeal" handler="0x6FD7D434" size="216">
+              <class id="Brpb" name="CBuffReplenish" handler="0x6FD7C7D4" size="216">
+                <class id="Brpl" name="CBuffReplenishLife" handler="0x6FD7C7EC" size="216" />
+                <class id="Brpm" name="CBuffReplenishMana" handler="0x6FD7C804" size="216" />
+              </class>
+            </class>
+            <class id="Binf" name="CBuffInnerFire" handler="0x6FD7F78C" size="284">
+              <class id="Broa" name="CBuffRoar" handler="0x6FD7C894" size="284">
+                <class id="BNht" name="CBuffHowlOfTerror" handler="0x6FD7F48C" size="284" />
+                <class id="BNbr" name="CBuffBattleRoar" handler="0x6FD7C8C4" size="284" />
+              </class>
+            </class>
+            <class id="Binv" name="CBuffInvisibility" handler="0x6FD7F7BC" size="220">
+              <class id="BOwk" name="CBuffWindWalk" handler="0x6FD7E3B8" size="268" />
+            </class>
+            <class id="Bmlc" name="CBuffMagicLeashCaster" handler="0x6FD7FA1C" size="204" />
+            <class id="BHds" name="CBuffDivineShield" handler="0x6FD7E9D4" size="204" />
+            <class id="Bdbb" name="CBuffDrainBonus" handler="0x6FD7EA64" size="320">
+              <class id="Bdbl" name="CBuffDrainBonusLife" handler="0x6FD7EA7C" size="320" />
+              <class id="Bdbm" name="CBuffDrainBonusMana" handler="0x6FD7EA94" size="320" />
+            </class>
+            <class id="Bdcb" name="CBuffDrainCaster" handler="0x6FD7EAAC" size="204">
+              <class id="Bdcl" name="CBuffDrainCasterLife" handler="0x6FD7EAC4" size="204" />
+              <class id="Bdcm" name="CBuffDrainCasterMana" handler="0x6FD7EADC" size="204" />
+              <class id="Bdtb" name="CBuffDrainTarget" handler="0x6FD7EAF4" size="204">
+                <class id="Bdtl" name="CBuffDrainTargetLife" handler="0x6FD7EB0C" size="204" />
+                <class id="Bdtm" name="CBuffDrainTargetMana" handler="0x6FD7EB24" size="204" />
+              </class>
+            </class>
+            <class id="Blsh" name="CBuffLightningShield" handler="0x6FD7F92C" size="268">
+              <class id="BEim" name="CBuffImmolation" handler="0x6FD7F648" size="296">
+                <class id="BNpi" name="CBuffPermImmolation" handler="0x6FD7F678" size="296">
+                  <class id="Bpig" name="CBuffPandaImmolation" handler="0x6FD7F6D8" size="296" />
+                </class>
+                <class id="BIcf" name="CBuffItemCloakOfFlames" handler="0x6FD7F6A8" size="296" />
+              </class>
+            </class>
+            <class id="Bprg" name="CBuffPurge" handler="0x6FD7D344" size="324">
+              <class id="Bchd" name="CBuffCargoHoldDeath" handler="0x6FD7D38C" size="324" />
+            </class>
+            <class id="Bspl" name="CBuffSpiritLink" handler="0x6FD7CE2C" size="212" />
+            <class id="BOvc" name="CBuffVoodooCaster" handler="0x6FD7E1B0" size="204" />
+            <class id="Bcyc" name="CBuffCyclone" handler="0x6FD7C5C8" size="268">
+              <class id="Bcy2" name="CBuffCycloneTwo" handler="0x6FD7C5E0" size="268">
+                <class id="BUim" name="CBuffImpale" handler="0x6FD7F708" size="304" />
+                <class id="Btsp" name="CBuffTornadoSpin" handler="0x6FD7E014" size="268" />
+              </class>
+            </class>
+            <class id="Bgra" name="CBuffGrabTree" handler="0x6FD7EC44" size="224" />
+            <class id="Brej" name="CBuffRejuvination" handler="0x6FD7D4AC" size="240">
+              <class id="Beat" name="CBuffEatTree" handler="0x6FD7EC14" size="240" />
+              <class id="BIrg" name="CBuffRegeneration" handler="0x6FD7D4DC" size="240">
+                <class id="BIrl" name="CBuffRegenLife" handler="0x6FD7D4F4" size="240" />
+                <class id="BIrm" name="CBuffRegenMana" handler="0x6FD7D50C" size="240" />
+              </class>
+            </class>
+            <class id="Btau" name="CBuffTaunt" handler="0x6FD7DCE0" size="204" />
+            <class id="Bams" name="CBuffAntiMagicShell" handler="0x6FD7F9A4" size="212" />
+            <class id="Bam2" name="CBuffAntiMagicShellTwo" handler="0x6FD7F9BC" size="212" />
+            <class id="Bcrs" name="CBuffCurse" handler="0x6FD7EE6C" size="216" />
+            <class id="Bpoc" name="CBuffPossessionCaster" handler="0x6FD7C27C" size="204" />
+            <class id="Bspa" name="CBuffSpiderAttack" handler="0x6FD7CD80" size="216" />
+            <class id="BUcs" name="CBuffCarrionSwarm" handler="0x6FD7CAA4" size="216">
+              <class id="BOsh" name="CBuffShockwave" handler="0x6FD7CAEC" size="216" />
+            </class>
+            <class id="BUfa" name="CBuffFrostArmor" handler="0x6FD7F2D8" size="244" />
+            <class id="BUsl" name="CBuffSleep" handler="0x6FD7CB88" size="216">
+              <class id="BNdc" name="CBuffDarkConversion" handler="0x6FD7CBE8" size="264" />
+            </class>
+            <class id="BNsa" name="CBuffSanctuary" handler="0x6FD80038" size="248" />
+            <class id="BNss" name="CBuffSpellShield" handler="0x6FD7CD20" size="204" />
+            <class id="BNba" name="CBuffBlackArrow" handler="0x6FD7BE8C" size="240" />
+            <class id="BNms" name="CBuffManaShield" handler="0x6FD7FB40" size="220" />
+            <class id="BNst" name="CBuffStampede" handler="0x6FD7CF34" size="204" />
+            <class id="BNic" name="CBuffIncinerate" handler="0x6FD7F094" size="272" />
+            <class id="BNsl" name="CBuffSoulPreservation" handler="0x6FD7BA9C" size="216" />
+            <class id="BIcb" name="CBuffCorruption" handler="0x6FD7D74C" size="212" />
+            <class id="BIsv" name="CBuffSoulTrapVision" handler="0x6FD7CC60" size="204" />
+            <class id="BIwb" name="CBuffItemWeb" handler="0x6FD7ED7C" size="204" />
+            <class id="BIpv" name="CBuffItemVampirePotion" handler="0x6FD7DB6C" size="240" />
+          </class>
+          <class id="aura" name="CAbilityAura" handler="0x6FD7AE0C" size="192">
+            <class id="AHab" name="CAbilityAuraBrilliance" handler="0x6FD7BB5C" size="192" />
+            <class id="AHad" name="CAbilityAuraDevotion" handler="0x6FD7BC34" size="192" />
+            <class id="Aakb" name="CAbilityAuraKotoBeast" handler="0x6FD7BBBC" size="192" />
+            <class id="Aoar" name="CAbilityAuraRegenLife" handler="0x6FD7AE70" size="192" />
+            <class id="Aarm" name="CAbilityAuraRegenMana" handler="0x6FD7AE88" size="192" />
+            <class id="AOac" name="CAbilityAuraCommand" handler="0x6FD7BB8C" size="192" />
+            <class id="AOae" name="CAbilityAuraEndurance" handler="0x6FD7BC4C" size="192" />
+            <class id="AEah" name="CAbilityAuraThorns" handler="0x6FD7BD0C" size="192" />
+            <class id="AEar" name="CAbilityAuraTrueshot" handler="0x6FD7BBEC" size="192" />
+            <class id="Aabr" name="CAbilityAuraBlightRegen" handler="0x6FD7AEA0" size="192" />
+            <class id="Aapl" name="CAbilityAuraPlague" handler="0x6FD7BCAC" size="204" />
+            <class id="AUau" name="CAbilityAuraUnholy" handler="0x6FD7BD3C" size="192" />
+            <class id="AUav" name="CAbilityAuraVampiric" handler="0x6FD7BD6C" size="192" />
+            <class id="Aasl" name="CAbilityAuraSlow" handler="0x6FD7BC7C" size="204" />
+          </class>
+          <class id="APbo" name="CAbilityPersistentBonus" handler="0x6FD7D7DC" size="140">
+            <class id="AREB" name="CAbilityRegenBase" handler="0x6FD7D92C" size="148">
+              <class id="Arel" name="CAbilityRegenLife" handler="0x6FD7D944" size="148">
+                <class id="AEtr" name="CAbilityTranquilityRegen" handler="0x6FD7E044" size="152" />
+                <class id="ANrl" name="CAbilityNeutralRegenLife" handler="0x6FD7AEB8" size="148" />
+              </class>
+              <class id="Arem" name="CAbilityRegenMana" handler="0x6FD7D95C" size="148">
+                <class id="ANrm" name="CAbilityNeutralRegenMana" handler="0x6FD7AED0" size="148" />
+                <class id="AIrm" name="CAbilityItemRegenMana" handler="0x6FD7D974" size="156" />
+              </class>
+            </class>
+            <class id="AIab" name="CAbilityAttributeBonus" handler="0x6FD7D83C" size="152" />
+            <class id="AIat" name="CAbilityAttackBonus" handler="0x6FD7D7F4" size="160">
+              <class id="AIDB" name="CAbilityDamageBonusBase" handler="0x6FD7D59C" size="184">
+                <class id="AIDE" name="CAbilityDamageBonusBaseEx" handler="0x6FD7D5B4" size="184" />
+                <class id="AIcb" name="CAbilityCorruptionDamageBonus" handler="0x6FD7D734" size="184" />
+                <class id="AIfb" name="CAbilityFireDamageBonus" handler="0x6FD7D5CC" size="184" />
+                <class id="AIzb" name="CAbilityFreezeDamageBonus" handler="0x6FD7D5FC" size="184" />
+                <class id="AIob" name="CAbilityFrostDamageBonus" handler="0x6FD7D614" size="184" />
+                <class id="AIlb" name="CAbilityLightningDamageBonus" handler="0x6FD7D62C" size="184" />
+                <class id="AIpb" name="CAbilityPoisonDamageBonus" handler="0x6FD7D68C" size="184" />
+                <class id="AIsb" name="CAbilitySpellEffectBonus" handler="0x6FD7D794" size="220" />
+              </class>
+              <class id="AIsr" name="CAbilityItemSpellReduction" handler="0x6FD7DB84" size="160" />
+            </class>
+            <class id="AIas" name="CAbilityAttackSpeedBonus" handler="0x6FD7D80C" size="160" />
+            <class id="AIde" name="CAbilityDefenseBonus" handler="0x6FD7D824" size="160" />
+            <class id="AIml" name="CAbilityMaxLifeBonus" handler="0x6FD7D8E4" size="140" />
+            <class id="AImm" name="CAbilityMaxManaBonus" handler="0x6FD7D8FC" size="140" />
+            <class id="AIms" name="CAbilityMoveSpeedBonus" handler="0x6FD7D914" size="160" />
+            <class id="AIsi" name="CAbilitySightBonus" handler="0x6FD7D8CC" size="140" />
+            <class id="AIva" name="CAbilityVampireBonus" handler="0x6FD7DB0C" size="144" />
+          </class>
+          <class id="Avul" name="CAbilityInvulnerable" handler="0x6FD7F894" size="132" />
+          <class id="Apiv" name="CAbilityPermInvis" handler="0x6FD7F804" size="132">
+            <class id="Agho" name="CAbilityGhost" handler="0x6FD7F834" size="132" />
+            <class id="AIpi" name="CAbilityItemPermInvis" handler="0x6FD7F84C" size="132" />
+          </class>
+          <class id="Asph" name="CAbilitySphere" handler="0x6FD7CD68" size="212" />
+          <class id="Aspi" name="CAbilitySpiked" handler="0x6FD7CDCC" size="144">
+            <class id="Arbr" name="CAbilityReinforce" handler="0x6FD7CDE4" size="148" />
+          </class>
+          <class id="Atol" name="CAbilityTreeOfLife" handler="0x6FD7B5F0" size="132" />
+          <class id="BUts" name="CBuffThornyShield" handler="0x6FD7DD28" size="132" />
+          <class id="BNeg" name="CBuffEngineeringUpgrade" handler="0x6FD7DF38" size="132" />
+          <class id="AIfl" name="CAbilityFlag" handler="0x6FD7DA94" size="132">
+            <class id="AIfm" name="CAbilityFlagHuman" handler="0x6FD7DAAC" size="132" />
+            <class id="AIfo" name="CAbilityFlagOrc" handler="0x6FD7DAC4" size="132" />
+            <class id="AIfe" name="CAbilityFlagUndead" handler="0x6FD7DADC" size="132" />
+            <class id="AIfn" name="CAbilityFlagNightElf" handler="0x6FD7DAF4" size="132" />
+          </class>
+          <class id="Afbs" name="COnFireBase" handler="0x6FD7B3A0" size="132">
+            <class id="Xfhs" name="COnFireHumanSml" handler="0x6FD7B3B8" size="132" />
+            <class id="Xfhm" name="COnFireHumanMed" handler="0x6FD7B3D0" size="132" />
+            <class id="Xfhl" name="COnFireHumanLrg" handler="0x6FD7B3E8" size="132" />
+            <class id="Xfos" name="COnFireOrcSml" handler="0x6FD7B400" size="132" />
+            <class id="Xfom" name="COnFireOrcMed" handler="0x6FD7B418" size="132" />
+            <class id="Xfol" name="COnFireOrcLrg" handler="0x6FD7B430" size="132" />
+            <class id="Xfns" name="COnFireNightElfSml" handler="0x6FD7B448" size="132" />
+            <class id="Xfnm" name="COnFireNightElfMed" handler="0x6FD7B460" size="132" />
+            <class id="Xfnl" name="COnFireNightElfLrg" handler="0x6FD7B478" size="132" />
+            <class id="Xfus" name="COnFireUndeadSml" handler="0x6FD7B490" size="132" />
+            <class id="Xfum" name="COnFireUndeadMed" handler="0x6FD7B4A8" size="132" />
+            <class id="Xful" name="COnFireUndeadLrg" handler="0x6FD7B4C0" size="132" />
+          </class>
+        </class>
+        <class id="Aalr" name="CAbilityAlarm" handler="0x6FD7ADF4" size="132" />
+        <class id="Abli" name="CAbilityBlightGrowth" handler="0x6FD7AF34" size="128" />
+        <class id="Ablr" name="CAbilityBlightRegen" handler="0x6FD7AF64" size="128" />
+        <class id="Acrg" name="CAbilityCargo" handler="0x6FD7E71C" size="120" />
+        <class id="Asod" name="CAbilityDeathSpawn" handler="0x6FD7F004" size="108">
+          <class id="Aspd" name="CAbilityDeathSpawnSpider" handler="0x6FD7F01C" size="108" />
+          <class id="Assp" name="CAbilityDeathSpawnSpiderling" handler="0x6FD7F034" size="108" />
+        </class>
+        <class id="Aeth" name="CAbilityGhostVisible" handler="0x6FD7F81C" size="108" />
+        <class id="Agmb" name="CAbilityGoldMineBase" handler="0x6FD7F350" size="132">
+          <class id="Agld" name="CAbilityGoldMine" handler="0x6FD7F368" size="244" />
+          <class id="Apgm" name="CAbilityPossessedGoldMine" handler="0x6FD7BF04" size="208">
+            <class id="Aegm" name="CAbilityEntangledGoldMine" handler="0x6FD7D404" size="208" />
+            <class id="Abgm" name="CAbilityBlightedGoldMine" handler="0x6FD7BF1C" size="232" />
+          </class>
+        </class>
+        <class id="Alit" name="CAbilityLightningAttack" handler="0x6FD7F8E0" size="132" />
+        <class id="Amin" name="CAbilityLandMine" handler="0x6FD7F8C4" size="140" />
+        <class id="Alea" name="CAbilityLeash" handler="0x6FD7CEA4" size="148" />
+        <class id="Anit" name="CAbilityNightVision" handler="0x6FD7FD20" size="116">
+          <class id="Ault" name="CAbilityUltraVision" handler="0x6FD7FD38" size="116" />
+        </class>
+        <class id="Admg" name="CAbilityNotifyDamage" handler="0x6FD7D1D8" size="140" />
+        <class id="Afir" name="CAbilityOnFire" handler="0x6FD7B328" size="140">
+          <class id="Afih" name="CAbilityOnFireHuman" handler="0x6FD7B340" size="140" />
+          <class id="Afio" name="CAbilityOnFireOrc" handler="0x6FD7B358" size="140" />
+          <class id="Afin" name="CAbilityOnFireNightElf" handler="0x6FD7B370" size="140" />
+          <class id="Afiu" name="CAbilityOnFireUndead" handler="0x6FD7B388" size="140" />
+        </class>
+        <class id="Apit" name="CAbilityPurchaseItem" handler="0x6FD7B698" size="112" />
+        <class id="Arsc" name="CAbilityRescuable" handler="0x6FD7C740" size="124" />
+        <class id="Artn" name="CAbilityReturn" handler="0x6FD7C84C" size="108" />
+        <class id="Asla" name="CAbilitySleepAlways" handler="0x6FD7CBB8" size="172">
+          <class id="ACsp" name="CAbilityCreepSleep" handler="0x6FD7CBD0" size="172" />
+        </class>
+        <class id="Atrg" name="CAbilityTarget" handler="0x6FD7DCB0" size="120" />
+        <class id="Awan" name="CAbilityWander" handler="0x6FD7E1C8" size="128">
+          <class id="Atwa" name="CAbilityTornadoWander" handler="0x6FD7DFB4" size="184" />
+        </class>
+        <class id="Awrp" name="CAbilityWarp" handler="0x6FD7B278" size="128" />
+        <class id="Btrv" name="CBuffTeleportReveal" handler="0x6FD7B1D0" size="108" />
+        <class id="Attu" name="CAbilityTankTurret" handler="0x6FD7DC98" size="108" />
+        <class id="Achb" name="CAbilityChaosBase" handler="0x6FD7C21C" size="152">
+          <class id="Acha" name="CAbilityChaos" handler="0x6FD7C234" size="152" />
+          <class id="Achl" name="CAbilityChaosCargoLoad" handler="0x6FD7C24C" size="152" />
+        </class>
+        <class id="Adda" name="CAbilityDeathDamageAoe" handler="0x6FD7C9B4" size="108" />
+        <class id="AEsd" name="CAbilityStarfallDrain" handler="0x6FD7E08C" size="200">
+          <class id="ANmd" name="CAbilityMonsoonDrain" handler="0x6FD7E0D4" size="200" />
+        </class>
+        <class id="Afrb" name="CAbilityFrostBreath" handler="0x6FD7E6D4" size="108" />
+        <class id="Agyd" name="CAbilityGraveyard" handler="0x6FD7F384" size="316" />
+        <class id="Agyc" name="CAbilityGraveyardCorpse" handler="0x6FD7F39C" size="120" />
+        <class id="Aspa" name="CAbilitySpiderAttack" handler="0x6FD7CDB0" size="108" />
+        <class id="Aloc" name="CAbilityLocust" handler="0x6FD7F974" size="192" />
+        <class id="Aneu" name="CAbilityNeutral" handler="0x6FD7B294" size="336">
+          <class id="Aall" name="CAbilityAllied" handler="0x6FD7B2C4" size="336" />
+        </class>
+        <class id="ANre" name="CAbilityNeutralRegen" handler="0x6FD7AEE8" size="112" />
+        <class id="Atdg" name="CAbilityTornadoDamage" handler="0x6FD7DFCC" size="140" />
+        <class id="Atsp" name="CAbilityTornadoSpin" handler="0x6FD7DFFC" size="140" />
+        <class id="AIrc" name="CAbilityItemReincarnation" handler="0x6FD7C728" size="120" />
+        <class id="Asou" name="CAbilitySoulTrapped" handler="0x6FD7CC78" size="136" />
+      </class>
+    </class>
+    <class id="+ord" name="COrder" handler="0x6FD8079C" size="68">
+      <class id="ord." name="COrderPoint" handler="0x6FD807B4" size="88">
+        <class id="or.2" name="COrderPoint2" handler="0x6FD807CC" size="104" />
+        <class id="ordt" name="COrderTarget" handler="0x6FD807E4" size="136">
+          <class id="ort2" name="COrderTarget2" handler="0x6FD807FC" size="148" />
+        </class>
+      </class>
+      <class id="+otc" name="COrderTrainCancel" handler="0x6FD80814" size="76" />
+      <class id="+orc" name="COrderReviveCancel" handler="0x6FD8082C" size="80" />
+    </class>
+    <class id="scal" name="CAnimScaler" handler="0x6FD7C038" size="88" />
+    <class id="Xbli" name="CEffectBlight" handler="0x6FD7B890" size="108" />
+    <class id="XHbz" name="CEffectBlizzard" handler="0x6FD7BF78" size="888">
+      <class id="XErf" name="CEffectRainOfFire" handler="0x6FD7BFD8" size="888" />
+    </class>
+    <class id="XOeq" name="CEffectEarthquake" handler="0x6FD7EB9C" size="156" />
+    <class id="XOre" name="CEffectReincarnation" handler="0x6FD7C6E0" size="92" />
+    <class id="XErc" name="CEffectRainOfChaos" handler="0x6FD7BB14" size="116" />
+    <class id="XIct" name="CEffectItemChangeTOD" handler="0x6FD7DB3C" size="64" />
+    <class id="+Wup" name="CPlayerUpgrade" handler="0x6FD8105C" size="108" />
+    <class id="+Wue" name="CUpgradeEffect" handler="0x6FD80C70" size="56">
+      <class id="rtma" name="CUpgradeAddTechMaxAllowed" handler="0x6FD80C88" size="56" />
+      <class id="rauv" name="CUpgradeAddUltraVision" handler="0x6FD80CA0" size="56" />
+      <class id="rarm" name="CUpgradeArmor" handler="0x6FD80CB8" size="56" />
+      <class id="rart" name="CUpgradeArmorType" handler="0x6FD80CD0" size="56" />
+      <class id="ratt" name="CUpgradeAttack" handler="0x6FD80CE8" size="56" />
+      <class id="ratx" name="CUpgradeAttackEx" handler="0x6FD80D00" size="56" />
+      <class id="radl" name="CUpgradeAttackDamageLoss" handler="0x6FD80D18" size="56" />
+      <class id="ratd" name="CUpgradeAttackDice" handler="0x6FD80D30" size="56" />
+      <class id="ratr" name="CUpgradeAttackRange" handler="0x6FD80D48" size="56" />
+      <class id="rats" name="CUpgradeAttackSpeed" handler="0x6FD80D60" size="56" />
+      <class id="rasd" name="CUpgradeAttackSpillDistance" handler="0x6FD80D78" size="56" />
+      <class id="rasr" name="CUpgradeAttackSpillRadius" handler="0x6FD80D90" size="56" />
+      <class id="ratc" name="CUpgradeAttackTargetCount" handler="0x6FD80DA8" size="56" />
+      <class id="raud" name="CUpgradeAuraData" handler="0x6FD80DC0" size="56" />
+      <class id="renw" name="CUpgradeEnableWeapon" handler="0x6FD80DD8" size="56" />
+      <class id="rent" name="CUpgradeEntangle" handler="0x6FD80DF0" size="56" />
+      <class id="rhpo" name="CUpgradeHitPoints" handler="0x6FD80E08" size="56" />
+      <class id="rhpx" name="CUpgradeHitPointsEx" handler="0x6FD80E20" size="56" />
+      <class id="rhpr" name="CUpgradeHitPointsRegen" handler="0x6FD80E38" size="56" />
+      <class id="rlum" name="CUpgradeLumberJack" handler="0x6FD80E50" size="56" />
+      <class id="rmim" name="CUpgradeMagicImmunity" handler="0x6FD80E68" size="56" />
+      <class id="rman" name="CUpgradeMana" handler="0x6FD80E80" size="56" />
+      <class id="rmnx" name="CUpgradeManaEx" handler="0x6FD80E98" size="56" />
+      <class id="rmnr" name="CUpgradeManaRegen" handler="0x6FD80EB0" size="56" />
+      <class id="rmin" name="CUpgradeMining" handler="0x6FD80EC8" size="56" />
+      <class id="rmov" name="CUpgradeMove" handler="0x6FD80EE0" size="56" />
+      <class id="rmvx" name="CUpgradeMoveEx" handler="0x6FD80EF8" size="56" />
+      <class id="rrai" name="CUpgradeRaiseDead" handler="0x6FD80F10" size="56" />
+      <class id="rroo" name="CUpgradeRootWeapons" handler="0x6FD80F28" size="56" />
+      <class id="rsig" name="CUpgradeSight" handler="0x6FD80F40" size="56" />
+      <class id="rlev" name="CUpgradeSpell" handler="0x6FD80F58" size="56" />
+      <class id="rspi" name="CUpgradeSpikes" handler="0x6FD80F70" size="56" />
+      <class id="ruro" name="CUpgradeUprootWeapons" handler="0x6FD80F88" size="56" />
+    </class>
+    <class id="+Epr" name="CEffectProcedural" handler="0x6FD81260" size="68">
+      <class id="Xdis" name="CEffectHeroDissipate" handler="0x6FD7CFEC" size="72" />
+    </class>
+    <class id="CMsk" name="CChangeMask" handler="0x6FD80074" size="52">
+      <class id="-det" name="CMaskDetect" handler="0x6FD7AFC8" size="76">
+        <class id="Xesn" name="CEffectSentinel" handler="0x6FD7C9FC" size="100" />
+      </class>
+    </class>
+    <class id="ddmg" name="CDelayedAreaDamage" handler="0x6FD811F4" size="192" />
+    <class id="Cdet" name="CDetectedData" handler="0x6FD801B0" size="180" />
+    <class id="Csha" name="CSharedVisionData" handler="0x6FD801C8" size="108" />
+    <class id="B-Ro" name="CRope" handler="0x6FD811C4" size="120">
+      <class id="Mlit" name="CMissileLightningAttack" handler="0x6FD7F8F8" size="156" />
+      <class id="Mspl" name="CMissileSpiritLink" handler="0x6FD7CE14" size="144" />
+      <class id="XOcl" name="CEffectChainLightning" handler="0x6FD7C204" size="196" />
+      <class id="Mmfl" name="CMissileManaFlare" handler="0x6FD7FA94" size="196" />
+      <class id="MEmb" name="CMissileManaBurn" handler="0x6FD7FA7C" size="192" />
+      <class id="MNdr" name="CMissileDrain" handler="0x6FD7EA4C" size="212" />
+      <class id="MNfl" name="CMissileForkedLightning" handler="0x6FD7F2C0" size="144" />
+      <class id="MNfd" name="CRopeBase" handler="0x6FD811DC" size="176" />
+    </class>
+    <class id="AI-1" name="CCompAI" handler="0x6FD87880" size="804" />
+    <class id="AI-U" name="CUnitAI" handler="0x6FD878E4" size="88" />
+    <class id="AIts" name="CTownSpot" handler="0x6FD878B0" size="108" />
+    <class id="AIcs" name="CCreepSpot" handler="0x6FD87898" size="188" />
+    <class id="AIgp" name="CGuardPost" handler="0x6FD87854" size="84" />
+    <class id="AItr" name="CThreadAI" handler="0x6FD8781C" size="96" />
+    <class id="+rct" name="CRectWar3" handler="0x6FD785A4" size="52" />
+    <class id="+cst" name="CCameraSetup" handler="0x6FD783F0" size="320" />
+    <class id="+loc" name="CMapLocation" handler="0x6FD78D64" size="44" />
+    <class id="+gam" name="CGameState" handler="0x6FD78DB4" size="848" />
+    <class id="ally" name="CAlliances" handler="0x6FD783D4" size="216" />
+    <class id="+ply" name="CPlayerWar3" handler="0x6FD786F0" size="824" />
+    <class id="hdlr" name="CJassFunc" handler="0x6FD7832C" size="40" />
+    <class id="bExp" name="CBooleanExpr" handler="0x6FD78374" size="36">
+      <class id="bbop" name="CBooleanBinaryOp" handler="0x6FD7835C" size="44">
+        <class id="bAnd" name="CBooleanAnd" handler="0x6FD78344" size="44" />
+        <class id="+bOr" name="CBooleanOr" handler="0x6FD783A4" size="44" />
+      </class>
+      <class id="bNot" name="CBooleanNot" handler="0x6FD7838C" size="40" />
+      <class id="+flt" name="CFilterFunc" handler="0x6FD78314" size="40" />
+    </class>
+    <class id="+grp" name="CGroup" handler="0x6FD78498" size="80" />
+    <class id="+frc" name="CForce" handler="0x6FD78438" size="80" />
+    <class id="+tmr" name="CTimerWar3" handler="0x6FD78638" size="84" />
+    <class id="+tml" name="CTimelineRecorder" handler="0x6FD78604" size="72" />
+    <class id="+trg" name="CTriggerWar3" handler="0x6FD78E50" size="124" />
+    <class id="tcnd" name="CTriggerCondition" handler="0x6FD78E80" size="40" />
+    <class id="+tac" name="CTriggerAction" handler="0x6FD78E68" size="40" />
+    <class id="+tex" name="CTriggerExecution" handler="0x6FD78E38" size="156" />
+    <class id="+evt" name="CEventRegWar3" handler="0x6FD78D94" size="52">
+      <class id="wdvt" name="CDeathEventReg" handler="0x6FD78B3C" size="64" />
+      <class id="gevt" name="CGameEventReg" handler="0x6FD78BFC" size="52" />
+      <class id="pevt" name="CPlayerEventReg" handler="0x6FD78C5C" size="76">
+        <class id="psvt" name="CPlayerStateEventReg" handler="0x6FD78C74" size="92" />
+        <class id="pcvt" name="CPlayerChatEventReg" handler="0x6FD78C44" size="92" />
+      </class>
+      <class id="uevt" name="CUnitEventReg" handler="0x6FD78D1C" size="72">
+        <class id="usvt" name="CUnitStateEventReg" handler="0x6FD78D34" size="96" />
+      </class>
+      <class id="rgvt" name="CRangeEventReg" handler="0x6FD78C8C" size="60" />
+      <class id="vevt" name="CVariableEventReg" handler="0x6FD78D4C" size="64">
+        <class id="sevt" name="CStateEventReg" handler="0x6FD78D7C" size="68">
+          <class id="ievt" name="CIntegerEventReg" handler="0x6FD78C14" size="72">
+            <class id="alvt" name="CAllianceEventReg" handler="0x6FD78B0C" size="84" />
+            <class id="gsvt" name="CIntegerGameStateEventReg" handler="0x6FD78C2C" size="72" />
+          </class>
+          <class id="fevt" name="CFloatEventReg" handler="0x6FD78BB4" size="76">
+            <class id="gfvt" name="CFloatGameStateEventReg" handler="0x6FD78BCC" size="76" />
+          </class>
+        </class>
+      </class>
+      <class id="tmvt" name="CTimerEventReg" handler="0x6FD78CBC" size="80" />
+      <class id="tmet" name="CTimerExpireEventReg" handler="0x6FD78CD4" size="56" />
+      <class id="+rev" name="CRegionEventReg" handler="0x6FD78CA4" size="92" />
+      <class id="+tev" name="CTrackableEventReg" handler="0x6FD78D04" size="56" />
+      <class id="bevt" name="CDialogButtonEventReg" handler="0x6FD78B54" size="56" />
+      <class id="devt" name="CDialogEventReg" handler="0x6FD78B84" size="56" />
+    </class>
+    <class id="+snd" name="CSoundWar3" handler="0x6FD785EC" size="80" />
+    <class id="+qum" name="CQuestManager" handler="0x6FD78544" size="60" />
+    <class id="+que" name="CQuest" handler="0x6FD7858C" size="88" />
+    <class id="+qui" name="CQuestItem" handler="0x6FD7855C" size="52">
+      <class id="+dfc" name="CDefeatCondition" handler="0x6FD78574" size="52" />
+    </class>
+    <class id="+tid" name="CTimerDialogWar3" handler="0x6FD78620" size="60" />
+    <class id="+dlb" name="CDialogButton" handler="0x6FD785BC" size="60" />
+    <class id="+dlg" name="CScriptDialogWar3" handler="0x6FD785D4" size="64" />
+    <class id="+ldb" name="CLeaderboardWar3" handler="0x6FD784C8" size="68" />
+    <class id="gcch" name="CGameCache" handler="0x6FD78450" size="48" />
+    <class id="ghth" name="CGameHashTable" handler="0x6FD78480" size="40" />
+    <class id="gccm" name="CGameCacheManager" handler="0x6FD78468" size="104" />
+    <class id="+mdb" name="CMultiboardWar3" handler="0x6FD784E0" size="80" />
+    <class id="+mbi" name="CMultiboardItemWar3" handler="0x6FD784F8" size="48" />
+  </class>
+  <class id="+fgm" name="CFogModifier" handler="0x6FD78408" size="80">
+    <class id="+fgt" name="CFogModifierTimed" handler="0x6FD78420" size="100" />
+  </class>
+  <class id="+cam" name="CCameraWar3" handler="0x6FD7A23C" size="1472" />
+  <class id="pool" name="CUnitPool" handler="0x6FD78668" size="48" />
+  <class id="ipol" name="CItemPool" handler="0x6FD784B0" size="48" />
+  <class id="wscd" name="CScriptEventData" handler="0x6FD78BE4" size="32">
+    <class id="uedb" name="CUnitEventDataBase" handler="0x6FD803D8" size="44">
+      <class id="usld" name="CUnitStateLimitEventData" handler="0x6FD803F0" size="48" />
+      <class id="udad" name="CUnitDamagedEventData" handler="0x6FD80408" size="64" />
+      <class id="udcd" name="CUnitDecayEventData" handler="0x6FD80420" size="44" />
+      <class id="used" name="CUnitSelectedEventData" handler="0x6FD80438" size="44" />
+      <class id="uddd" name="CUnitDeselectedEventData" handler="0x6FD80450" size="44" />
+      <class id="uced" name="CUnitConstructEventDataBase" handler="0x6FD80468" size="44">
+        <class id="uccd" name="CUnitConstructCancelEventData" handler="0x6FD80480" size="44" />
+        <class id="ucfd" name="CUnitConstructFinishEventData" handler="0x6FD80498" size="44" />
+      </class>
+      <class id="uued" name="CUnitUpgradeEventDataBase" handler="0x6FD804B0" size="48">
+        <class id="uusd" name="CUnitUpgradeStartEventData" handler="0x6FD804E0" size="48" />
+        <class id="uucd" name="CUnitUpgradeCancelEventData" handler="0x6FD804F8" size="48" />
+        <class id="uufd" name="CUnitUpgradeFinishEventData" handler="0x6FD80510" size="48" />
+      </class>
+      <class id="ured" name="CUnitResearchEventDataBase" handler="0x6FD80528" size="48">
+        <class id="ursd" name="CUnitResearchStartEventData" handler="0x6FD80540" size="48" />
+        <class id="urcd" name="CUnitResearchCancelEventData" handler="0x6FD80558" size="48" />
+        <class id="urfd" name="CUnitResearchFinishEventData" handler="0x6FD80570" size="48" />
+      </class>
+      <class id="ueed" name="CUnitDetectedEventData" handler="0x6FD80588" size="56" />
+      <class id="uhed" name="CUnitHiddenEventData" handler="0x6FD805A0" size="56" />
+      <class id="ueoe" name="CUnitEventOtherUnitDataBase" handler="0x6FD805B8" size="56">
+        <class id="uded" name="CUnitDeathEventData" handler="0x6FD80630" size="56" />
+        <class id="ursc" name="CUnitRescueEventData" handler="0x6FD805D0" size="56" />
+        <class id="uaed" name="CUnitAcquireEventData" handler="0x6FD805E8" size="56">
+          <class id="uird" name="CUnitInRangeEventData" handler="0x6FD80600" size="56" />
+        </class>
+        <class id="uatd" name="CUnitAttackedEventData" handler="0x6FD80618" size="56" />
+        <class id="uted" name="CUnitTrainEventDataBase" handler="0x6FD80660" size="56">
+          <class id="utsd" name="CUnitTrainStartEventData" handler="0x6FD80678" size="60">
+            <class id="utcd" name="CUnitTrainCancelEventData" handler="0x6FD80690" size="60" />
+          </class>
+          <class id="utfd" name="CUnitTrainFinishEventData" handler="0x6FD806A8" size="56" />
+        </class>
+        <class id="uoed" name="CUnitOrderEventData" handler="0x6FD806F0" size="68">
+          <class id="uped" name="CUnitOrderPointEventData" handler="0x6FD80708" size="68">
+            <class id="uotd" name="CUnitOrderTargetEventData" handler="0x6FD80720" size="68" />
+          </class>
+        </class>
+        <class id="usud" name="CUnitSummonedEventData" handler="0x6FD80648" size="56" />
+        <class id="usvd" name="CUnitSellEventData" handler="0x6FD806C0" size="68" />
+        <class id="usid" name="CUnitSellItemEventData" handler="0x6FD806D8" size="68" />
+      </class>
+      <class id="usbd" name="CUnitSpellEventDataBase" handler="0x6FD80738" size="56" />
+      <class id="uehs" name="CUnitEventHeroSkillData" handler="0x6FD80750" size="52" />
+      <class id="uitt" name="CUnitLoadEventData" handler="0x6FD80780" size="56" />
+      <class id="uite" name="CUnitItemEventData" handler="0x6FD80768" size="56" />
+      <class id="ucod" name="CUnitChangeOwnerEventData" handler="0x6FD804C8" size="48" />
+    </class>
+    <class id="wded" name="CDeathEventData" handler="0x6FD78B24" size="44" />
+    <class id="wsed" name="CTimerExpireEventData" handler="0x6FD78CEC" size="36" />
+    <class id="pedb" name="CPlayerEventDataBase" handler="0x6FD78708" size="44">
+      <class id="psld" name="CPlayerStateLimitEventData" handler="0x6FD78720" size="48" />
+      <class id="pded" name="CPlayerDefeatEventData" handler="0x6FD78738" size="44" />
+      <class id="pved" name="CPlayerVictoryEventData" handler="0x6FD78750" size="44" />
+      <class id="pled" name="CPlayerLeaveEventData" handler="0x6FD78768" size="44" />
+      <class id="pecd" name="CPlayerEndCinematicData" handler="0x6FD78780" size="44" />
+      <class id="pcmd" name="CPlayerChatMatchEventData" handler="0x6FD78798" size="68" />
+      <class id="pued" name="CPlayerUnitEventDataBase" handler="0x6FD787B0" size="68">
+        <class id="puad" name="CPlayerUnitAttackedEventData" handler="0x6FD787C8" size="68" />
+        <class id="pudd" name="CPlayerUnitDeathEventData" handler="0x6FD787F8" size="68" />
+        <class id="pude" name="CPlayerUnitDecayEventData" handler="0x6FD78810" size="68" />
+        <class id="pusd" name="CPlayerUnitSelectedEventData" handler="0x6FD78828" size="68" />
+        <class id="psel" name="CPlayerUnitDeselectedEventData" handler="0x6FD78840" size="68" />
+        <class id="updd" name="CPlayerUnitDetectedEventData" handler="0x6FD78858" size="68" />
+        <class id="puhd" name="CPlayerUnitHiddenEventData" handler="0x6FD78870" size="68" />
+        <class id="pucs" name="CPlayerUnitConstructStartEventData" handler="0x6FD788B8" size="68" />
+        <class id="pcfd" name="CPlayerUnitConstructFinishEventData" handler="0x6FD788D0" size="68" />
+        <class id="pccd" name="CPlayerUnitConstructCancelEventData" handler="0x6FD788E8" size="68" />
+        <class id="puud" name="CPlayerUnitUpgradeEventDataBase" handler="0x6FD78900" size="72">
+          <class id="puse" name="CPlayerUnitUpgradeStartEventData" handler="0x6FD78918" size="72" />
+          <class id="pufd" name="CPlayerUnitUpgradeFinishEventData" handler="0x6FD78930" size="72" />
+          <class id="pucd" name="CPlayerUnitUpgradeCancelEventData" handler="0x6FD78948" size="72" />
+        </class>
+        <class id="pted" name="CPlayerUnitTrainEventDataBase" handler="0x6FD789D8" size="68">
+          <class id="ptes" name="CPlayerUnitTrainStartEventData" handler="0x6FD789F0" size="72">
+            <class id="ptcd" name="CPlayerUnitTrainCancelEventData" handler="0x6FD78A08" size="72" />
+            <class id="ptcf" name="CPlayerUnitTrainFinishEventData" handler="0x6FD78A50" size="72" />
+          </class>
+        </class>
+        <class id="puod" name="CPlayerUnitOrderEventData" handler="0x6FD78A68" size="80">
+          <class id="ppod" name="CPlayerUnitPointOrderEventData" handler="0x6FD78A80" size="80" />
+          <class id="ptod" name="CPlayerUnitTargetOrderEventData" handler="0x6FD78A98" size="80" />
+        </class>
+        <class id="psbd" name="CPlayerUnitSpellEventDataBase" handler="0x6FD78AB0" size="80" />
+        <class id="prud" name="CPlayerUnitResearchEventDataBase" handler="0x6FD78960" size="72">
+          <class id="prse" name="CPlayerUnitResearchStartEventData" handler="0x6FD78990" size="72" />
+          <class id="prcd" name="CPlayerUnitResearchCancelEventData" handler="0x6FD789C0" size="72" />
+          <class id="prfd" name="CPlayerUnitResearchFinishEventData" handler="0x6FD789A8" size="72" />
+        </class>
+        <class id="pssd" name="CPlayerUnitSummonedEventData" handler="0x6FD78888" size="68" />
+        <class id="pite" name="CPlayerUnitItemEventData" handler="0x6FD78AC8" size="80" />
+        <class id="pstd" name="CPlayerUnitLoadedEventData" handler="0x6FD788A0" size="68" />
+        <class id="phsd" name="CPlayerHeroSkillEventData" handler="0x6FD78978" size="76" />
+        <class id="purd" name="CPlayerUnitRescuedEventData" handler="0x6FD787E0" size="68" />
+        <class id="psvd" name="CPlayerUnitSellEventData" handler="0x6FD78A20" size="80" />
+        <class id="psid" name="CPlayerUnitSellItemEventData" handler="0x6FD78A38" size="80" />
+        <class id="puco" name="CPlayerUnitChangeOwnerEventData" handler="0x6FD78AE0" size="72" />
+      </class>
+    </class>
+    <class id="bedb" name="CDialogButtonClickEventData" handler="0x6FD78B6C" size="44" />
+    <class id="dced" name="CDialogClickEventData" handler="0x6FD78B9C" size="56" />
+    <class id="tfsd" name="CTournamentFinishSoonEventData" handler="0x6FD78DCC" size="36" />
+    <class id="tfnd" name="CTournamentFinishNowEventData" handler="0x6FD78DE4" size="40" />
+    <class id="gsed" name="CGameSaveEventData" handler="0x6FD78DFC" size="44" />
+  </class>
+</class>
