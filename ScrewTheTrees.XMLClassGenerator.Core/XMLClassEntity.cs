@@ -8,7 +8,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
     {
         public string ID { get; }
         public string Name { get; }
-        public string Sandler { get; }
+        public string Handler { get; }
         public int Size { get; }
 
         public string directory = "\\";
@@ -19,10 +19,10 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
 
         public XmlClassEntity(string id, string name, string handler, int size)
         {
-            this.ID = id;
-            this.Name = name;
-            this.Sandler = handler;
-            this.Size = size;
+            ID = id;
+            Name = name;
+            Handler = handler;
+            Size = size;
         }
 
         /**
@@ -40,7 +40,6 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             }
 
         }
-
         public void AddToParent()
         {
             if (parentClass != null)
