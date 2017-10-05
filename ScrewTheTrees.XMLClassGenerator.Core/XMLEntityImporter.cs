@@ -6,14 +6,14 @@ using System.Xml.Linq;
 
 namespace ScrewTheTrees.XMLClassGenerator.Core
 {
-    class XMLHandler
+    class XMLEntityImporter
     {
         public XDocument doc= new XDocument();
         public List<XMLClassEntity> eList = new List<XMLClassEntity>();
         private string outputDirectory;
         private string loadDocument;
 
-        public XMLHandler(string loadDocument, string outputDirectory)
+        public XMLEntityImporter(string loadDocument, string outputDirectory)
         {
             this.loadDocument = loadDocument;
             this.outputDirectory = outputDirectory;

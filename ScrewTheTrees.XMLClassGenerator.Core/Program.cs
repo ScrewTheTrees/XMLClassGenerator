@@ -8,7 +8,7 @@ namespace ScrewTheTrees.XMLClassGenerator.Core
     {
         static void Main(string[] args)
         {
-            XMLHandler handle = new XMLHandler("Classes.xml", "\\output");
+            XMLEntityImporter handle = new XMLEntityImporter("Classes.xml", "\\output");
 
             handle.Load();
             handle.createEntities();
