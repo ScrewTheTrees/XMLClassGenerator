@@ -36,19 +36,17 @@ namespace ScrewTheTrees.XMLClassGenerator.Core
         public List<XMLClassEntity> createEntities()
         {
             List<XMLClassEntity> entities = new List<XMLClassEntity>();
-            List<XmlNode> allNodes = new List<XmlNode>();
 
             List<XElement> root = new List<XElement>();
             root.AddRange(doc.Elements().Where(x => x.Name == "class"));
 
             Console.WriteLine(root.Attributes().FirstOrDefault() + "  - Children:  " + root.Elements().Count().ToString());
 
-            //Loop parent
+            //Loop through all the elements to create their ClassEntities
             foreach (XElement node in root)
                 entities = parseNode(node, entities, null);
 
-
-
+            //Calculate directories (and print debug i guess)
             foreach (XMLClassEntity e in entities)
             {
                 e.calculateDirectory();
@@ -56,18 +54,13 @@ namespace ScrewTheTrees.XMLClassGenerator.Core
                 Console.WriteLine("name: " + e.name + " - Size:" + e.size + " - ID:" + e.id + " - Handler:" + e.handler);
             }
 
-
-            Console.WriteLine("");
-            Console.WriteLine("done!");
-
             return entities;
         }
 
 
         private List<XMLClassEntity> parseNode(XElement element, List<XMLClassEntity> entities, XMLClassEntity parent)
         {
-            //TODO: Loop logic
-            Console.WriteLine(element.Attributes().FirstOrDefault() + "  - Children:  " + element.Elements().Count().ToString());
+            Console.WriteLine(element.Attributes().FirstOrDefault() + " - Children:  " + element.Elements().Count().ToString());
 
             XMLClassEntity currentEntity = makeEntityFromElement(element);
             currentEntity.parentClass = parent;
@@ -77,7 +70,7 @@ namespace ScrewTheTrees.XMLClassGenerator.Core
             if (element.Elements().Count() > 0 && element != null)
             {
                 foreach (XElement node in element.Elements())
-                entities = parseNode(node, entities, currentEntity);
+                    entities = parseNode(node, entities, currentEntity);
             }
             
             return entities;

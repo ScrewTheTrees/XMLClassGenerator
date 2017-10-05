@@ -24,9 +24,8 @@ namespace ScrewTheTrees.XMLClassGenerator.Core
         }
 
         /**
-         * Calculates the relative directory this instance is gonna need in structure.
-         * 
-         * */
+         * Calculates the relative directory this class is gonna be in the file/import structure.
+         **/
         public void calculateDirectory()
         {
             XMLClassEntity parent = parentClass;
