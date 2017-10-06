@@ -31,6 +31,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             {
                 e.GenerateIncludes();
                 e.GenerateHeader();
+                e.GenerateFields();
                 e.GenerateBody();
 
                 ClassGeneratorClassFile cgcf = new ClassGeneratorClassFile(e, output);
