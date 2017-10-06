@@ -66,14 +66,17 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
                 Header.Add(string.Format("Name: {0}", Name));
                 if (ParentClass != null)
                 {
-                    Header.Add(string.Format("Parent: {0}", ParentClass.Name));
                     Header.Add(string.Format("ID: {0}", ID));
-                    Header.Add(string.Format("Size: {0} (+{1})", Size, Size - ParentClass.Size));
+                    Header.Add(string.Format("Size: {0} (0x{1})", Size, Size.ToString("X")));
+                    Header.Add(string.Format("SizeDifference: {0} (0x{1})", Size - ParentClass.Size, (Size - ParentClass.Size).ToString("X")));
+                    Header.Add(string.Format("ParentSize: {0} (0x{1})", ParentClass.Size, ParentClass.Size.ToString("X")));
+                    Header.Add(string.Format("Parent: {0}", ParentClass.Name));
                 }
+                
                 else
                 {
                     Header.Add(string.Format("ID: {0}", ID));
-                    Header.Add(string.Format("Size: {0}", Size));
+                    Header.Add(string.Format("Size: {0} (0x{1})", Size, Size.ToString("X")));
                 }
                 Header.Add(string.Format("Handler: {0}", Handler));
             }
@@ -98,6 +101,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             if (beforeFields != null)
                 Body.AddRange(beforeFields);
 
+            Body.Add("public:");
             Body.AddRange(Fields);
 
             if (afterFields != null)
@@ -108,7 +112,18 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
 
         public void GenerateFields()
         {
-            //TODO: GENERATE FIELDS
+            int start = 0;
+            if (ParentClass != null)
+                start = ParentClass.Size;
+
+            int increment = 4;
+            string varType = "int";
+
+            for (int i = start; i < Size; i += increment)
+            {
+                string hexValue = i.ToString("X");
+                Fields.Add(string.Format("  {0} field_{1};",varType ,hexValue));
+            }
         }
 
 

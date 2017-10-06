@@ -36,7 +36,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
 
                 ClassGeneratorClassFile cgcf = new ClassGeneratorClassFile(e, output);
                 //Thread workerThread = new Thread(cgcf.Execute);
-                //workerThread.Start();
+                //workerThread.Start();  //Sadly multithreading does jackshit for file generation
                 cgcf.Execute();
             }
 
