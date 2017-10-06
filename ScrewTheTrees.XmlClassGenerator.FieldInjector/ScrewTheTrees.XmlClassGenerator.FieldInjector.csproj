@@ -51,9 +51,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\ScrewTheTrees.XMLClassGenerator.Core\ScrewTheTrees.XmlClassGenerator.Core.csproj">
       <Project>{12bd1edb-c23f-4e05-a3b1-890eb13842e7}</Project>
       <Name>ScrewTheTrees.XmlClassGenerator.Core</Name>
