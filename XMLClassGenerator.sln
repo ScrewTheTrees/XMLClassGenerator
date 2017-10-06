@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrewTheTrees.XmlClassGenerator.Core", "ScrewTheTrees.XMLClassGenerator.Core\ScrewTheTrees.XmlClassGenerator.Core.csproj", "{12BD1EDB-C23F-4E05-A3B1-890EB13842E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrewTheTrees.XmlClassGenerator.FieldInjector", "ScrewTheTrees.XmlClassGenerator.FieldInjector\ScrewTheTrees.XmlClassGenerator.FieldInjector.csproj", "{D43EC4D7-E516-4302-A76D-B394296D0E1D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrewTheTrees.XmlClassGenerator.Injector", "ScrewTheTrees.XmlClassGenerator.FieldInjector\ScrewTheTrees.XmlClassGenerator.Injector.csproj", "{D43EC4D7-E516-4302-A76D-B394296D0E1D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrewTheTrees.XmlClassGenerator.Runner", "ScrewTheTrees.XmlClassGenerator.Runner\ScrewTheTrees.XmlClassGenerator.Runner.csproj", "{2C0A6063-6707-45DB-BFEE-646716D3E7BD}"
 EndProject

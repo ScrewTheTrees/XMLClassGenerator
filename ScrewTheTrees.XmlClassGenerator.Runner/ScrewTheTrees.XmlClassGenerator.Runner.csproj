@@ -59,9 +59,9 @@
       <Name>ScrewTheTrees.XmlClassGenerator.Core</Name>
       <Aliases>global</Aliases>
     </ProjectReference>
-    <ProjectReference Include="..\ScrewTheTrees.XmlClassGenerator.FieldInjector\ScrewTheTrees.XmlClassGenerator.FieldInjector.csproj">
+    <ProjectReference Include="..\ScrewTheTrees.XmlClassGenerator.FieldInjector\ScrewTheTrees.XmlClassGenerator.Injector.csproj">
       <Project>{d43ec4d7-e516-4302-a76d-b394296d0e1d}</Project>
-      <Name>ScrewTheTrees.XmlClassGenerator.FieldInjector</Name>
+      <Name>ScrewTheTrees.XmlClassGenerator.Injector</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
