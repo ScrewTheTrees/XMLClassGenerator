@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 
 
-namespace ScrewTheTrees.XmlClassGenerator.Runner
+namespace ScrewTheTrees.XmlClassGenerator.Core
 {
     class Program
     {

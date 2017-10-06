@@ -1,6 +1,6 @@
 ﻿
 
-namespace ScrewTheTrees.XmlClassGenerator.Injector
+namespace ScrewTheTrees.XmlClassGenerator.Core
 {
     public class ClassFields
     {

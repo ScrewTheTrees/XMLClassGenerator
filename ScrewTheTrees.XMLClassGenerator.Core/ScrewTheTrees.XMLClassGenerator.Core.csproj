@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{12BD1EDB-C23F-4E05-A3B1-890EB13842E7}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>ScrewTheTrees.XMLClassGenerator.Core</RootNamespace>
     <AssemblyName>ScrewTheTrees.XMLClassGenerator.Core</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -16,7 +16,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -47,10 +47,19 @@
   <ItemGroup>
     <Compile Include="ClassGeneratorClassFile.cs" />
     <Compile Include="ClassGeneratorMainFile.cs" />
+    <Compile Include="Injector\ClassFields.cs" />
+    <Compile Include="Injector\ClassIncludes.cs" />
+    <Compile Include="Injector\ClassListInjector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ITask.cs" />
+    <Compile Include="Runner\Program.cs" />
     <Compile Include="XmlClassEntity.cs" />
     <Compile Include="XmlEntityImporter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Classes.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
