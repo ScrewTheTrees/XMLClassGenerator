@@ -72,7 +72,6 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
                     Header.Add(string.Format("ParentSize: {0} (0x{1})", ParentClass.Size, ParentClass.Size.ToString("X")));
                     Header.Add(string.Format("Parent: {0}", ParentClass.Name));
                 }
-                
                 else
                 {
                     Header.Add(string.Format("ID: {0}", ID));

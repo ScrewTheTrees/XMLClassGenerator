@@ -48,9 +48,6 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             foreach (XmlClassEntity e in entities)
             {
                 e.CalculateDirectory();
-
-                //TODO: Removed debug
-                Console.WriteLine("Name: " + e.Name + "       Size:" + e.Size + "   ID:" + e.ID + "   Handler:" + e.Handler);
             }
 
             return entities;
