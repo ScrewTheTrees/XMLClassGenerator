@@ -57,36 +57,28 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
                 Includes.AddRange(includes);
         }
 
-        public void GenerateHeader()
-        {
-            Header.Clear();
-            Header.Add("/*");
-            Header.Add(string.Format("Name: {0}", Name));
-            if (ParentClass != null)
-            {
-                Header.Add(string.Format("Parent: {0}", ParentClass.Name));
-                Header.Add(string.Format("ID: {0}", ID));
-                Header.Add(string.Format("Size: {0} (+{1})", Size, Size-ParentClass.Size));
-            }
-            else
-            {
-                Header.Add(string.Format("ID: {0}", ID));
-                Header.Add(string.Format("Size: {0}", Size));
-            }
-            Header.Add(string.Format("Handler: {0}", Handler));
-            Header.Add("*/");
-        }
-        public void GenerateHeader(List<string> header, bool generateBase = false)
+        public void GenerateHeader(List<string> header = null, bool generateBase = true)
         {
             Header.Clear();
             Header.Add("/*");
             if (generateBase == true)
             {
-                GenerateHeader();       //Generate normal header
-                Header.Remove("*/");    //Remove the endtag so that more lines can be added.
+                Header.Add(string.Format("Name: {0}", Name));
+                if (ParentClass != null)
+                {
+                    Header.Add(string.Format("Parent: {0}", ParentClass.Name));
+                    Header.Add(string.Format("ID: {0}", ID));
+                    Header.Add(string.Format("Size: {0} (+{1})", Size, Size - ParentClass.Size));
+                }
+                else
+                {
+                    Header.Add(string.Format("ID: {0}", ID));
+                    Header.Add(string.Format("Size: {0}", Size));
+                }
+                Header.Add(string.Format("Handler: {0}", Handler));
             }
-
-            Header.AddRange(header);
+            if (header != null)
+                Header.AddRange(header);
             Header.Add("*/");
         }
 
