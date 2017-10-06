@@ -1,6 +1,5 @@
-﻿
+﻿using System.Collections.Generic;
 
-using System.Collections.Generic;
 
 namespace ScrewTheTrees.XmlClassGenerator.Core
 {
