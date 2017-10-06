@@ -43,18 +43,18 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             }
         }
 
-        public void GenerateIncludes()
-        {
-            Includes.Clear();
-            if (ParentClass != null)
-                Includes.Add(string.Format("#include \"{0}{1}.h\"", ParentClass.Directory.Replace('\\', '/'), ParentClass.Name));
-        }
-        public void GenerateIncludes(List<string> includes, bool generateParent = false) 
+        /// <summary>
+        /// Generate the include strings at the top of the document, other top of the document stuff can technically be added here aswell.
+        /// </summary>
+        /// <param name="includes">List (Nullable) of includes you want to add, the strings are parsed and will be written as is (no #include and etc...)</param>
+        /// <param name="generateParent">Default true, Should the include for this Class parent be included (if not null)?</param>
+        public void GenerateIncludes(List<string> includes = null, bool generateParent = true)
         {
             Includes.Clear();
             if (generateParent == true && ParentClass != null)
                 Includes.Add(string.Format("#include \"{0}{1}.h\"", ParentClass.Directory.Replace('\\', '/'), ParentClass.Name));
-            Includes.AddRange(includes);
+            if (includes != null)
+                Includes.AddRange(includes);
         }
 
         public void GenerateHeader()
