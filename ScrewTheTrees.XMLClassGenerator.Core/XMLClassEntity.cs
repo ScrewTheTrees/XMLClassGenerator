@@ -16,8 +16,9 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
         public XmlClassEntity ParentClass;
         public List<XmlClassEntity> ChildrenClasses = new List<XmlClassEntity>();
 
-        public List<string> Includes { get; }
-
+        public List<string> Includes = new List<string>();
+        public List<string> Header = new List<string>();
+        public List<string> Body = new List<string>();
 
         public void CalculateDirectory()
         {
@@ -41,24 +42,71 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             }
         }
 
-        public void ClearIncludes()
+        public void GenerateIncludes()
         {
             Includes.Clear();
+            if (ParentClass != null)
+                Includes.Add(string.Format("#include \"{0}{1}.h\"", ParentClass.Directory.Replace('\\', '/'), ParentClass.Name));
         }
-
-        public void CreateIncludes()
+        public void GenerateIncludes(List<string> includes, bool generateParent = false) 
         {
-            Includes.Add("#include \"" + ParentClass.Directory.Replace('\\', '/') + @"\" + ParentClass.Name + ".h\"");
+            Includes.Clear();
+            if (generateParent == true && ParentClass != null)
+                Includes.Add(string.Format("#include \"{0}{1}.h\"", ParentClass.Directory.Replace('\\', '/'), ParentClass.Name));
+            Includes.AddRange(includes);
         }
 
-        public void CreateIncludes(List<string> includes) 
+        public void GenerateHeader()
         {
-            this.Includes.Add("#include \"" + Directory.Replace('\\','/') + ".h\"");
+            Header.Clear();
+            Header.Add("/*");
+            Header.Add(string.Format("Name: {0}", Name));
+            if (ParentClass != null)
+            {
+                Header.Add(string.Format("Parent: {0}", ParentClass.Name));
+                Header.Add(string.Format("ID: {0}", ID));
+                Header.Add(string.Format("Size: {0} (+{1})", Size, Size-ParentClass.Size));
+            }
+            else
+            {
+                Header.Add(string.Format("ID: {0}", ID));
+                Header.Add(string.Format("Size: {0}", Size));
+            }
+            Header.Add(string.Format("Handler: {0}", Handler));
+            Header.Add("*/");
+        }
+        public void GenerateHeader(List<string> header, bool generateBase = false)
+        {
+            Header.Clear();
+            Header.Add("/*");
+            if (generateBase == true)
+            {
+                GenerateHeader();       //Generate normal header
+                Header.Remove("*/");    //Remove the endtag so that more lines can be added.
+            }
 
-            if (includes != null)
-                Includes.Add("#include \"" + ParentClass.Directory.Replace('\\', '/') + @"\" + ParentClass.Name + ".h\"");
+            Header.AddRange(header);
+            Header.Add("*/");
         }
 
+        public void GenerateBody()
+        {
+            Body.Clear();
+            if (ParentClass != null)
+                Body.Add(string.Format("class {0} : {1} {{", Name, ParentClass.Name));
+            else Body.Add(string.Format("class {0} {{", Name));
+
+
+
+            Body.Add("};");
+        }
+
+
+
+        /// <summary>
+        /// Compares the order of XmlClassEntitites based on how far nested they are in the file system.
+        /// Generally to make sure the base classes and their directories are always generated before the inheriting classes.
+        /// </summary>
         public static int CompareByDirectoryLength(XmlClassEntity dir1, XmlClassEntity dir2)
         {
             if (dir1 == null)

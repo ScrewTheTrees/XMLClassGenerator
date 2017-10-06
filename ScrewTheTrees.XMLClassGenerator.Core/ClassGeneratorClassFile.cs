@@ -18,7 +18,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
 
         public void Execute()
         {
-            GenerateFoldersToFile();
+            GenerateFolder();
             GenerateFile();
         }
 
@@ -26,15 +26,29 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
         {
             StreamWriter write = new StreamWriter(OutputDirectory + @"\" + XmlClass.Directory + @"\" + XmlClass.Name + ".h");
 
-            write.WriteLine(XmlClass);
+            //Generate Includes
+            foreach (string inc in XmlClass.Includes)
+                write.WriteLine(inc);
+
+            write.WriteLine();
+
+            //Header
+            foreach (string h in XmlClass.Header)
+                write.WriteLine(h);
+            //My body is ready
+            foreach (string b in XmlClass.Body)
+                write.WriteLine(b);
 
 
+            write.Close();
         }
 
-        private void GenerateFoldersToFile()
+        /// <summary>
+        /// This function does not generate the folders up to this one, please sort before you generate the folder using:
+        /// XmlClassEntity.CompareByDirectoryLength
+        /// </summary>
+        private void GenerateFolder()
         {
-            XmlClassEntity parent = XmlClass.ParentClass;
-
             string extraDir = XmlClass.Directory;
 
             if (!Directory.Exists(OutputDirectory + @"\" + extraDir))
