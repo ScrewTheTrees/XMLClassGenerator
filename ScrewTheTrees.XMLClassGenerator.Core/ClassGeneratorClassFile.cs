@@ -7,13 +7,13 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
 {
     class ClassGeneratorClassFile : ITask
     {
-        private XmlClassEntity xmlClass;
-        private string outputDirectory;
+        private XmlClassEntity XmlClass;
+        private string OutputDirectory;
 
         public ClassGeneratorClassFile(XmlClassEntity xmlClass, string outputDirectory)
         {
-            this.xmlClass = xmlClass;
-            this.outputDirectory = outputDirectory;
+            XmlClass = xmlClass;
+            OutputDirectory = outputDirectory;
         }
 
         public void Execute()
@@ -24,17 +24,21 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
 
         public void GenerateFile()
         {
-            //TODO: Generate File
+            StreamWriter write = new StreamWriter(OutputDirectory + @"\" + XmlClass.Directory + @"\" + XmlClass.Name + ".h");
+
+            write.WriteLine(XmlClass);
+
+
         }
 
         private void GenerateFoldersToFile()
         {
-            XmlClassEntity parent = xmlClass.parentClass;
+            XmlClassEntity parent = XmlClass.ParentClass;
 
-            string extraDir = xmlClass.directory;
+            string extraDir = XmlClass.Directory;
 
-            if (!Directory.Exists(outputDirectory + @"\" + extraDir))
-                Directory.CreateDirectory(outputDirectory + @"\" + extraDir);
+            if (!Directory.Exists(OutputDirectory + @"\" + extraDir))
+                Directory.CreateDirectory(OutputDirectory + @"\" + extraDir);
         }
     }
 }

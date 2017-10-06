@@ -4,13 +4,13 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
 {
     class ClassGeneratorMainFile : ITask
     {
-        private XmlClassEntity[] xmlClasses;
-        private string outputDirectory;
+        private XmlClassEntity[] XmlClasses;
+        private string OutputDirectory;
 
         public ClassGeneratorMainFile(XmlClassEntity[] xmlClasses, string outputDirectory)
         {
-            this.xmlClasses = xmlClasses;
-            this.outputDirectory = outputDirectory;
+            XmlClasses = xmlClasses;
+            OutputDirectory = outputDirectory;
         }
 
         public void Execute()

@@ -6,48 +6,58 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
 {
     class XmlClassEntity
     {
-        public string ID = "";
-        public string Name = "";
-        public string Handler = "";
-        public int Size = 0;
+        public string ID;
+        public string Handler;
+        public string Name;
+        public int Size;
 
-        public string directory = "";
+        public string Directory = "";
 
-        public XmlClassEntity parentClass = null;
-        public List<XmlClassEntity> childrenClasses = new List<XmlClassEntity>();
+        public XmlClassEntity ParentClass;
+        public List<XmlClassEntity> ChildrenClasses = new List<XmlClassEntity>();
+
+        public List<string> Includes { get; }
 
 
-        public XmlClassEntity()
-        {
-
-        }
-
-        /**
-         * Calculates the relative directory this class is gonna be in the file/import structure.
-         **/
         public void CalculateDirectory()
         {
-            XmlClassEntity parent = parentClass;
+            XmlClassEntity parent = ParentClass;
 
             while (parent != null)
             {
-                directory = (parent.Name.Substring(1, parent.Name.Length - 1))+ @"\" + directory;
+                Directory = (parent.Name.Substring(1, parent.Name.Length - 1)) + @"\" + Directory;
 
-                parent = parent.parentClass;
+                parent = parent.ParentClass;
             }
-
         }
         public void AddToParent()
         {
-            if (parentClass != null)
+            if (ParentClass != null)
             {
-                if (!parentClass.childrenClasses.Contains(this))
+                if (!ParentClass.ChildrenClasses.Contains(this))
                 {
-                    parentClass.childrenClasses.Add(this);
+                    ParentClass.ChildrenClasses.Add(this);
                 }
             }
         }
 
+        public void ClearIncludes()
+        {
+            Includes.Clear();
+        }
+
+        public void CreateIncludes()
+        {
+            Includes.Add("#include \"" + ParentClass.Directory.Replace('\\', '/') + @"\" + ParentClass.Name + ".h\"");
+        }
+
+        public void CreateIncludes(List<string> includes) 
+        {
+            this.Includes.Add("#include \"" + Directory.Replace('\\','/') + ".h\"");
+
+            if (includes != null)
+                Includes.Add("#include \"" + ParentClass.Directory.Replace('\\', '/') + @"\" + ParentClass.Name + ".h\"");
+        }
 
         public static int CompareByDirectoryLength(XmlClassEntity dir1, XmlClassEntity dir2)
         {
@@ -64,12 +74,12 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
                     return 1;   //Finally some progress
                 else
                 {
-                    int retval = dir1.directory.Length.CompareTo(dir2.directory.Length);
+                    int retval = dir1.Directory.Length.CompareTo(dir2.Directory.Length);
 
                     if (retval != 0)
                         return retval;
                     else
-                        return dir1.directory.CompareTo(dir2.directory);
+                        return dir1.Directory.CompareTo(dir2.Directory);
                 }
             }
         }

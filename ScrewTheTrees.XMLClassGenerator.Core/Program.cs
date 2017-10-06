@@ -29,6 +29,9 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
 
             foreach (XmlClassEntity e in entitites)
             {
+                e.ClearIncludes();
+                e.CreateIncludes();
+
                 ClassGeneratorClassFile cgcf = new ClassGeneratorClassFile(e, output);
                 Thread workerThread = new Thread(cgcf.Execute);
                 workerThread.Start();

@@ -8,35 +8,35 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
 {
     class XmlEntityImporter
     {
-        public XDocument doc= new XDocument();
-        public List<XmlClassEntity> eList = new List<XmlClassEntity>();
-        private string outputDirectory;
-        private string loadDocument;
+        public XDocument Doc= new XDocument();
+        public List<XmlClassEntity> EList = new List<XmlClassEntity>();
+        private string OutputDirectory;
+        private string LoadDocument;
 
         public XmlEntityImporter(string loadDocument, string outputDirectory)
         {
-            this.loadDocument = loadDocument;
-            this.outputDirectory = outputDirectory;
+            LoadDocument = loadDocument;
+            OutputDirectory = outputDirectory;
         }
 
         public XDocument Load()
         {
-            doc = XDocument.Load(loadDocument);
+            Doc = XDocument.Load(LoadDocument);
 
-            return doc;
+            return Doc;
         }
         public XDocument Load(string document)
         {
-            doc = XDocument.Load(document);
+            Doc = XDocument.Load(document);
 
-            return doc;
+            return Doc;
         }
 
         public List<XmlClassEntity> CreateEntities()
         {
             List<XmlClassEntity> entities = new List<XmlClassEntity>();
             List<XElement> rootClass = new List<XElement>();
-            rootClass.AddRange(doc.Elements().Where(x => x.Name == "class"));
+            rootClass.AddRange(Doc.Elements().Where(x => x.Name == "class"));
 
             Console.WriteLine(rootClass.Attributes().FirstOrDefault() + "  - Children:  " + rootClass.Elements().Count().ToString());
 
@@ -49,6 +49,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             {
                 e.CalculateDirectory();
 
+                //TODO: Removed debug
                 Console.WriteLine("Name: " + e.Name + "       Size:" + e.Size + "   ID:" + e.ID + "   Handler:" + e.Handler);
             }
 
@@ -58,7 +59,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
         private List<XmlClassEntity> ParseNode(XElement element, List<XmlClassEntity> entities, XmlClassEntity parent)
         {
             XmlClassEntity currentEntity = MakeEntityFromElement(element);
-            currentEntity.parentClass = parent;
+            currentEntity.ParentClass = parent;
 
             entities.Add(currentEntity);
 
