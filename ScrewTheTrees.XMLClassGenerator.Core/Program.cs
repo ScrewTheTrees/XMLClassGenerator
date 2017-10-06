@@ -22,7 +22,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             handle.Load();
             List<XmlClassEntity> entitites = handle.CreateEntities();
 
-            //IF we sort them according to string length, it will always generate the essential folders before their subfolders!
+            //IF we sort them according to string length to the folder path, it will always generate the essential folders before their subfolders!
             entitites.Sort(XmlClassEntity.CompareByDirectoryLength);
 
 

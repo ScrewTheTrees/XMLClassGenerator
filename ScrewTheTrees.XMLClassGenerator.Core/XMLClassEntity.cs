@@ -54,32 +54,22 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             if (dir1 == null)
             {
                 if (dir2 == null)
-                {
-                    return 0;
-                }
+                    return 0;   //Well, shit
                 else
-                {
-                    return -1;
-                }
+                    return -1;  //Counter productive
             }
             else
             {
                 if (dir2 == null)
-                {
-                    return 1;
-                }
+                    return 1;   //Finally some progress
                 else
                 {
                     int retval = dir1.directory.Length.CompareTo(dir2.directory.Length);
 
                     if (retval != 0)
-                    {
                         return retval;
-                    }
                     else
-                    {
                         return dir1.directory.CompareTo(dir2.directory);
-                    }
                 }
             }
         }
