@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Threading;
 
 namespace ScrewTheTrees.XmlClassGenerator.Core
 {
@@ -49,7 +48,6 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
                 ClassGeneratorClassFile cgcf = new ClassGeneratorClassFile(e, output);
                 cgcf.Execute();
             }
-            
 
             Console.WriteLine("Processed "+entitites.Count+" Entities");
             Console.WriteLine("All done!");
