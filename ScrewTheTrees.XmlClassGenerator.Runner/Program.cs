@@ -1,8 +1,10 @@
-﻿using System;
+﻿using ScrewTheTrees.XmlClassGenerator.Core;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace ScrewTheTrees.XmlClassGenerator.Core
+
+namespace ScrewTheTrees.XmlClassGenerator.Runner
 {
     class Program
     {
@@ -16,7 +18,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             output += @"\output";
             if (!Directory.Exists(output))
                 Directory.CreateDirectory(output);
-
+            
             //Hardcoded... until a proper console app is built
             Console.WriteLine("Importing XML classes");
             XmlEntityImporter handle = new XmlEntityImporter("Classes.xml", output);

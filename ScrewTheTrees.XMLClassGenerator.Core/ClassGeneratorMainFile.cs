@@ -5,7 +5,7 @@ using System.IO;
 
 namespace ScrewTheTrees.XmlClassGenerator.Core
 {
-    class ClassGeneratorMainFile : ITask
+    public class ClassGeneratorMainFile : ITask
     {
         private List<XmlClassEntity> XmlClasses;
         private string OutputDirectory;

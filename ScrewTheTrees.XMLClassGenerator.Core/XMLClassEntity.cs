@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace ScrewTheTrees.XmlClassGenerator.Core
 {
-    class XmlClassEntity
+    public class XmlClassEntity
     {
         public string ID;
         public string Handler;

@@ -6,7 +6,7 @@ using System.Xml.Linq;
 
 namespace ScrewTheTrees.XmlClassGenerator.Core
 {
-    class XmlEntityImporter
+    public class XmlEntityImporter
     {
         public XDocument Doc= new XDocument();
         public List<XmlClassEntity> EList = new List<XmlClassEntity>();

@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace ScrewTheTrees.XmlClassGenerator.FieldInjector
 {
-    public class ClassFields
+    public class ClassIncludes
     {
-        public string FieldName;
-        public string NewName;
-        public string NewType;
-        public string Comment;
+
     }
 }
