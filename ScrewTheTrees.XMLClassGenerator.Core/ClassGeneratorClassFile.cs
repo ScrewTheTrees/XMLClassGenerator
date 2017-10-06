@@ -1,24 +1,58 @@
 ﻿
 
-namespace ScrewTheTrees.XMLClassGenerator.Core
-{
-    class ClassGeneratorClassFile
-    {
-        private XMLClassEntity classes;
+using System;
+using System.IO;
 
-        public ClassGeneratorClassFile(XMLClassEntity classes)
+namespace ScrewTheTrees.XmlClassGenerator.Core
+{
+    class ClassGeneratorClassFile : ITask
+    {
+        private XmlClassEntity XmlClass;
+        private string OutputDirectory;
+
+        public ClassGeneratorClassFile(XmlClassEntity xmlClass, string outputDirectory)
         {
-            this.classes = classes;
+            XmlClass = xmlClass;
+            OutputDirectory = outputDirectory;
+        }
+
+        public void Execute()
+        {
+            GenerateFolder();
+            GenerateFile();
         }
 
         public void GenerateFile()
         {
-            //TODO: Generate File
+            StreamWriter write = new StreamWriter(OutputDirectory + @"\" + XmlClass.Directory + @"\" + XmlClass.Name + ".h");
+
+            //Generate Includes
+            foreach (string inc in XmlClass.Includes)
+                write.WriteLine(inc);
+
+            write.WriteLine();
+
+            //Header
+            foreach (string h in XmlClass.Header)
+                write.WriteLine(h);
+            //My body is ready
+            foreach (string b in XmlClass.Body)
+                write.WriteLine(b);
+
+
+            write.Close();
         }
 
-        private void GenerateFoldersToFile()
+        /// <summary>
+        /// This function does not generate the folders up to this one, please sort before you generate the folder using:
+        /// XmlClassEntity.CompareByDirectoryLength
+        /// </summary>
+        private void GenerateFolder()
         {
-            //TODO: Make Folder Generator
+            string extraDir = XmlClass.Directory;
+
+            if (!Directory.Exists(OutputDirectory + @"\" + extraDir))
+                Directory.CreateDirectory(OutputDirectory + @"\" + extraDir);
         }
     }
 }
