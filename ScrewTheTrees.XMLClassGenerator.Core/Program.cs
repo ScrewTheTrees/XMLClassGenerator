@@ -9,6 +9,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
     {
         static void Main(string[] args)
         {
+            //I had to hardcode it to go into either C: or D: , otherwise the directory length gets too long
             string output = @"C:\Classes";
             if (!Directory.Exists(output))
                 Directory.CreateDirectory(output);
@@ -17,8 +18,8 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             if (!Directory.Exists(output))
                 Directory.CreateDirectory(output);
 
+            //Hardcoded... until a proper console app is built
             XmlEntityImporter handle = new XmlEntityImporter("Classes.xml", output);
-
             handle.Load();
             List<XmlClassEntity> entitites = handle.CreateEntities();
 
