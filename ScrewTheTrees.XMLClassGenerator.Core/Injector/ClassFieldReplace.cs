@@ -30,8 +30,6 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
         /// <returns>Returns whenever it was successfully injected or not.</returns>
         public bool InjectIntoList(List<string> list)
         {
-            if (NewName == "" || NewType == "" || FieldName == "")
-            {
                 string comment;
                 if (Comment != null && Comment != "")
                     comment = "//" + Comment;
@@ -50,7 +48,6 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
                         return true;
                     }
                 }
-            }
 
             return false;
         }

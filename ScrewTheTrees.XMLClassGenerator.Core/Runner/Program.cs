@@ -53,7 +53,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Runner
 
             Console.WriteLine("Processed "+entitites.Count+" Entities");
             Console.WriteLine("All done!");
-
+            Console.WriteLine("All files are located in: " + output);
             Console.ReadLine();
         }
     }

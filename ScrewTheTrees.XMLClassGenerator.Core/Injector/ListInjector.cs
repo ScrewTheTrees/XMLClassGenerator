@@ -19,9 +19,18 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
 
         public XDocument Load()
         {
+            try {
             if (File.Exists(Directory.GetCurrentDirectory() + @"\Injects\" + Entity.Name + ".xml"))
                 XmlDoc = XDocument.Load(Directory.GetCurrentDirectory() + @"\Injects\" + Entity.Name + ".xml");
             else XmlDoc = null;
+            }
+            catch (Exception e)
+            {
+                XmlDoc = null;
+                Console.WriteLine("WARNING! Could not Load injection XML");
+                Console.WriteLine(e);
+            }
+
 
             return XmlDoc;
         }
