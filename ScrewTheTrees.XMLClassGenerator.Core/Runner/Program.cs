@@ -22,19 +22,18 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Runner
             List<XmlClassEntity> entitites = handle.CreateEntities();
 
 
-            Console.WriteLine("Generating Entity Data");
+            Console.WriteLine("Generating Entity Data and injecting data.");
             //Generate all their values
             foreach (XmlClassEntity e in entitites)
             {
                 e.GenerateFields();
+                e.GenerateIncludes();
+                e.GenerateHeader();
+                e.GenerateFinalize();
 
                 ListInjector inject = new ListInjector(e);
                 inject.Load();
                 inject.Inject();
-
-                e.GenerateIncludes();
-                e.GenerateHeader();
-                e.GenerateFinalize();
             }
             Console.WriteLine("Generating \"Agents.h\" file");
             //Generate the core file before we sort it

@@ -41,40 +41,40 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
                 XElement Doc = XmlDoc.Descendants().FirstOrDefault();
                 Console.WriteLine(Entity.Name);
 
-                    if (Doc.Descendants().Any(x => x.Name == "Includes"))
-                    {
-                        XElement includes = Doc.Descendants().Single(x => x.Name == "Includes");
-                        List<string> addem = Entity.InjectIncludes;
-                        ParseElements(includes, addem);
-                    }
-                    if (Doc.Descendants().Any(x => x.Name == "Header"))
-                    {
-                        XElement includes = Doc.Descendants().Single(x => x.Name == "Header");
-                        List<string> addem = Entity.InjectHeader;
-
-                        ParseElements(includes, addem);
-                    }
-                    if (Doc.Descendants().Any(x => x.Name == "Fields"))
-                    {
-                        XElement includes = Doc.Descendants().Single(x => x.Name == "Fields");
-                        List<string> addem = Entity.Fields;
-
-                        ParseElements(includes, addem);
-                    }
-                    if (Doc.Descendants().Any(x => x.Name == "BeforeFields"))
-                    {
-                        XElement includes = Doc.Descendants().Single(x => x.Name == "BeforeFields");
-                        List<string> addem = Entity.InjectBeforeFields;
-
-                        ParseElements(includes, addem);
-                    }
-                    if (Doc.Descendants().Any(x => x.Name == "AfterFields"))
-                    {
-                        XElement includes = Doc.Descendants().Single(x => x.Name == "AfterFields");
-                        List<string> addem = Entity.InjectAfterFields;
-
-                        ParseElements(includes, addem);
-                    }
+                if (Doc.Descendants().Any(x => x.Name == "Includes"))
+                {
+                    XElement includes = Doc.Descendants().Single(x => x.Name == "Includes");
+                    List<string> addem = Entity.InjectIncludes;
+                    ParseElements(includes, addem);
+                    Entity.GenerateIncludes();
+                }
+                if (Doc.Descendants().Any(x => x.Name == "Header"))
+                {
+                    XElement includes = Doc.Descendants().Single(x => x.Name == "Header");
+                    List<string> addem = Entity.InjectHeader;
+                    ParseElements(includes, addem);
+                    Entity.GenerateHeader();
+                }
+                if (Doc.Descendants().Any(x => x.Name == "Fields"))
+                {
+                    XElement includes = Doc.Descendants().Single(x => x.Name == "Fields");
+                    List<string> addem = Entity.Fields;
+                    ParseElements(includes, addem);
+                }
+                if (Doc.Descendants().Any(x => x.Name == "BeforeFields"))
+                {
+                    XElement includes = Doc.Descendants().Single(x => x.Name == "BeforeFields");
+                    List<string> addem = Entity.InjectBeforeFields;
+                    ParseElements(includes, addem);
+                    Entity.GenerateFinalize();
+                }
+                if (Doc.Descendants().Any(x => x.Name == "AfterFields"))
+                {
+                    XElement includes = Doc.Descendants().Single(x => x.Name == "AfterFields");
+                    List<string> addem = Entity.InjectAfterFields;
+                    ParseElements(includes, addem);
+                    Entity.GenerateFinalize();
+                }
             }
         }
 
