@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ScrewTheTrees.XmlClassGenerator.Core.Injector;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -11,10 +12,6 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Runner
         {
             //I had to hardcode it to go into either C: or D: , otherwise the directory length gets too long
             string output = @"C:\Classes";
-            if (!Directory.Exists(output))
-                Directory.CreateDirectory(output);
-
-            output += @"\output";
             if (!Directory.Exists(output))
                 Directory.CreateDirectory(output);
             
@@ -33,6 +30,10 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Runner
                 e.GenerateHeader();
                 e.GenerateFields();
                 e.GenerateBody();
+
+                ListInjector inject = new ListInjector(e);
+                inject.Load();
+                inject.Inject();
             }
             Console.WriteLine("Generating \"Agents.h\" file");
             //Generate the core file before we sort it

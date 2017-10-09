@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
 {
-    public class ClassFields : IClassElement
+    public class ClassFieldReplace : IClassElement
     {
         public string FieldName;
         public string FieldType;
@@ -15,12 +15,13 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
 
         public string Comment;
 
-        public ClassFields(string fieldName, string fieldType, string newName, string newType)
+        public ClassFieldReplace(string fieldName, string fieldType, string newName, string newType, string comment)
         {
             FieldName = fieldName;
             FieldType = fieldType;
             NewName = newName;
             NewType = newType;
+            Comment = comment;
         }
 
         /// <summary>

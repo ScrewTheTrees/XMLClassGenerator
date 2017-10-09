@@ -1,22 +1,23 @@
-﻿<class name="CUnit">
+﻿<Class>
 
-  <list id="Includes">
-    <include IncludeString='#include "Vector3.h"' Comment=""/>
-  </list>
-  <list id="Header">
-    <string Text="Big Butts: 420"/>
-  </list>
-  <list id="Fields">
-    <fieldreplace FieldType="int" FieldName="field_100" NewType="Vector3" NewName="somethingUseful" Comment="Cool stuff" />
-    <fieldremove FieldType="int" FieldName="field_104"/>
-    <fieldremove FieldType="int" FieldName="field_108"/>
-  </list>
+  <Includes>
+    <Include IncludeString='#include "Vector3.h"' Comment=""/>
+  </Includes>
+  <Header>
+    <String Text="Big Butts: 420"/>
+  </Header>
+  <Fields>
+    <FieldReplace FieldType="int" FieldName="field_100" NewType="Vector3" NewName="somethingUseful" Comment="Cool stuff"/>
+    <FieldRemove FieldType="int" FieldName="field_104"/>
+    <FieldRemove FieldType="int" FieldName="field_108"/>
+  </Fields>
 
-  <list id="BeforeFields">
-    <string Text="//Start"/>
-  </list>
-  <list id="AfterFields">
-    <string Text="//End"/>
-  </list>
+  <BeforeFields>
+    <String Text="//Start"/>
+    <String Text="//Demonstrative"/>
+  </BeforeFields>
+  <AfterFields>
+    <String Text="//End"/>
+  </AfterFields>
 
-</class>
+</Class>

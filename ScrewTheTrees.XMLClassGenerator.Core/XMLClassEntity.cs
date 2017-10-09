@@ -19,6 +19,8 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
         public List<string> Header = new List<string>();
         public List<string> Body = new List<string>();
         public List<string> Fields = new List<string>();
+        public List<string> BeforeFields = new List<string>();
+        public List<string> AfterFields = new List<string>();
 
         public void CalculateDirectory()
         {
@@ -87,23 +89,21 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
         /// Please generate "Fields" before generating the body, as this function uses the Fields
         /// This function accepts null lists that you dont have to make a new list just to add afterFields
         /// </summary>
-        /// <param name="beforeFields">Lines to add before the fields get filled in.</param>
-        /// <param name="afterFields">Lines to add after the fields and before };</param>
-        public void GenerateBody(List<string> beforeFields = null, List<string> afterFields = null)
+        public void GenerateBody()
         {
             Body.Clear();
             if (ParentClass != null)
                 Body.Add(string.Format("class {0} : {1} {{", Name, ParentClass.Name));
             else Body.Add(string.Format("class {0} {{", Name));
 
-            if (beforeFields != null)
-                Body.AddRange(beforeFields);
+            if (BeforeFields != null)
+                Body.AddRange(BeforeFields);
 
             Body.Add("public:");
             Body.AddRange(Fields);
 
-            if (afterFields != null)
-                Body.AddRange(afterFields);
+            if (AfterFields != null)
+                Body.AddRange(AfterFields);
 
             Body.Add("};");
         }
