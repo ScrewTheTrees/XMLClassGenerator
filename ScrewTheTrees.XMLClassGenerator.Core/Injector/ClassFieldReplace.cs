@@ -30,22 +30,25 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
         /// <returns>Returns whenever it was successfully injected or not.</returns>
         public bool InjectIntoList(List<string> list)
         {
-            string comment;
-            if (Comment != null && Comment != "")
-                comment = "//" + Comment;
-            else comment = "";
-
-            for (int i = 0; i < list.Count; i++)
+            if (NewName == "" || NewType == "" || FieldName == "")
             {
-                string tempString = list[i];
+                string comment;
+                if (Comment != null && Comment != "")
+                    comment = "//" + Comment;
+                else comment = "";
 
-                tempString = tempString.Trim(' ');
-
-                if (tempString.StartsWith(string.Format("{0} {1};" , FieldType, FieldName)))
+                for (int i = 0; i < list.Count; i++)
                 {
-                    list[i] = string.Format("  {0} {1}; {2}", NewType, NewName, comment);
+                    string tempString = list[i];
 
-                    return true;
+                    tempString = tempString.Trim(' ');
+
+                    if (tempString.StartsWith(string.Format("{0} {1};", FieldType, FieldName)))
+                    {
+                        list[i] = string.Format("  {0} {1}; {2}", NewType, NewName, comment);
+
+                        return true;
+                    }
                 }
             }
 

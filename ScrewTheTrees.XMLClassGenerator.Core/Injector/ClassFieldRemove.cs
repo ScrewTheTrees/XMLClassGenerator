@@ -22,7 +22,7 @@ namespace ScrewTheTrees.XMLClassGenerator.Core.Injector
         /// Injects this Include into a string List
         /// </summary>
         /// <param name="list">List to Inject into.</param>
-        /// <returns>Returns whenever it was successfully injected or not.</returns>
+        /// <returns>Returns true.</returns>
         public bool InjectIntoList(List<string> list)
         {
             list.Remove(string.Format("  {0} {1};", FieldType, FieldName));

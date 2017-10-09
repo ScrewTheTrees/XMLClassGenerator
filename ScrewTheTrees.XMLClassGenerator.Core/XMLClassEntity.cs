@@ -51,7 +51,6 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
         /// <summary>
         /// Generate the include strings at the top of the document, other top of the document stuff can technically be added here aswell.
         /// </summary>
-        /// <param name="includes">List (Nullable) of includes you want to add, the strings are parsed and will be written as is (no #include and etc...)</param>
         /// <param name="generateParent">Default true, Should the include for this Class parent be included (if not null)?</param>
         public void GenerateIncludes(bool generateParent = true)
         {

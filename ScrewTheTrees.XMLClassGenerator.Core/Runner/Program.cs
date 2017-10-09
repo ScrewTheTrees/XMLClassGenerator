@@ -22,8 +22,8 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Runner
             List<XmlClassEntity> entitites = handle.CreateEntities();
 
 
-            Console.WriteLine("Generating Entity Data and injecting data.");
             //Generate all their values
+            Console.WriteLine("Generating Entity Data and injecting data.");
             foreach (XmlClassEntity e in entitites)
             {
                 e.GenerateFields();

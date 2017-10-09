@@ -39,7 +39,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
             if (XmlDoc != null)
             {
                 XElement Doc = XmlDoc.Descendants().FirstOrDefault();
-                Console.WriteLine(Entity.Name);
+                Console.WriteLine("Injecting into: " + Entity.Name);
 
                 if (Doc.Descendants().Any(x => x.Name == "Includes"))
                 {
@@ -87,20 +87,20 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
             {
                 if (x.Name == "FieldReplace")
                 {
-                    ClassFieldReplace field = new ClassFieldReplace(x.Attribute("Name").Value, x.Attribute("NewName").Value, x.Attribute("Type").Value);
+                    ClassFieldReplace field = new ClassFieldReplace(x.Attribute("Name")?.Value ?? "", x.Attribute("NewName")?.Value ?? "", x.Attribute("Type")?.Value ?? "");
                     field.Comment = x.Value;
                     injectorElements.Add(field);
                 }
 
                 else if (x.Name == "FieldRemove")
-                    injectorElements.Add(new ClassFieldRemove(x.Attribute("Name").Value));
+                    injectorElements.Add(new ClassFieldRemove(x.Attribute("Name")?.Value ?? ""));
 
                 else if (x.Name == "Include")
-                    injectorElements.Add(new ClassInclude(x.Attribute("IncludeString").Value));
+                    injectorElements.Add(new ClassInclude(x.Attribute("IncludeString")?.Value ?? ""));
 
                 else if (x.Name == "String")
                     if (x.Attributes().Any(a => a.Name == "Text"))
-                        injectorElements.Add(new ClassString(x.Attribute("Text").Value));
+                        injectorElements.Add(new ClassString(x.Attribute("Text")?.Value ?? ""));
                     else injectorElements.Add(new ClassString(x.Value));
 
                 else Console.WriteLine("Ignoring unknown XML tag: " + x.Name);
