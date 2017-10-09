@@ -1,17 +1,16 @@
-﻿using System.Collections.Generic;
-
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ScrewTheTrees.XMLClassGenerator.Core.Injector
 {
-    public class ClassString : IClassElement
+    public class ClassFieldRemove : IClassElement
     {
 
-        string Text;
-
-        public ClassString(string text)
-        {
-            Text = text;
-        }
+        public string FieldName;
+        public string FieldType;
 
         /// <summary>
         /// Injects this Include into a string List
@@ -20,10 +19,9 @@ namespace ScrewTheTrees.XMLClassGenerator.Core.Injector
         /// <returns>Returns whenever it was successfully injected or not.</returns>
         public bool InjectIntoList(List<string> list)
         {
-            list.Add(string.Format("{0}", Text));
+            list.Remove(string.Format("{0} {1}", FieldType, FieldName));
 
             return true;
         }
-
     }
 }

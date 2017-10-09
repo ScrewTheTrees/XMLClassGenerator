@@ -7,7 +7,9 @@
     <string Text="Big Butts: 420"/>
   </list>
   <list id="Fields">
-    <fieldreplace FieldType="int" FieldName="field_100" NewType="float" NewName="something useful" Comment="Cool stuff" />
+    <fieldreplace FieldType="int" FieldName="field_100" NewType="Vector3" NewName="somethingUseful" Comment="Cool stuff" />
+    <fieldremove FieldType="int" FieldName="field_104"/>
+    <fieldremove FieldType="int" FieldName="field_108"/>
   </list>
 
   <list id="BeforeFields">
