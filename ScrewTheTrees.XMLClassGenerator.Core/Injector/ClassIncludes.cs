@@ -1,9 +1,10 @@
 ﻿
+using ScrewTheTrees.XMLClassGenerator.Core.Injector;
 using System.Collections.Generic;
 
-namespace ScrewTheTrees.XmlClassGenerator.Core
+namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
 {
-    public class ClassIncludes
+    public class ClassIncludes : IClassElement
     {
         public string IncludeString;
         public string Comment;

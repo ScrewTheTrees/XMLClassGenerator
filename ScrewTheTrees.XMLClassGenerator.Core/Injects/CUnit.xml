@@ -1,0 +1,20 @@
+﻿<class name="CUnit">
+
+  <list id="Includes">
+    <include IncludeString='#include "Vector3.h"' Comment=""/>
+  </list>
+  <list id="Header">
+    <string Text="Big Butts: 420"/>
+  </list>
+  <list id="Fields">
+    <fieldreplace FieldType="int" FieldName="field_100" NewType="float" NewName="something useful" Comment="Cool stuff" />
+  </list>
+
+  <list id="BeforeFields">
+    <string Text="//Start"/>
+  </list>
+  <list id="AfterFields">
+    <string Text="//End"/>
+  </list>
+
+</class>

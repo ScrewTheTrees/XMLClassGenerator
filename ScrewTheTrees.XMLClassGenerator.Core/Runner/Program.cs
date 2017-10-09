@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 
 
-namespace ScrewTheTrees.XmlClassGenerator.Core
+namespace ScrewTheTrees.XmlClassGenerator.Core.Runner
 {
     class Program
     {

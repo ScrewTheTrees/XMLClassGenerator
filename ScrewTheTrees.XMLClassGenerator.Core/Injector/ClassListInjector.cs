@@ -1,4 +1,4 @@
-﻿namespace ScrewTheTrees.XmlClassGenerator.Core
+﻿namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
 {
     public class ClassListInjector
     {

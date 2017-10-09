@@ -1,10 +1,11 @@
 ﻿
 
+using ScrewTheTrees.XMLClassGenerator.Core.Injector;
 using System.Collections.Generic;
 
-namespace ScrewTheTrees.XmlClassGenerator.Core
+namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
 {
-    public class ClassFields
+    public class ClassFields : IClassElement
     {
         public string FieldName;
         public string FieldType;
@@ -33,8 +34,6 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             if (Comment != null)
                 comment = "//" + Comment;
             else comment = "";
-
-
 
             for (int i = 0; i < list.Count; i++)
             {
