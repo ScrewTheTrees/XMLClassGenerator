@@ -4,12 +4,12 @@ using System.Collections.Generic;
 
 namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
 {
-    public class ClassIncludes : IClassElement
+    public class ClassInclude : IClassElement
     {
         public string IncludeString;
         public string Comment;
 
-        public ClassIncludes(string includeString)
+        public ClassInclude(string includeString)
         {
             IncludeString = includeString;
         }
@@ -22,7 +22,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
         public bool InjectIntoList(List<string> list)
         {
             string comment;
-            if (Comment != null)
+            if (Comment != null && Comment != "")
                 comment = "//" + Comment;
             else comment = "";
 

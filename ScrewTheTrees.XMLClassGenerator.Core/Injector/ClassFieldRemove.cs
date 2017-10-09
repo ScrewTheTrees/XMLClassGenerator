@@ -12,6 +12,12 @@ namespace ScrewTheTrees.XMLClassGenerator.Core.Injector
         public string FieldName;
         public string FieldType;
 
+        public ClassFieldRemove(string fieldName)
+        {
+            FieldName = fieldName;
+            FieldType = "int";
+        }
+
         /// <summary>
         /// Injects this Include into a string List
         /// </summary>
@@ -19,7 +25,7 @@ namespace ScrewTheTrees.XMLClassGenerator.Core.Injector
         /// <returns>Returns whenever it was successfully injected or not.</returns>
         public bool InjectIntoList(List<string> list)
         {
-            list.Remove(string.Format("{0} {1};", FieldType, FieldName));
+            list.Remove(string.Format("  {0} {1};", FieldType, FieldName));
 
             return true;
         }

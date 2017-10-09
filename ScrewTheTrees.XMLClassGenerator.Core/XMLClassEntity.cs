@@ -19,8 +19,12 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
         public List<string> Header = new List<string>();
         public List<string> Body = new List<string>();
         public List<string> Fields = new List<string>();
-        public List<string> BeforeFields = new List<string>();
-        public List<string> AfterFields = new List<string>();
+
+        public List<string> InjectIncludes = new List<string>();
+        public List<string> InjectHeader = new List<string>();
+        public List<string> InjectBeforeFields = new List<string>();
+        public List<string> InjectAfterFields = new List<string>();
+
 
         public void CalculateDirectory()
         {
@@ -49,16 +53,15 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
         /// </summary>
         /// <param name="includes">List (Nullable) of includes you want to add, the strings are parsed and will be written as is (no #include and etc...)</param>
         /// <param name="generateParent">Default true, Should the include for this Class parent be included (if not null)?</param>
-        public void GenerateIncludes(List<string> includes = null, bool generateParent = true)
+        public void GenerateIncludes(bool generateParent = true)
         {
             Includes.Clear();
             if (generateParent == true && ParentClass != null)
                 Includes.Add(string.Format("#include \"{0}{1}.h\"", ParentClass.Directory.Replace('\\', '/'), ParentClass.Name));
-            if (includes != null)
-                Includes.AddRange(includes);
+            Includes.AddRange(InjectIncludes);
         }
 
-        public void GenerateHeader(List<string> header = null, bool generateBase = true)
+        public void GenerateHeader(bool generateBase = true)
         {
             Header.Clear();
             Header.Add("/*");
@@ -80,30 +83,30 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
                 }
                 Header.Add(string.Format("Handler: {0}", Handler));
             }
-            if (header != null)
-                Header.AddRange(header);
+            Header.AddRange(InjectHeader);
             Header.Add("*/");
         }
 
         /// <summary>
-        /// Please generate "Fields" before generating the body, as this function uses the Fields
-        /// This function accepts null lists that you dont have to make a new list just to add afterFields
+        /// This is the final generate, run this after injection please
+        /// 
         /// </summary>
-        public void GenerateBody()
+        public void GenerateFinalize()
         {
             Body.Clear();
             if (ParentClass != null)
                 Body.Add(string.Format("class {0} : {1} {{", Name, ParentClass.Name));
             else Body.Add(string.Format("class {0} {{", Name));
 
-            if (BeforeFields != null)
-                Body.AddRange(BeforeFields);
+            if (InjectBeforeFields != null)
+                Body.AddRange(InjectBeforeFields);
 
-            Body.Add("public:");
+            if (Fields.Count > 0)
+                Body.Add("public:");
             Body.AddRange(Fields);
 
-            if (AfterFields != null)
-                Body.AddRange(AfterFields);
+            if (InjectAfterFields != null)
+                Body.AddRange(InjectAfterFields);
 
             Body.Add("};");
         }

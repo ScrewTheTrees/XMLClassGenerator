@@ -1,23 +1,51 @@
-﻿<Class>
+﻿<class>
+	<Includes>
+		<Include IncludeString='#include "Vector2.h"' Comment=""/>
+		<Include IncludeString='#include "Vector3.h"' Comment=""/>
+	</Includes>
+	<Header>
+		<String Text="Big Butts: 420"/>
+	</Header>
+	<Fields>
+		<FieldReplace FieldName="field_B0" FieldType="int" NewName="baseHealthRegen" NewType="float" Comment="Read Only"/>
+		<FieldReplace FieldName="field_D4" FieldType="int" NewName="baseManaRegen" NewType="float" Comment="Read Only"/>
+		<FieldReplace FieldName="field_E0" FieldType="int" NewName="defenseArmor" NewType="float" Comment=""/>
+		<FieldReplace FieldName="field_E4" FieldType="int" NewName="defenseArmorType" NewType="int" Comment="enumDefenseArmorType"/>
+		<FieldReplace FieldName="field_1DC" FieldType="int" NewName="field_1DC" NewType="int" Comment="Used to fetch additional abilities"/>
+		<FieldReplace FieldName="field_1E0" FieldType="int" NewName="field_1E0" NewType="int" Comment="Used to fetch additional abilities"/>
+		<FieldReplace FieldName="field_1E8" FieldType="int" NewName="attackAbility" NewType="void*" Comment=""/>
+		<FieldReplace FieldName="field_1EC" FieldType="int" NewName="moveAbility" NewType="void*" Comment=""/>
+		<FieldReplace FieldName="field_1F0" FieldType="int" NewName="heroAbility" NewType="void*" Comment=""/>
+		<FieldReplace FieldName="field_1F4" FieldType="int" NewName="buildAbility" NewType="void*" Comment=""/>
+		<FieldReplace FieldName="field_1F8" FieldType="int" NewName="inventoryAbility" NewType="void*" Comment=""/>
+		<FieldReplace FieldName="field_1FC" FieldType="int" NewName="movementType" NewType="int" Comment=""/>
+		<FieldReplace FieldName="field_208" FieldType="int" NewName="movementHeight" NewType="float" Comment=""/>
+		<FieldReplace FieldName="field_20C" FieldType="int" NewName="movementHeightMinimum" NewType="float" Comment=""/>
+		<FieldReplace FieldName="field_210" FieldType="int" NewName="movementHeight2" NewType="float" Comment=""/>
+		<FieldReplace FieldName="field_228" FieldType="int" NewName="projectileImpactZ" NewType="float" Comment=""/>
+		<FieldReplace FieldName="field_22C" FieldType="int" NewName="projectileImpactZSwimming" NewType="float" Comment=""/>
+		<FieldReplace FieldName="field_230" FieldType="int" NewName="projectileLaunch" NewType="Vector3" Comment=""/>
+		<FieldRemove FieldName="field_234" FieldType="int" />
+		<FieldRemove FieldName="field_238" FieldType="int" />
+		<FieldReplace FieldName="field_23C" FieldType="int" NewName="projectileLaunchZSwimming" NewType="float" Comment=""/>
+	
+		<FieldReplace FieldName="field_27C" FieldType="int" NewName="userdata" NewType="int" Comment=""/>
+	  
+		<FieldReplace FieldName="field_284" FieldType="int" NewName="position" NewType="Vector3" Comment="12 bytes, [284, 288, 28C]"/>
+	
+		<FieldReplace FieldName="field_290" FieldType="int" NewName="rotation" NewType="float" Comment=""/>
+		<FieldReplace FieldName="field_294" FieldType="int" NewName="rotationSinCos" NewType="Vector2" Comment=""/>
+		<FieldRemove FieldName="field_298" FieldType="int" />
+		
+		<FieldReplace FieldName="field_2F8" FieldType="int" NewName="animationRunSpeed" NewType="float" Comment=""/>
+		<FieldReplace FieldName="field_2FC" FieldType="int" NewName="animationWalkSpeed" NewType="float" Comment=""/>
+		
+	</Fields>
 
-  <Includes>
-    <Include IncludeString='#include "Vector3.h"' Comment=""/>
-  </Includes>
-  <Header>
-    <String Text="Big Butts: 420"/>
-  </Header>
-  <Fields>
-    <FieldReplace FieldType="int" FieldName="field_100" NewType="Vector3" NewName="somethingUseful" Comment="Cool stuff"/>
-    <FieldRemove FieldType="int" FieldName="field_104"/>
-    <FieldRemove FieldType="int" FieldName="field_108"/>
-  </Fields>
-
-  <BeforeFields>
-    <String Text="//Start"/>
-    <String Text="//Demonstrative"/>
-  </BeforeFields>
-  <AfterFields>
-    <String Text="//End"/>
-  </AfterFields>
-
-</Class>
+	<BeforeFields>
+		<String Text=""/>
+	</BeforeFields>
+	<AfterFields>
+		<String Text=""/>
+	</AfterFields>
+</class>

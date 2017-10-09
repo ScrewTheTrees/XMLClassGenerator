@@ -15,13 +15,12 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
 
         public string Comment;
 
-        public ClassFieldReplace(string fieldName, string fieldType, string newName, string newType, string comment)
+        public ClassFieldReplace(string fieldName, string newName, string newType)
         {
             FieldName = fieldName;
-            FieldType = fieldType;
+            FieldType = "int";
             NewName = newName;
             NewType = newType;
-            Comment = comment;
         }
 
         /// <summary>
@@ -32,7 +31,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
         public bool InjectIntoList(List<string> list)
         {
             string comment;
-            if (Comment != null)
+            if (Comment != null && Comment != "")
                 comment = "//" + Comment;
             else comment = "";
 
@@ -44,7 +43,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
 
                 if (tempString.StartsWith(string.Format("{0} {1};" , FieldType, FieldName)))
                 {
-                    list[i] = string.Format("{0} {1}; {2}", FieldType, FieldName, comment);
+                    list[i] = string.Format("  {0} {1}; {2}", NewType, NewName, comment);
 
                     return true;
                 }

@@ -49,7 +49,7 @@
     <Compile Include="ClassGeneratorMainFile.cs" />
     <Compile Include="Injector\ClassFieldRemove.cs" />
     <Compile Include="Injector\ClassFieldReplace.cs" />
-    <Compile Include="Injector\ClassIncludes.cs" />
+    <Compile Include="Injector\ClassInclude.cs" />
     <Compile Include="Injector\ListInjector.cs" />
     <Compile Include="Injector\ClassString.cs" />
     <Compile Include="Injector\IClassElement.cs" />

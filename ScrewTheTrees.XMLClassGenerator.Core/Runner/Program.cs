@@ -26,14 +26,15 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Runner
             //Generate all their values
             foreach (XmlClassEntity e in entitites)
             {
-                e.GenerateIncludes();
-                e.GenerateHeader();
                 e.GenerateFields();
-                e.GenerateBody();
 
                 ListInjector inject = new ListInjector(e);
                 inject.Load();
                 inject.Inject();
+
+                e.GenerateIncludes();
+                e.GenerateHeader();
+                e.GenerateFinalize();
             }
             Console.WriteLine("Generating \"Agents.h\" file");
             //Generate the core file before we sort it
