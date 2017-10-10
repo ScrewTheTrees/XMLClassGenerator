@@ -12,9 +12,9 @@ namespace ScrewTheTrees.XMLClassGenerator.Core.Injector
         public string FieldName;
         public string FieldType;
 
-        public ClassFieldRemove(string fieldName)
+        public ClassFieldRemove(string fieldOffset)
         {
-            FieldName = fieldName;
+            FieldName = "field_" + fieldOffset;
             FieldType = "int";
         }
 

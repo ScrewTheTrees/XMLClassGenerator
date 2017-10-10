@@ -15,9 +15,9 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
 
         public string Comment;
 
-        public ClassFieldReplace(string fieldName, string newName, string newType)
+        public ClassFieldReplace(string fieldOffset, string newName, string newType)
         {
-            FieldName = fieldName;
+            FieldName = "field_"+fieldOffset;
             FieldType = "int";
             NewName = newName;
             NewType = newType;

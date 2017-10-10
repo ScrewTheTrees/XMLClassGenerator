@@ -84,6 +84,7 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
                     ParseElements(includes, addem);
                     Entity.GenerateFinalize();
                 }
+
             }
         }
 
@@ -94,18 +95,23 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
 
             foreach(XElement x in elements.Elements())
             {
-                if (x.Name == "FieldReplace" && x.Attributes().Any( a => a.Name == "Name" && a.Name == "NewName" && a.Name == "Type"))
+                if (x.Name == "FieldReplace")
                 {
-                    ClassFieldReplace field = new ClassFieldReplace(x.Attribute("Name").Value, x.Attribute("NewName").Value, x.Attribute("Type").Value);
-                    field.Comment = x.Value;
-                    injectorElements.Add(field);
+                    if (x.Attributes().Any(a => a.Name == "Offset") && x.Attributes().Any(a => a.Name == "NewName") && x.Attributes().Any(a => a.Name == "Type"))
+                    {
+                        ClassFieldReplace field = new ClassFieldReplace(x.Attribute("Offset").Value, x.Attribute("NewName").Value, x.Attribute("Type").Value);
+                        field.Comment = x.Value;
+                        injectorElements.Add(field);
+                    }
                 }
 
-                else if (x.Name == "FieldRemove" && x.Attributes().Any(a => a.Name == "Name"))
-                    injectorElements.Add(new ClassFieldRemove(x.Attribute("Name").Value));
+                else if (x.Name == "FieldRemove")
+                    if (x.Attributes().Any(a => a.Name == "Offset"))
+                        injectorElements.Add(new ClassFieldRemove(x.Attribute("Offset").Value));
 
-                else if (x.Name == "Include" && x.Attributes().Any(a => a.Name == "IncludeString"))
-                    injectorElements.Add(new ClassInclude(x.Attribute("IncludeString").Value));
+                else if (x.Name == "Include")
+                    if (x.Attributes().Any(a => a.Name == "IncludeString"))
+                        injectorElements.Add(new ClassInclude(x.Attribute("IncludeString").Value));
 
                 else if (x.Name == "String")
                     if (x.Attributes().Any(a => a.Name == "Text"))
