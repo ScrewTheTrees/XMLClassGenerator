@@ -11,10 +11,9 @@
     <FieldReplace Offset="B0" Name="baseHealthRegen" Type="float">Read Only</FieldReplace>
     <FieldReplace Offset="D4" Name="baseManaRegen" Type="float">Read Only</FieldReplace>
     <FieldReplace Offset="E0" Name="defenseArmor" Type="float" />
-    <FieldReplace Offset="E4" Name="defenseArmor" Type="float" />
     <FieldReplace Offset="E4" Name="defenseArmorType" Type="int">enumDefenseArmorType</FieldReplace>
-    <FieldReplace Offset="1DC" Name="1DC" Type="int">Used to fetch additional abilities</FieldReplace>
-    <FieldReplace Offset="1E0" Name="1E0" Type="int">Used to fetch additional abilities</FieldReplace>
+    <FieldReplace Offset="1DC" Name="field_1DC" Type="int">Used to fetch additional abilities</FieldReplace>
+    <FieldReplace Offset="1E0" Name="field_1E0" Type="int">Used to fetch additional abilities</FieldReplace>
     <FieldReplace Offset="1E8" Name="attackAbility" Type="void*" />
     <FieldReplace Offset="1EC" Name="moveAbility" Type="void*" />
     <FieldReplace Offset="1F0" Name="heroAbility" Type="void*" />
