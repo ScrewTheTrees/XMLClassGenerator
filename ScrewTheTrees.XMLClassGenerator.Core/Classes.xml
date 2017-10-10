@@ -21,6 +21,7 @@
             <class id="XEtq" name="CEffectTranquility" handler="0x6FD7E05C" size="284">
               <class id="XEsf" name="CEffectStarfall" handler="0x6FD7E0A4" size="292">
                 <class id="XNmo" name="CEffectMonsoon" handler="0x6FD7E0EC" size="292" />
+                <class id="XNmo" name="CEffectMonsoonsssss" />
               </class>
               <class id="XUdd" name="CEffectDeathAndDecay" handler="0x6FD7E80C" size="304">
                 <class id="XHfs" name="CEffectFlameStrike" handler="0x6FD7F1B8" size="348">

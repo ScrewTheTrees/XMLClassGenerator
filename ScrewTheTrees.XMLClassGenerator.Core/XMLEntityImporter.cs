@@ -37,8 +37,6 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
             List<XElement> rootClass = new List<XElement>();
             rootClass.AddRange(Doc.Elements().Where(x => x.Name == "class"));
 
-            Console.WriteLine(rootClass.Attributes().FirstOrDefault() + "  - Children:  " + rootClass.Elements().Count().ToString());
-
             //Loop through all the elements to create their ClassEntities
             foreach (XElement node in rootClass)
                 entities = ParseNode(node, entities, null);
@@ -54,28 +52,54 @@ namespace ScrewTheTrees.XmlClassGenerator.Core
 
         private List<XmlClassEntity> ParseNode(XElement element, List<XmlClassEntity> entities, XmlClassEntity parent)
         {
-            XmlClassEntity currentEntity = MakeEntityFromElement(element);
-            currentEntity.ParentClass = parent;
-
-            entities.Add(currentEntity);
-
-            if (element.Elements().Count() > 0 && element != null)
+            try
             {
-                //Only loop classes here.
-                foreach (XElement node in element.Elements().Where(x => x.Name == "class"))
-                    entities = ParseNode(node, entities, currentEntity);
+                XmlClassEntity currentEntity = MakeEntityFromElement(element);
+                currentEntity.ParentClass = parent;
+
+                entities.Add(currentEntity);
+
+                if (element.Elements().Count() > 0 && element != null)
+                {
+                    //Only loop classes here.
+                    foreach (XElement node in element.Elements().Where(x => x.Name == "class"))
+                        entities = ParseNode(node, entities, currentEntity);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
             return entities;
         }
 
         private XmlClassEntity MakeEntityFromElement(XElement element)
         {
-            return (new XmlClassEntity() {
-                ID = element.Attribute("id").Value,
-                Name = element.Attribute("name").Value,
-                Handler = element.Attribute("handler").Value,
-                Size = int.Parse(element.Attribute("size").Value)
-                });
+            if (element.Attributes().Any(a => a.Name == "id") 
+                && element.Attributes().Any(a => a.Name == "name") 
+                && element.Attributes().Any(a => a.Name == "handler") 
+                && element.Attributes().Any(a => a.Name == "size"))
+                {
+                    return (new XmlClassEntity()
+                    {
+                        ID = element.Attribute("id").Value,
+                        Name = element.Attribute("name").Value,
+                        Handler = element.Attribute("handler").Value,
+                        Size = int.Parse(element.Attribute("size").Value)
+                    });
+                }
+
+            throw new Exception(string.Format("Failed to create Class Entity: '{0} {1}', missing data. This class and all its children will be ignored.", element.Name,MakeAttributeString(element.Attributes())));
+        }
+
+        private string MakeAttributeString(IEnumerable<XAttribute> a)
+        {
+            string start = "";
+            foreach(XAttribute x in a)
+            {
+                start += x.ToString() + " ";
+            }
+            return start;
         }
     }
 }

@@ -4,43 +4,42 @@
     <Include IncludeString='#include "Vector3.h"' />
   </Includes>
   <Header>
-    <String Text="---"/>
-    <String Text="The main class struct for all Units in the game."/>
+    <String> ---
+    The main class struct for all Units in the game."</String>
   </Header>
   <Fields>
-    <FieldReplace Offset="B0" NewName="baseHealthRegen" Type="float">Read Only</FieldReplace>
-    <FieldReplace Offset="D4" NewName="baseManaRegen" Type="float">Read Only</FieldReplace>
-    <FieldReplace Offset="E0" NewName="defenseArmor" Type="float" />
-    <FieldReplace NewName="defenseArmor" Type="float" />
-    <FieldReplace Offset="E4" NewName="defenseArmorType" Type="int">enumDefenseArmorType</FieldReplace>
-    <FieldReplace Offset="1DC" NewName="1DC" Type="int">Used to fetch additional abilities</FieldReplace>
-    <FieldReplace Offset="1E0" NewName="1E0" Type="int">Used to fetch additional abilities</FieldReplace>
-    <FieldReplace Offset="1E8" NewName="attackAbility" Type="void*" />
-    <FieldReplace Offset="1EC" NewName="moveAbility" Type="void*" />
-    <FieldReplace Offset="1F0" NewName="heroAbility" Type="void*" />
-    <FieldReplace Offset="1F4" NewName="buildAbility" Type="void*" />
-    <FieldReplace Offset="1F8" NewName="inventoryAbility" Type="void*" />
-    <FieldReplace Offset="1FC" NewName="movementType" Type="int" />
-    <FieldReplace Offset="208" NewName="movementHeight" Type="float" />
-    <FieldReplace Offset="20C" NewName="movementHeightMinimum" Type="float" />
-    <FieldReplace Offset="210" NewName="movementHeight2" Type="float" />
-    <FieldReplace Offset="228" NewName="projectileImpactZ" Type="float" />
-    <FieldReplace Offset="22C" NewName="projectileImpactZSwimming" Type="float" />
-    <FieldReplace Offset="230" NewName="projectileLaunch" Type="Vector3" />
+    <FieldReplace Offset="B0" Name="baseHealthRegen" Type="float">Read Only</FieldReplace>
+    <FieldReplace Offset="D4" Name="baseManaRegen" Type="float">Read Only</FieldReplace>
+    <FieldReplace Offset="E0" Name="defenseArmor" Type="float" />
+    <FieldReplace Offset="E4" Name="defenseArmor" Type="float" />
+    <FieldReplace Offset="E4" Name="defenseArmorType" Type="int">enumDefenseArmorType</FieldReplace>
+    <FieldReplace Offset="1DC" Name="1DC" Type="int">Used to fetch additional abilities</FieldReplace>
+    <FieldReplace Offset="1E0" Name="1E0" Type="int">Used to fetch additional abilities</FieldReplace>
+    <FieldReplace Offset="1E8" Name="attackAbility" Type="void*" />
+    <FieldReplace Offset="1EC" Name="moveAbility" Type="void*" />
+    <FieldReplace Offset="1F0" Name="heroAbility" Type="void*" />
+    <FieldReplace Offset="1F4" Name="buildAbility" Type="void*" />
+    <FieldReplace Offset="1F8" Name="inventoryAbility" Type="void*" />
+    <FieldReplace Offset="1FC" Name="movementType" Type="int" />
+    <FieldReplace Offset="208" Name="movementHeight" Type="float" />
+    <FieldReplace Offset="20C" Name="movementHeightMinimum" Type="float" />
+    <FieldReplace Offset="210" Name="movementHeight2" Type="float" />
+    <FieldReplace Offset="228" Name="projectileImpactZ" Type="float" />
+    <FieldReplace Offset="22C" Name="projectileImpactZSwimming" Type="float" />
+    <FieldReplace Offset="230" Name="projectileLaunch" Type="Vector3" />
     <FieldRemove Offset="234" />
     <FieldRemove Offset="238" />
-    <FieldReplace Offset="23C" NewName="projectileLaunchZSwimming" Type="float" />
-    <MindWorX/>
-    <FieldReplace Offset="27C" NewName="userdata" Type="int" />
+    <FieldReplace Offset="23C" Name="projectileLaunchZSwimming" Type="float" />
+    <FieldReplace Offset="27C" Name="userdata" Type="int" />
 
-    <FieldReplace Offset="284" NewName="position" Type="Vector3">12 bytes, [284, 288, 28C]</FieldReplace>
+    <FieldReplace Offset="284" Name="position" Type="Vector3">12 bytes, [284, 288, 28C]</FieldReplace>
 
-    <FieldReplace Offset="290" NewName="rotation" Type="float" />
-    <FieldReplace Offset="294" NewName="rotationSinCos" Type="Vector2" />
+    <FieldReplace Offset="290" Name="rotation" Type="float" />
+    <FieldReplace Offset="294" Name="rotationSinCos" Type="Vector2" />
     <FieldRemove Offset="298" />
 
-    <FieldReplace Offset="2F8" NewName="animationRunSpeed" Type="float" />
-    <FieldReplace Offset="2FC" NewName="animationWalkSpeed" Type="float" />
+    <FieldReplace Offset="2F8" Name="animationRunSpeed" Type="float" />
+    <FieldReplace Offset="2FC" Name="animationWalkSpeed" Type="float" />
 
   </Fields>
 
