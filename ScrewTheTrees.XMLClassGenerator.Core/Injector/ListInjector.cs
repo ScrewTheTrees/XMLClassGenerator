@@ -99,8 +99,10 @@ namespace ScrewTheTrees.XmlClassGenerator.Core.Injector
                 {
                     if (x.Attributes().Any(a => a.Name == "Offset") && x.Attributes().Any(a => a.Name == "Name") && x.Attributes().Any(a => a.Name == "Type"))
                     {
-                        ClassFieldReplace field = new ClassFieldReplace(x.Attribute("Offset").Value, x.Attribute("Name").Value, x.Attribute("Type").Value);
-                        field.Comment = x.Value;
+                        ClassFieldReplace field = new ClassFieldReplace(x.Attribute("Offset").Value, x.Attribute("Name").Value, x.Attribute("Type").Value)
+                        {
+                            Comment = x.Value
+                        };
                         injectorElements.Add(field);
                     }
                     else Console.WriteLine(string.Format("Failed FieldReplace, missing attributes. {0} {1}.",x.Name, MakeAttributeString(x.Attributes())));
